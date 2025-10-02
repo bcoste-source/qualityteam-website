@@ -21,7 +21,7 @@
   --color-code-green:       #a7bd68;
   --color-code-aqua:        #8abeb7;
   --color-code-blue:        #7e9abf;
-  --color-code-purple:      #b294bb;
+  --color-code-purple:      #483EB8;
   --font-family-sans: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
   --font-family-mono: "SFMono-Regular", Consolas, "Liberation Mono", Menlo, Courier, monospace;
 }
@@ -34,11 +34,17 @@ html {
 img {
   width: 100%;
 }
-body {
+
+.body-padding {
   padding: var(--padding);
   max-width: 70rem;
   margin: 0 auto;
 }
+
+.body-centered {
+  text-align: center;
+}
+
 li {
   list-style: none;
 }
@@ -74,18 +80,15 @@ small {
   flex-wrap: wrap;
   align-items: center;
   justify-content: space-between;
-  margin-right: -1rem;
-  margin-left: -1rem;
-  margin-bottom: 6rem;
+  padding: var(--padding);
 }
 
 .logo {
+  position: absolute;
   padding: 1rem;
   display: flex;
   align-items: center;
-  font-weight: 600;
   cursor: pointer;
-  flex-shrink: 0;
   max-width: 130px;
 }
 
@@ -96,6 +99,7 @@ small {
   cursor: pointer;
   padding: 1rem;
   z-index: 1001;
+  margin-left: auto;
 }
 
 .hamburger {
@@ -434,13 +438,12 @@ hr {
 .margin-xxl {
   margin-bottom: 6rem;
 }
-
-
 /* Responsive navbar */
 @media screen and (max-width: 768px) {
   .menu-toggle {
     display: block;
     order: 3;
+    margin-left: auto;
   }
 
   .menu {
@@ -477,7 +480,7 @@ hr {
 }
 
 @media screen and (min-width: 60rem) {
-  body {
+  .body-padding {
     --padding: 3rem;
   }
 
@@ -526,4 +529,31 @@ hr {
   color: var(--color-text-grey);
 }
 
+.padding-section {
+  padding-top: var(--padding);
+}
 
+.purple-section {
+  background-color: var(--color-code-purple);
+}
+
+.backgrond-vector-green {
+  background-image: url('/assets/images/background-vectors/vector-green.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+
+.backgrond-vector-purple {
+  background-image: url('/assets/images/background-vectors/vector-purple.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  opacity: 0.17;
+}
+
+.spot {
+  width: 50px;
+  height: auto;
+}

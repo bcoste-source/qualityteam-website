@@ -62,4 +62,12 @@ Example-text: Applications mobiles iOS/Android, sites web, outils métiers : on 
 
 ----
 
+Offer-image: - 'file://mqvnsuw2mawghhmw'
+
+----
+
 Uuid: wljMYhm0m3e9QOwC
+
+----
+
+Lock: GkSUVpYd

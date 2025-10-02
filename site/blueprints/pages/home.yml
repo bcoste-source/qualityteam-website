@@ -33,6 +33,17 @@ sections:
       companies:
         type: text
         width: 1
+      companies_logo:
+        label: Companies Logo
+        type: files
+        multiple: true
+        layout: cards
+        image:
+          cover: true
+        uploads:
+          template: image
+        width: 1
+        help: "Upload des logos des entreprises"
       images_texts:
         type: structure
         extends: sections/images_text

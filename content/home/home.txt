@@ -2,11 +2,56 @@ Title: Home
 
 ----
 
-Headline: Welcome to Kirby's Starterkit
+Bg-image: - 'file://nrhrg9arcnvj4quq'
 
 ----
 
-Subheadline: A fully documented example project
+Headline: On co-construit avec vous le bon produit, dès le début.
+
+----
+
+Subheadline: Que vous soyez porteur de projet, start-up, scale-up ou PME en transformation digitale, on travaille main dans la main pour concevoir un produit qui fait la différence. Avec méthode, écoute et exigence.
+
+----
+
+Companies: Les plus belles entreprises nous font confiance
+
+----
+
+Images-texts:
+
+-
+  image:
+    - 'file://anqmlzmydixibnkh'
+  texte: 'Vous avez une idée de projet numérique mais vous ne savez pas par ou commencer ?'
+-
+  image:
+    - 'file://kjmnglzuslvpwij8'
+  texte: 'Votre projet est déjà lancé mais il vous manque la vision produit ?'
+-
+  image:
+    - 'file://tokp0fyerf9f6wcm'
+  texte: 'Vous avez besoin de retours d’utilisateurs pour valider votre idée ?'
+
+----
+
+Construction-headline: Co-construisons ensemble !
+
+----
+
+Construction-text: <p>QualityTeam s’occupe de tout </p>
+
+----
+
+Mvp-image: - 'file://2gx871ivc6j1jdki'
+
+----
+
+Team-text: Une équipe produit soudée, un accompagnement pas à pas, un prototype qui fait mouche.
+
+----
+
+Example-text: Applications mobiles iOS/Android, sites web, outils métiers : on construit un produit numérique robuste, clair et validé.
 
 ----
 

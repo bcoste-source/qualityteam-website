@@ -1,0 +1,16 @@
+type: structure
+label: Liste d'images et textes
+fields:
+  image:
+    label: Image
+    type: files
+    multiple: false
+    layout: cards
+    image:
+      cover: true
+    uploads:
+      template: image
+  texte:
+    label: Texte
+    type: textarea
+    buttons: false

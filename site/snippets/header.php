@@ -60,8 +60,20 @@
     */
     ?>
     <a class="logo" href="<?= $site->url() ?>">
-      <?= $site->title()->esc() ?>
+      <?php if ($site->logo_image()->isNotEmpty()): ?>
+        <?= $site->logo_image()->toFile()->html(['alt' => $site->title()->esc()]) ?>
+      <?php else: ?>
+        <?= $site->title()->esc() ?>
+      <?php endif ?>
     </a>
+
+    <button class="menu-toggle" aria-label="Toggle menu" aria-expanded="false">
+      <span class="hamburger">
+        <span></span>
+        <span></span>
+        <span></span>
+      </span>
+    </button>
 
     <nav class="menu">
       <?php
@@ -80,7 +92,6 @@
       <?php foreach ($site->children()->listed() as $item): ?>
       <a <?php e($item->isOpen(), 'aria-current="page"') ?> href="<?= $item->url() ?>"><?= $item->title()->esc() ?></a>
       <?php endforeach ?>
-      <?php snippet('social') ?>
     </nav>
   </header>
 

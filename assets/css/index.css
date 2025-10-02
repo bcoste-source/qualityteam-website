@@ -1,3 +1,5 @@
+@import url('fonts.css');
+
 * {
   margin: 0;
   padding: 0;
@@ -18,11 +20,12 @@
   --color-code-red:         #d16464;
   --color-code-orange:      #de935f;
   --color-code-yellow:      #f0c674;
-  --color-code-green:       #a7bd68;
+  --color-code-green:       #35C475;
   --color-code-aqua:        #8abeb7;
   --color-code-blue:        #7e9abf;
   --color-code-purple:      #483EB8;
-  --font-family-sans: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+  --color-code-pink:        #C991F9;
+  --font-family-sans: 'Gilroy', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
   --font-family-mono: "SFMono-Regular", Consolas, "Liberation Mono", Menlo, Courier, monospace;
 }
 
@@ -535,6 +538,7 @@ hr {
 
 .purple-section {
   background-color: var(--color-code-purple);
+  position: relative;
 }
 
 .backgrond-vector-green {
@@ -550,10 +554,17 @@ hr {
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
-  opacity: 0.17;
 }
 
 .spot {
   width: 50px;
   height: auto;
+}
+
+.text-green {
+  color: var(--color-code-green);
+}
+
+.text-white {
+  color: var(--color-white);
 }

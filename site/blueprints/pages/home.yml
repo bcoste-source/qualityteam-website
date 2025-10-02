@@ -74,3 +74,23 @@ sections:
         label: Example Text
         type: text
         width: 1/2
+      used_method:
+        label: Méthode utilisée
+        type: structure
+        fields:
+          titre:
+            label: Titre
+            type: text
+            width: 1
+          description:
+            label: Description (liste à puces)
+            type: list
+            width: 1
+      accompagnement_text:
+        label: Accompagnement texte
+        type: writer
+        width: 1
+      accompagnement_text_images:
+        label: Images pour l'accompagnement
+        extends: sections/images_text
+        width: 1

@@ -122,22 +122,26 @@
   text-align: center;
 }
 
-/* Responsive : 1 colonne sur mobile, 2 sur tablette */
-@media (max-width: 900px) {
-  .images-texts {
-    grid-template-columns: repeat(2, 1fr);
-  }
+.mvp-max-width {
+  max-width: 600px;
+  margin: 0 auto;
+}
 
-  .companies-logo img {
-    max-width: 100px;
-    max-height: 100px;
-  }
+.transition-rectangle {
+  width: 40%;
+  height: 70px;
+  background-color: var(--color-code-purple);
+  border-radius: 50px 50px 0 0;
+  margin: 0 auto;
 }
-@media (max-width: 600px) {
-  .images-texts {
-    grid-template-columns: 1fr;
-  }
+
+.hourglass {
+  text-align: center;
+  width: 3rem;
+  height: auto;
+  object-fit: cover;
 }
+
 
 .mvp {
   display: flex;
@@ -149,4 +153,221 @@
   max-width: 800px;
   height: 100%;
   object-fit: cover;
+}
+
+.purple-arrow {
+  width: 32px;
+  height: auto;
+}
+
+.arrow-container {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  color: white;
+  font-size: 1.1rem;
+  font-weight: 500;
+  padding-left: 23vw;
+  div {
+    padding-top: 4rem;
+  }
+}
+
+.method-steps {
+  max-width: 70rem;
+  padding-left: 25vw;
+}
+
+.method-step {
+  display: flex;
+  align-items: flex-start;
+  margin-bottom: 3rem;
+  position: relative;
+}
+
+.step-number {
+  color: var(--color-code-green);
+  font-weight: 100;
+  font-size: 5rem;
+  line-height: 1;
+  margin-right: 2rem;
+  flex-shrink: 0;
+  font-style: italic;
+}
+
+.step-content {
+  flex: 1;
+  color: white;
+}
+
+.step-title {
+  font-size: 1.8rem;
+  margin-bottom: 1rem;
+  color: var(--color-code-green);
+  font-style: italic;
+}
+
+.step-description {
+  color: white;
+  line-height: 1.6;
+  font-size: 1.1rem;
+}
+
+.step-description ul {
+  margin: 0;
+  padding-left: 1.5rem;
+}
+
+.step-description li {
+  margin-bottom: 0.5rem;
+  list-style: disc;
+  color: white;
+}
+
+.accompagnement-text-section {
+  color: var(--color-white);
+  text-align: center;
+}
+
+.accompagnement-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 3rem 6rem;
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 2rem 0;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+}
+
+/* Pour forcer le retour à la ligne après 3 éléments */
+.accompagnement-item:nth-child(3n+1) {
+  clear: left;
+}
+
+.accompagnement-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  gap: 1rem;
+}
+
+.accompagnement-icon {
+  width: 80px;
+  height: 80px;
+  background: white;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 0.5rem;
+}
+
+.accompagnement-icon img {
+  width: 50px;
+  height: 50px;
+  object-fit: contain;
+}
+
+.accompagnement-text {
+  font-size: 1.1rem;
+  line-height: 1.4;
+  max-width: 200px;
+}
+
+.accompagnement-text .highlight {
+  color: var(--color-code-pink);
+}
+
+/* Responsive pour mobile */
+@media (max-width: 900px) {
+  .accompagnement-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem 1rem;
+  }
+}
+
+@media (max-width: 600px) {
+  .accompagnement-grid {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+  }
+}
+
+/* Desktop: Progressive padding */
+@media (min-width: 769px) {
+  .method-step:nth-child(1) {
+    padding-left: 0;
+  }
+
+  .method-step:nth-child(2) {
+    padding-left: 4rem;
+  }
+
+  .method-step:nth-child(3) {
+    padding-left: 8rem;
+  }
+
+  .method-step:nth-child(4) {
+    padding-left: 12rem;
+  }
+}
+
+/* Mobile: Reset padding */
+@media (max-width: 768px) {
+  .method-step {
+    flex-direction: column;
+    text-align: left;
+    margin-bottom: 2rem;
+  }
+
+  .step-number {
+    font-size: 3rem;
+    margin-right: 0;
+    margin-bottom: 1rem;
+  }
+
+  .method-step:nth-child(1),
+  .method-step:nth-child(2),
+  .method-step:nth-child(3),
+  .method-step:nth-child(4) {
+    padding-left: 0;
+  }
+}
+
+
+/* Responsive : 1 colonne sur mobile, 2 sur tablette */
+@media (max-width: 900px) {
+  .images-texts {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .companies-logo img {
+    max-width: 100px;
+    max-height: 100px;
+  }
+
+  .transition-rectangle {
+    width: 80%;
+  }
+  .hourglass {
+    width: 2rem;
+  }
+
+  .method-steps {
+    padding-left: 2rem;
+    padding-right: 2rem;
+  }
+
+  .arrow-container {
+    padding-left: 1rem;
+  }
+}
+
+@media (max-width: 600px) {
+  .images-texts {
+    grid-template-columns: 1fr;
+  }
 }

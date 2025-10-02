@@ -12,5 +12,5 @@ fields:
       template: image
   texte:
     label: Texte
-    type: textarea
+    type: writer
     buttons: false

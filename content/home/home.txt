@@ -62,4 +62,54 @@ Example-text: Applications mobiles iOS/Android, sites web, outils métiers : on 
 
 ----
 
+Used-method:
+
+-
+  titre: Exploration
+  description: '<ul><li>Valider votre idée : Vérifier si votre idée est viable</li><li>Comprendre les besoins des utilisateurs : Interroger des utilisateurs potentiels</li></ul>'
+-
+  titre: 'Étude produit'
+  description: "<ul><li>Choisir les fonctionnalités essentielles : Définir les fonctions principales de l'application</li><li>Analyser la concurrence : Étudier les applications similaires</li><li>Évaluer la complexité technique : Estimer la difficulté de développement</li></ul>"
+-
+  titre: Prototypage
+  description: '<ul><li>Zoning : Pensez la première ergo pour vos utilisateurs</li><li>User flow : Pensez le parcours utilisateur nominal</li><li>Créer une maquette haute fidélité : Dessiner une version simple de l\''application</li></ul>'
+-
+  titre: Synthèse
+  description: '<ul><li>Un vision produit claire : compréhension de ce qui va apporter de la valeur</li><li>Arbitrage technique : Estimer le coût de développement pour votre V1</li></ul>'
+
+----
+
+Accompagnement-text: <p>Avec notre accompagnement Product Starter  vous repartirez avec :&nbsp;</p>
+
+----
+
+Accompagnement-text-images:
+
+-
+  image:
+    - 'file://kulxtkcbtizos0bi'
+  texte: '<p>UN PROTOTYPE À VOTRE <span class="highlight">IMAGE</span></p>'
+-
+  image:
+    - 'file://omy9sic89eqtyarn'
+  texte: '<p>UNE VISION PRODUIT <span class="highlight">CLARIFIÉE</span></p>'
+-
+  image:
+    - 'file://kug0zmm1esnqdnpk'
+  texte: '<p>UN PRODUCT BACKLOG <span class="highlight">COHÉRENT</span></p>'
+-
+  image:
+    - 'file://hdmjydkmpe0tpehk'
+  texte: '<p>UN ARBITRAGE BUDGÉTAIRE <span class="highlight">OPTIMISÉ</span></p>'
+-
+  image:
+    - 'file://kulxtkcbtizos0bi'
+  texte: '<p>UNE ROADMAP BIEN <span class="highlight">PENSÉE</span></p>'
+
+----
+
 Uuid: wljMYhm0m3e9QOwC
+
+----
+
+Offer-image: - 'file://mqvnsuw2mawghhmw'

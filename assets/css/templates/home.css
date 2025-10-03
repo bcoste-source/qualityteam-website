@@ -127,6 +127,19 @@
   margin: 0 auto;
 }
 
+.transition-spot {
+  position: relative;
+  z-index: 10;
+  text-align: center;
+  margin: -30px 0;
+}
+
+.transition-spot img {
+  width: 60px;
+  height: auto;
+  object-fit: contain;
+}
+
 .transition-rectangle {
   width: 40%;
   height: 70px;
@@ -417,5 +430,117 @@
 @media (max-width: 600px) {
   .images-texts {
     grid-template-columns: 1fr;
+  }
+}
+
+/* Black Section Styles */
+.expertise-section {
+  max-width: 800px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.expertise-title {
+  margin-bottom: 3rem;
+  line-height: 1.2;
+}
+
+.expertise-title-line1 {
+  display: block;
+  color: var(--color-white);
+  font-size: 2.5rem;
+  font-weight: 800;
+  margin-bottom: 0.5rem;
+}
+
+.expertise-title-line2 {
+  display: block;
+  color: var(--color-code-green);
+  font-size: 2rem;
+  font-weight: 800;
+}
+
+.expertise-content {
+  display: flex;
+  align-items: flex-start;
+  gap: 2rem;
+  margin-bottom: 3rem;
+  text-align: left;
+}
+
+.expertise-icon {
+  flex-shrink: 0;
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 0.5rem;
+}
+
+.expertise-text {
+  flex: 1;
+  color: var(--color-white);
+  font-size: 1.1rem;
+  line-height: 1.6;
+}
+
+.expertise-text p {
+  margin-bottom: 1.5rem;
+}
+
+.highlight-green {
+  color: var(--color-code-green);
+  font-weight: 600;
+}
+
+.expertise-cta {
+  text-align: center;
+}
+
+.btn-expertise {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 1rem 2rem;
+  border: 2px solid var(--color-white);
+  background: transparent;
+  color: var(--color-white);
+  text-decoration: none;
+  font-weight: 600;
+  text-transform: uppercase;
+  border-radius: 8px;
+  transition: all 0.3s ease;
+}
+
+.btn-expertise:hover {
+  background: var(--color-white);
+  color: var(--color-black);
+}
+
+.arrow {
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+
+/* Responsive pour la section expertise */
+@media (max-width: 768px) {
+  .expertise-title-line1 {
+    font-size: 2rem;
+  }
+
+  .expertise-title-line2 {
+    font-size: 1.5rem;
+  }
+
+  .expertise-content {
+    flex-direction: column;
+    text-align: center;
+    gap: 1rem;
+  }
+
+  .expertise-icon {
+    margin: 0 auto;
   }
 }

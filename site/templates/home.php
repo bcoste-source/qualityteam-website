@@ -212,13 +212,46 @@
       <a class="btn-launch" href="#contact">Lancez-vous !</a>
     </div>
     <section class="padding-section" />
-
-
-    <!-- Used Method Section -->
-
-
   </section>
 
+
+  <!-- Transition Image -->
+  <div class="transition-spot">
+    <img src="/assets/images/spots/purple-to-black-spot.png" alt="Transition spot">
+  </div>
+
+  <!-- Black Section -->
+  <section class="black-section">
+    <div class="body-padding body-centered">
+      <section class="padding-section" />
+
+      <div class="expertise-section">
+        <h2 class="expertise-title">
+          <span class="expertise-title-line1">POURQUOI UN ACCOMPAGNEMENT</span>
+          <span class="expertise-title-line2">À 3 EXPERTISES ?</span>
+        </h2>
+
+        <div class="expertise-content">
+          <div class="expertise-icon">
+            <img src="/assets/images/other/lightning-bolt.png" alt="Éclair">
+          </div>
+          <div class="expertise-text">
+            <p>Grâce à nos talents combinés, nous avons une réponse <span class="highlight-green">pour chaque problématique</span>.</p>
+            <p>On aligne <span class="highlight-green">product</span>, <span class="highlight-green">design</span> et <span class="highlight-green">tech</span> dès le départ pour construire un produit cohérent, utile et faisable. Chaque décision est partagée, chaque étape est éclairée par les trois expertises.</p>
+          </div>
+        </div>
+
+        <div class="expertise-cta">
+          <a href="#contact" class="btn-expertise">
+            CONSULTEZ NOTRE PAGE DÉDIÉE
+            <span class="arrow">→</span>
+          </a>
+        </div>
+      </div>
+
+      <section class="padding-section" />
+    </div>
+  </section>
 
   <?php
   /*

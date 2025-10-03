@@ -554,12 +554,22 @@ hr {
   background-position: center;
 }
 
+.green-section {
+  background-color: var(--color-code-green);
+  position: relative;
+  background-image: url('/assets/images/background-vectors/vector-green-full.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
 .background-vector-green {
   background-image: url('/assets/images/background-vectors/vector-green.png');
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
 }
+
 
 .spot {
   width: 50px;

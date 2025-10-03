@@ -51,3 +51,23 @@ document.addEventListener("DOMContentLoaded", function () {
     console.error("Menu toggle or menu element not found");
   }
 });
+
+// FAQ Accordion
+document.addEventListener("DOMContentLoaded", function () {
+  const faqQuestions = document.querySelectorAll("[data-faq-toggle]");
+
+  faqQuestions.forEach((question) => {
+    question.addEventListener("click", function () {
+      const index = this.getAttribute("data-faq-toggle");
+      const answer = document.querySelector(`[data-faq-content="${index}"]`);
+
+      // Toggle active class on question
+      this.classList.toggle("active");
+
+      // Toggle active class on answer
+      if (answer) {
+        answer.classList.toggle("active");
+      }
+    });
+  });
+});

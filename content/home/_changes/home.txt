@@ -88,23 +88,51 @@ Accompagnement-text-images:
 -
   image:
     - 'file://kulxtkcbtizos0bi'
-  texte: '<p>Un prototype <strong>à votre image</strong></p>'
+  texte: '<p>UN PROTOTYPE À VOTRE IMAGE</p>'
 -
   image:
     - 'file://omy9sic89eqtyarn'
-  texte: '<p>Une vision produit <strong>clarifiée</strong></p>'
+  texte: '<p>UNE VISION PRODUIT <span class="highlight">CLARIFIÉE</span></p>'
 -
   image:
     - 'file://kug0zmm1esnqdnpk'
-  texte: '<p>Un product backlog <strong>cohérent</strong></p>'
+  texte: '<p>UN PRODUCT BACKLOG <span class="highlight">COHÉRENT</span></p>'
 -
   image:
     - 'file://hdmjydkmpe0tpehk'
-  texte: "<p>Un arbitrage budgétaire\L <strong>optimisé</strong></p>"
+  texte: '<p>UN ARBITRAGE BUDGÉTAIRE <span class="highlight">OPTIMISÉ</span></p>'
 -
   image:
     - 'file://kulxtkcbtizos0bi'
-  texte: '<p>Une roadmap <strong>bien pensée</strong></p>'
+  texte: '<p>UNE ROADMAP <span class="highlight">BIEN PENSÉE</span></p>'
+
+----
+
+Faq-title: Foire aux questions
+
+----
+
+Faq-subtitle: VENEZ EN APPRENDRE DAVANTAGE
+
+----
+
+Faq-items:
+
+-
+  question: 'Tu sais ce que tu veux faire, mais tu ne sais pas par où commencer ?'
+  answer: '<p>On co-construit un produit <strong>testable</strong>, aligné avec tes utilisateurs et tes enjeux business.</p>'
+-
+  question: 'Vous avez une idée de produit digital/numérique, mais vous ne savez pas par où commencer ?'
+  answer: "<p>On vous accompagne dès la <strong>validation de votre idée</strong> jusqu'au prototype fonctionnel. On structure votre vision produit, on définit les fonctionnalités essentielles et on vous guide pas à pas.</p>"
+-
+  question: 'Tu as fait un MVP, une première version et tu souhaites aller plus loin ?'
+  answer: "<p>Oui, tu as tout fait en <strong>no-code low code</strong>, tu as quelques métriques et tu te rends compte qu'il va falloir re-développer ton produit (et c'est normal), alors on est là pour t'aider pour mettre en ligne ta v2.</p>"
+-
+  question: "Vous ne pouvez pas tout développer d''un coup ?"
+  answer: "<p>Exactement ! On privilégie une approche <strong>itérative et progressive</strong>. On commence par les fonctionnalités les plus critiques, on teste, on apprend, puis on développe la suite. C'est plus sûr et plus efficace.</p>"
+-
+  question: "Vous avez déjà les bases mais rien n''est cohérent ?"
+  answer: "<p>On fait le point sur ce qui existe, on identifie les incohérences et on <strong>restructure votre produit</strong> pour qu'il soit cohérent, utilisable et évolutif. On repart sur de bonnes bases.</p>"
 
 ----
 

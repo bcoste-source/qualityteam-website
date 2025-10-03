@@ -94,3 +94,24 @@ sections:
         label: Images pour l'accompagnement
         extends: sections/images_text
         width: 1
+      faq_title:
+        label: Titre FAQ
+        type: text
+        width: 1
+      faq_subtitle:
+        label: Sous-titre FAQ
+        type: text
+        width: 1
+      faq_items:
+        label: Questions FAQ
+        type: structure
+        fields:
+          question:
+            label: Question
+            type: text
+            width: 1
+          answer:
+            label: Réponse
+            type: writer
+            width: 1
+        width: 1

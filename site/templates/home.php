@@ -253,6 +253,100 @@
     </div>
   </section>
 
+  <!-- Transition Image -->
+  <div class="double-transition-spot">
+    <img src="/assets/images/spots/black-to-white-spot.png" alt="Transition spot">
+  </div>
+
+  <!-- FAQ Section -->
+  <section class="faq-section">
+    <div class="body-padding body-centered">
+      <section class="padding-section" />
+
+      <?php if ($page->faq_title()->isNotEmpty() || $page->faq_subtitle()->isNotEmpty()): ?>
+        <div class="faq-header">
+          <?php if ($page->faq_title()->isNotEmpty()): ?>
+            <h2 class="faq-title">
+              <span class="faq-title-part1"><?= $page->faq_title()->esc() ?></span>
+              <span class="faq-title-part2">questions</span>
+            </h2>
+          <?php endif ?>
+          <?php if ($page->faq_subtitle()->isNotEmpty()): ?>
+            <p class="faq-subtitle"><?= $page->faq_subtitle()->esc() ?></p>
+          <?php endif ?>
+        </div>
+      <?php endif ?>
+
+      <?php if ($page->faq_items()->isNotEmpty()): ?>
+        <div class="faq-accordion">
+          <?php foreach ($page->faq_items()->toStructure() as $index => $item): ?>
+            <div class="faq-item">
+              <div class="faq-question" data-faq-toggle="<?= $index ?>">
+                <span class="faq-number"><?= $index + 1 ?>.</span>
+                <span class="faq-question-text"><?= $item->question()->esc() ?></span>
+                <span class="faq-arrow">▼</span>
+              </div>
+              <?php if ($item->answer()->isNotEmpty()): ?>
+                <div class="faq-answer" data-faq-content="<?= $index ?>">
+                  <div class="faq-answer-content">
+                    <span class="faq-checkmark">✓⃝</span>
+                    <div class="faq-answer-text">
+                      <?= $item->answer()->kirbytext() ?>
+                    </div>
+                  </div>
+                </div>
+              <?php endif ?>
+            </div>
+          <?php endforeach ?>
+        </div>
+      <?php endif ?>
+
+      <section class="padding-section" />
+    </div>
+  </section>
+
+  <!-- Green Section -->
+  <section class="green-section">
+    <div class="body-padding body-centered">
+      <section class="padding-section" />
+
+      <div class="green-cta-section">
+        <h2 class="green-title">
+          <span class="green-title-part1">En savoir</span>
+          <span class="green-title-part2">plus ?</span>
+        </h2>
+
+        <p class="green-subtitle">Explorez notre site</p>
+
+        <div class="green-buttons">
+          <div class="green-button-container">
+            <a href="#about" class="btn-green">
+              DÉCOUVREZ LE COLLECTIF QUALITYTEAM
+              <span class="arrow">→</span>
+            </a>
+            <img class="pink-arrow-right" src="/assets/images/spots/pink-arrow-to-left.png" alt="Flèche droite">
+          </div>
+
+          <div class="green-button-container">
+            <img class="pink-arrow-left" src="/assets/images/spots/pink-arrow-to-right.png" alt="Flèche gauche">
+            <a href="#portfolio" class="btn-green">
+              DÉCOUVREZ NOS RÉALISATIONS
+              <span class="arrow">→</span>
+            </a>
+          </div>
+        </div>
+
+        <div class="scroll-to-top">
+          <button class="scroll-top-btn" onclick="window.scrollTo({top: 0, behavior: 'smooth'})">
+            ↑
+          </button>
+        </div>
+      </div>
+
+      <section class="padding-section" />
+    </div>
+  </section>
+
   <?php
   /*
     We always use an if-statement to check if a page exists to

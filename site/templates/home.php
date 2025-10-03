@@ -1,21 +1,18 @@
 <?php
 /*
-  Templates render the content of your pages.
-
-  They contain the markup together with some control structures
-  like loops or if-statements. The `$page` variable always
-  refers to the currently active page.
-
-  To fetch the content from each field we call the field name as a
-  method on the `$page` object, e.g. `$page->title()`.
-
-  This home template renders content from others pages, the children of
-  the `photography` page to display a nice gallery grid.
-
-  Snippets like the header and footer contain markup used in
-  multiple templates. They also help to keep templates clean.
-
-  More about templates: https://getkirby.com/docs/guide/templates/basics
+  Home Template - QualityTeam Website
+  
+  This template renders the homepage with all sections:
+  - Hero Section
+  - Companies Section  
+  - Problem Section
+  - Construction Section
+  - MVP Section
+  - Method Section (Purple)
+  - Accompaniment Section
+  - Expertise Section (Black)
+  - FAQ Section (White)
+  - CTA Section (Green)
 */
 
 ?>
@@ -23,22 +20,24 @@
 
 <!-- Hero Section -->
 <section class="hero">
-  <?php if ($page->bg_image()->isNotEmpty()): ?>
+  <?php if ($page->hero_image()->isNotEmpty()): ?>
     <div class="hero-bg">
-      <?= $page->bg_image()->toFile()->html(['alt' => 'Background image']) ?>
+      <?= $page->hero_image()->toFile()->html(['alt' => 'Background image']) ?>
     </div>
   <?php endif ?>
 </section>
 
+<!-- Green Background Section -->
 <div class="background-vector-green">
   <div class="body-padding body-centered">
+
     <!-- Companies Section -->
-    <?php if ($page->companies()->isNotEmpty()): ?>
+    <?php if ($page->companies_title()->isNotEmpty()): ?>
       <section class="companies">
-        <h2><?= $page->companies()->esc() ?></h2>
-        <?php if ($page->companies_logo()->isNotEmpty()): ?>
+        <h2 class="h2"><?= $page->companies_title()->esc() ?></h2>
+        <?php if ($page->companies_logos()->isNotEmpty()): ?>
           <div class="companies-logo">
-            <?php foreach ($page->companies_logo()->toFiles() as $logo): ?>
+            <?php foreach ($page->companies_logos()->toFiles() as $logo): ?>
               <?= $logo->html(['alt' => 'Logo entreprise']) ?>
             <?php endforeach ?>
           </div>
@@ -47,42 +46,40 @@
     <?php endif ?>
 
     <section class="padding-section" />
-
     <img class="spot" src="/assets/images/spots/green-spot-1.png">
-
     <section class="padding-section" />
 
-    <!-- Images and Texts Section -->
-    <?php if ($page->images_texts()->isNotEmpty()): ?>
-      <section class="images-texts">
-        <?php foreach ($page->images_texts()->toStructure() as $item): ?>
-          <div class="image-text-item">
-            <?php if ($item->image()->isNotEmpty()): ?>
-              <div class="image-text-image">
-                <?= $item->image()->toFile()->html(['alt' => '']) ?>
+    <!-- Problem Section -->
+    <?php if ($page->problem_items()->isNotEmpty()): ?>
+      <section class="problem-section">
+        <div class="problem-grid">
+          <?php foreach ($page->problem_items()->toStructure() as $item): ?>
+            <div class="problem-item">
+              <?php if ($item->icon()->isNotEmpty()): ?>
+                <div class="problem-icon">
+                  <?= $item->icon()->toFile()->html(['alt' => '']) ?>
+                </div>
+              <?php endif ?>
+              <div class="problem-text">
+                <?= $item->text()->kirbytext() ?>
               </div>
-            <?php endif ?>
-            <div class="image-text-content">
-              <p><?= $item->texte()->esc() ?></p>
             </div>
-          </div>
-        <?php endforeach ?>
+          <?php endforeach ?>
+        </div>
       </section>
     <?php endif ?>
 
     <section class="padding-section" />
 
     <div class="mvp-max-width">
-
-
       <!-- Construction Section -->
-      <?php if ($page->construction_headline()->isNotEmpty() || $page->construction_text()->isNotEmpty()): ?>
+      <?php if ($page->construction_title()->isNotEmpty() || $page->construction_text()->isNotEmpty()): ?>
         <section class="construction">
-          <?php if ($page->construction_headline()->isNotEmpty()): ?>
-            <h2><?= $page->construction_headline()->esc() ?></h2>
+          <?php if ($page->construction_title()->isNotEmpty()): ?>
+            <h2 class="h2 text-black"><?= $page->construction_title()->esc() ?></h2>
           <?php endif ?>
           <?php if ($page->construction_text()->isNotEmpty()): ?>
-            <div class="construction-text">
+            <div class="construction-text text-black-green">
               <?= $page->construction_text()->kirbytext() ?>
             </div>
           <?php endif ?>
@@ -94,265 +91,271 @@
       <!-- MVP Section -->
       <?php if ($page->mvp_image()->isNotEmpty()): ?>
         <section class="mvp">
-          <div class="mvp-image">
-            <?= $page->mvp_image()->toFile()->html(['alt' => 'MVP Image']) ?>
-          </div>
+          <?php if ($page->mvp_button_link()->isNotEmpty()): ?>
+            <a href="<?= $page->mvp_button_link()->esc() ?>" class="btn-mvp">
+              <div class="mvp-image">
+                <?= $page->mvp_image()->toFile()->html(['alt' => 'MVP Image']) ?>
+              </div>
+            </a>
+          <?php endif ?>
         </section>
       <?php endif ?>
 
       <section class="padding-section" />
 
-      <!-- Team and Example Section -->
-      <section class="team-example">
+      <!-- Team Section -->
+      <section class="team-section">
         <?php if ($page->team_text()->isNotEmpty()): ?>
-          <div class="team-text">
+          <div class="team-text text-purple">
             <p><?= $page->team_text()->esc() ?></p>
           </div>
+          <img class="team-spot" src="/assets/images/spots/green-spot-4.png" alt="Spot vert équipe">
         <?php endif ?>
 
         <section class="padding-section" />
 
         <?php if ($page->example_text()->isNotEmpty()): ?>
-          <div class="example-text">
+          <div class="example-text text-purple">
             <p><?= $page->example_text()->esc() ?></p>
           </div>
         <?php endif ?>
       </section>
-
     </div>
+  </div>
+</div>
 
+<!-- Transition Rectangle -->
+<div class="transition-rectangle"></div>
+
+<!-- Purple Section - Method -->
+<section class="purple-section">
+  <div class="hourglass-container">
+    <img class="hourglass" src="/assets/images/other/hourglass.png">
   </div>
 
-  <!-- Transition Rectangle -->
-  <div class="transition-rectangle"></div>
-  <section class="purple-section">
-    <div class="hourglass-container" style="text-align: center;">
-      <img class="hourglass" src="/assets/images/other/hourglass.png">
-    </div>
-
-    <div style="text-align: center;">
-      <div class="offre-decouverte text-white">
-        <div class="offre-title">
-          Une offre découverte imparable
-        </div>
-        <div class="offre-duree text-green">
-          30H
-        </div>
-        <div class="offre-description" style="font-size: 1.1rem; text-align: center;">
-          pour passer de l’idée au prototype<br>avec un max de valeur
-        </div>
-      </div>
-    </div>
-    <div class="arrow-container">
-      <img class="purple-arrow" src="/assets/images/spots/purple-arrow.png" alt="Flèche violette">
-      <div>
-        La méthode utilisée :
-      </div>
-    </div>
-    <section class="padding-section" />
-    <?php if ($page->used_method()->isNotEmpty()): ?>
-      <section class="used-method">
-        <div class="method-steps">
-          <?php foreach ($page->used_method()->toStructure() as $index => $step): ?>
-            <div class="method-step">
-              <div class="step-number"><?= $index + 1 ?></div>
-              <div class="step-content">
-                <h3 class="step-title"><?= $step->titre()->esc() ?></h3>
-                <div class="step-description">
-                  <?= $step->description()->kirbytext() ?>
-                </div>
-              </div>
-            </div>
-          <?php endforeach ?>
-        </div>
-      </section>
+  <div class="method-header">
+    <?php if ($page->method_title()->isNotEmpty()): ?>
+      <h2 class="h2 text-white"><?= $page->method_title()->esc() ?></h2>
     <?php endif ?>
+    <?php if ($page->method_duration()->isNotEmpty()): ?>
+      <div class="method-duration text-green"><?= $page->method_duration()->esc() ?></div>
+    <?php endif ?>
+    <?php if ($page->method_description()->isNotEmpty()): ?>
+      <div class="method-description text-white"><?= $page->method_description()->esc() ?></div>
+    <?php endif ?>
+  </div>
 
+  <div class="arrow-container">
+    <img class="purple-arrow" src="/assets/images/spots/purple-arrow.png" alt="Flèche violette">
+    <div class="text-white">La méthode utilisée :</div>
+  </div>
 
-    <section class="padding-section" />
+  <section class="padding-section" />
 
-
-    <!-- Accompagnement Text Section -->
-    <section class="accompagnement-text-section">
-      <?php if ($page->accompagnement_text()->isNotEmpty()): ?>
-        <div class="accompagnement-text-content">
-          <?= $page->accompagnement_text()->kirbytext() ?>
+  <?php if ($page->method_steps()->isNotEmpty()): ?>
+    <section class="method-steps">
+      <?php foreach ($page->method_steps()->toStructure() as $index => $step): ?>
+        <div class="method-step">
+          <div class="step-number text-green"><?= $index + 1 ?></div>
+          <div class="step-content">
+            <h3 class="step-title text-green"><?= $step->title()->esc() ?></h3>
+            <div class="step-description text-white">
+              <?= $step->description()->kirbytext() ?>
+            </div>
+          </div>
         </div>
-      <?php endif ?>
+      <?php endforeach ?>
+    </section>
+  <?php endif ?>
 
+  <section class="padding-section" />
 
-      <section class="padding-section" />
+  <!-- Accompaniment Section -->
+  <?php if ($page->accompaniment_title()->isNotEmpty()): ?>
+    <section class="accompaniment-section">
+      <div class="accompaniment-header">
+        <h2 class="h2 text-white"><?= $page->accompaniment_title()->esc() ?></h2>
+      </div>
 
-      <?php if ($page->accompagnement_text_images()->isNotEmpty()): ?>
-        <div class="accompagnement-grid">
-          <?php foreach ($page->accompagnement_text_images()->toStructure() as $item): ?>
-            <div class="accompagnement-item">
-              <?php if ($item->image()->isNotEmpty()): ?>
-                <div class="accompagnement-icon">
-                  <?= $item->image()->toFile()->html(['alt' => '']) ?>
+      <?php if ($page->accompaniment_items()->isNotEmpty()): ?>
+        <div class="accompaniment-grid">
+          <?php foreach ($page->accompaniment_items()->toStructure() as $item): ?>
+            <div class="accompaniment-item">
+              <?php if ($item->icon()->isNotEmpty()): ?>
+                <div class="accompaniment-icon">
+                  <?= $item->icon()->toFile()->html(['alt' => '']) ?>
                 </div>
               <?php endif ?>
-              <div class="accompagnement-text">
-                <?= $item->texte()->kirbytext() ?>
+              <div class="accompaniment-text text-white">
+                <?= $item->text()->kirbytext() ?>
               </div>
             </div>
           <?php endforeach ?>
         </div>
       <?php endif ?>
-    </section>
 
-    <section class="padding-section" />
-
-    <div class="button-spots">
-      <img class="button-spot-left" src="/assets/images/spots/button-spot-left.png" alt="Spot gauche">
-      <img class="button-spot-right" src="/assets/images/spots/button-spot-right.png" alt="Spot droite">
-    </div>
-
-    <div class="cta-accompagnement">
-      <a class="btn-launch" href="#contact">Lancez-vous !</a>
-    </div>
-    <section class="padding-section" />
-  </section>
-
-
-  <!-- Transition Image -->
-  <div class="transition-spot">
-    <img src="/assets/images/spots/purple-to-black-spot.png" alt="Transition spot">
-  </div>
-
-  <!-- Black Section -->
-  <section class="black-section">
-    <div class="body-padding body-centered">
       <section class="padding-section" />
 
-      <div class="expertise-section">
-        <h2 class="expertise-title">
-          <span class="expertise-title-line1">POURQUOI UN ACCOMPAGNEMENT</span>
-          <span class="expertise-title-line2">À 3 EXPERTISES ?</span>
-        </h2>
+      <div class="button-spots">
+        <img class="button-spot-left" src="/assets/images/spots/button-spot-left.png" alt="Spot gauche">
+        <img class="button-spot-right" src="/assets/images/spots/button-spot-right.png" alt="Spot droite">
+      </div>
 
-        <div class="expertise-content">
-          <div class="expertise-icon">
-            <img src="/assets/images/other/lightning-bolt.png" alt="Éclair">
-          </div>
-          <div class="expertise-text">
-            <p>Grâce à nos talents combinés, nous avons une réponse <span class="highlight-green">pour chaque problématique</span>.</p>
-            <p>On aligne <span class="highlight-green">product</span>, <span class="highlight-green">design</span> et <span class="highlight-green">tech</span> dès le départ pour construire un produit cohérent, utile et faisable. Chaque décision est partagée, chaque étape est éclairée par les trois expertises.</p>
-          </div>
+      <?php if ($page->accompaniment_button_text()->isNotEmpty()): ?>
+        <div class="cta-accompaniment">
+          <a href="<?= $page->accompaniment_button_link()->esc() ?>" class="btn-launch">
+            <?= $page->accompaniment_button_text()->esc() ?>
+          </a>
         </div>
+      <?php endif ?>
 
+      <section class="padding-section" />
+    </section>
+  <?php endif ?>
+</section>
+
+<!-- Transition Image -->
+<div class="transition-spot">
+  <img src="/assets/images/spots/purple-to-black-spot.png" alt="Transition spot">
+</div>
+
+<!-- Black Section - Expertise -->
+<section class="black-section">
+  <div class="body-padding body-centered">
+    <section class="padding-section" />
+
+    <div class="expertise-section">
+      <h2 class="expertise-title">
+        <span class="expertise-title-line1 text-white"><?= $page->expertise_title_line1()->esc() ?></span>
+        <span class="expertise-title-line2 text-green"><?= $page->expertise_title_line2()->esc() ?></span>
+      </h2>
+
+      <div class="expertise-content">
+        <div class="expertise-icon">
+          <img src="/assets/images/other/lightning-bolt.png" alt="Expertise icon">
+        </div>
+        <div class="expertise-text">
+          <?php if ($page->expertise_text1()->isNotEmpty()): ?>
+            <div class="text-white-green">
+              <?= $page->expertise_text1()->kirbytext() ?>
+            </div>
+          <?php endif ?>
+          <?php if ($page->expertise_text2()->isNotEmpty()): ?>
+            <div class="text-white">
+              <?= $page->expertise_text2()->kirbytext() ?>
+            </div>
+          <?php endif ?>
+        </div>
+      </div>
+
+      <?php if ($page->expertise_button_text()->isNotEmpty()): ?>
         <div class="expertise-cta">
-          <a href="#contact" class="btn-expertise">
-            CONSULTEZ NOTRE PAGE DÉDIÉE
+          <a href="<?= $page->expertise_button_link()->esc() ?>" class="btn-expertise">
+            <?= $page->expertise_button_text()->esc() ?>
             <span class="arrow">→</span>
           </a>
         </div>
-      </div>
-
-      <section class="padding-section" />
-    </div>
-  </section>
-
-  <!-- Transition Image -->
-  <div class="double-transition-spot">
-    <img src="/assets/images/spots/black-to-white-spot.png" alt="Transition spot">
-  </div>
-
-  <!-- FAQ Section -->
-  <section class="faq-section">
-    <div class="body-padding body-centered">
-      <section class="padding-section" />
-
-      <?php if ($page->faq_title()->isNotEmpty() || $page->faq_subtitle()->isNotEmpty()): ?>
-        <div class="faq-header">
-          <?php if ($page->faq_title()->isNotEmpty()): ?>
-            <h2 class="faq-title">
-              <span class="faq-title-part1"><?= $page->faq_title()->esc() ?></span>
-              <span class="faq-title-part2">questions</span>
-            </h2>
-          <?php endif ?>
-          <?php if ($page->faq_subtitle()->isNotEmpty()): ?>
-            <p class="faq-subtitle"><?= $page->faq_subtitle()->esc() ?></p>
-          <?php endif ?>
-        </div>
       <?php endif ?>
+    </div>
 
-      <?php if ($page->faq_items()->isNotEmpty()): ?>
-        <div class="faq-accordion">
-          <?php foreach ($page->faq_items()->toStructure() as $index => $item): ?>
-            <div class="faq-item">
-              <div class="faq-question" data-faq-toggle="<?= $index ?>">
-                <span class="faq-number"><?= $index + 1 ?>.</span>
-                <span class="faq-question-text"><?= $item->question()->esc() ?></span>
-                <span class="faq-arrow">▼</span>
-              </div>
-              <?php if ($item->answer()->isNotEmpty()): ?>
-                <div class="faq-answer" data-faq-content="<?= $index ?>">
-                  <div class="faq-answer-content">
-                    <span class="faq-checkmark">✓⃝</span>
-                    <div class="faq-answer-text">
-                      <?= $item->answer()->kirbytext() ?>
-                    </div>
+    <section class="padding-section" />
+  </div>
+</section>
+
+<!-- Transition Image -->
+<div class="double-transition-spot">
+  <img src="/assets/images/spots/black-to-white-spot.png" alt="Transition spot">
+</div>
+
+<!-- FAQ Section -->
+<section class="faq-section">
+  <div class="body-padding body-centered">
+    <section class="padding-section" />
+
+    <div class="faq-header">
+      <h2 class="faq-title">
+        <span class="faq-title-part1 text-grey"><?= $page->faq_title_line1()->esc() ?></span>
+        <span class="faq-title-part2 text-green"><?= $page->faq_title_line2()->esc() ?></span>
+      </h2>
+      <?php if ($page->faq_subtitle()->isNotEmpty()): ?>
+        <p class="faq-subtitle text-grey"><?= $page->faq_subtitle()->esc() ?></p>
+      <?php endif ?>
+    </div>
+
+    <?php if ($page->faq_items()->isNotEmpty()): ?>
+      <div class="faq-accordion">
+        <?php foreach ($page->faq_items()->toStructure() as $index => $item): ?>
+          <div class="faq-item">
+            <div class="faq-question" data-faq-toggle="<?= $index ?>">
+              <span class="faq-number text-purple"><?= $index + 1 ?>.</span>
+              <span class="faq-question-text text-black"><?= $item->question()->esc() ?></span>
+              <span class="faq-arrow text-purple">▼</span>
+            </div>
+            <?php if ($item->answer()->isNotEmpty()): ?>
+              <div class="faq-answer" data-faq-content="<?= $index ?>">
+                <div class="faq-answer-content">
+                  <span class="faq-checkmark text-green">✓</span>
+                  <div class="faq-answer-text text-grey">
+                    <?= $item->answer()->kirbytext() ?>
                   </div>
                 </div>
-              <?php endif ?>
-            </div>
-          <?php endforeach ?>
-        </div>
+              </div>
+            <?php endif ?>
+          </div>
+        <?php endforeach ?>
+      </div>
+    <?php endif ?>
+
+    <section class="padding-section" />
+  </div>
+</section>
+
+<!-- Green Section - CTA -->
+<section class="green-section">
+  <div class="body-padding body-centered">
+    <section class="padding-section" />
+
+    <div class="green-cta-section">
+      <h2 class="green-title">
+        <span class="green-title-part1 text-white"><?= $page->cta_title_line1()->esc() ?></span>
+        <span class="green-title-part2 text-purple"><?= $page->cta_title_line2()->esc() ?></span>
+      </h2>
+
+      <?php if ($page->cta_subtitle()->isNotEmpty()): ?>
+        <p class="green-subtitle text-white"><?= $page->cta_subtitle()->esc() ?></p>
       <?php endif ?>
 
-      <section class="padding-section" />
-    </div>
-  </section>
-
-  <!-- Green Section -->
-  <section class="green-section">
-    <div class="body-padding body-centered">
-      <section class="padding-section" />
-
-      <div class="green-cta-section">
-        <h2 class="green-title">
-          <span class="green-title-part1">En savoir</span>
-          <span class="green-title-part2">plus ?</span>
-        </h2>
-
-        <p class="green-subtitle">Explorez notre site</p>
-
-        <div class="green-buttons">
+      <div class="green-buttons">
+        <?php if ($page->cta_button1_text()->isNotEmpty()): ?>
           <div class="green-button-container">
-            <a href="#about" class="btn-green">
-              DÉCOUVREZ LE COLLECTIF QUALITYTEAM
+            <a href="<?= $page->cta_button1_link()->esc() ?>" class="btn-green">
+              <?= $page->cta_button1_text()->esc() ?>
               <span class="arrow">→</span>
             </a>
             <img class="pink-arrow-right" src="/assets/images/spots/pink-arrow-to-left.png" alt="Flèche droite">
           </div>
+        <?php endif ?>
 
+        <?php if ($page->cta_button2_text()->isNotEmpty()): ?>
           <div class="green-button-container">
             <img class="pink-arrow-left" src="/assets/images/spots/pink-arrow-to-right.png" alt="Flèche gauche">
-            <a href="#portfolio" class="btn-green">
-              DÉCOUVREZ NOS RÉALISATIONS
+            <a href="<?= $page->cta_button2_link()->esc() ?>" class="btn-green">
+              <?= $page->cta_button2_text()->esc() ?>
               <span class="arrow">→</span>
             </a>
           </div>
-        </div>
-
-        <div class="scroll-to-top">
-          <button class="scroll-top-btn" onclick="window.scrollTo({top: 0, behavior: 'smooth'})">
-            ↑
-          </button>
-        </div>
+        <?php endif ?>
       </div>
 
-      <section class="padding-section" />
+      <div class="scroll-to-top">
+        <button class="scroll-top-btn" onclick="window.scrollTo({top: 0, behavior: 'smooth'})">
+          ↑
+        </button>
+      </div>
     </div>
-  </section>
 
-  <?php
-  /*
-    We always use an if-statement to check if a page exists to
-    prevent errors in case the page was deleted or renamed before
-    we call a method like `children()` in this case
-  */
-  ?>
-</div>
+    <section class="padding-section" />
+  </div>
+</section>
+
 <?php snippet('footer') ?>

@@ -2,6 +2,236 @@ Title: Home
 
 ----
 
+Hero-image: - 'file://2qzsqmrgloowybjd'
+
+----
+
+Companies-title: Les plus belles entreprises nous font confiance
+
+----
+
+Companies-logos:
+
+- 'file://31j9omkilbixjayd'
+- 'file://nps6e9a6ysq15fkq'
+
+----
+
+Problem-items:
+
+-
+  icon:
+    - 'file://anqmlzmydixibnkh'
+  text: '<p>Vous avez une idée de <strong>projet numérique</strong> mais vous ne savez pas par où commencer ?</p>'
+-
+  icon:
+    - 'file://kjmnglzuslvpwij8'
+  text: '<p>Votre projet est déjà lancé mais il vous manque la <strong>vision produit</strong> ?</p>'
+-
+  icon:
+    - 'file://tokp0fyerf9f6wcm'
+  text: "<p>Vous avez besoin de <strong>retours d'utilisateurs</strong> pour valider votre idée ?</p>"
+
+----
+
+Construction-title: Co-construisons ensemble !
+
+----
+
+Construction-text: <p><strong>QualityTeam</strong> s’occupe de tout </p>
+
+----
+
+Mvp-image: - 'file://2gx871ivc6j1jdki'
+
+----
+
+Mvp-button-link: contact
+
+----
+
+Team-text: Une équipe produit soudée, un accompagnement pas à pas, un prototype qui fait mouche.
+
+----
+
+Example-text: Applications mobiles iOS/Android, sites web, outils métiers : on construit un produit numérique robuste, clair et validé.
+
+----
+
+Method-title: Une offre découverte imparable
+
+----
+
+Method-duration: 30H
+
+----
+
+Method-description: pour passer de l'idée au prototype avec un max de valeur
+
+----
+
+Method-steps:
+
+-
+  title: Exploration
+  description: "<ul><li><p>Choisir les fonctionnalités essentielles : Définir les fonctions principales de l'application</p></li><li><p>Analyser la concurrence : Étudier les applications similaires</p></li><li><p>Évaluer la complexité technique : Estimer la difficulté de développement</p></li></ul>"
+-
+  title: 'Étude produit'
+  description: "<ul><li><p>Choisir les fonctionnalités essentielles : Définir les fonctions principales de l'application</p></li><li><p>Analyser la concurrence : Étudier les applications similaires</p></li><li><p>Évaluer la complexité technique : Estimer la difficulté de développement</p></li></ul>"
+-
+  title: Prototypage
+  description: "<ul><li><p>Zoning : Pensez la première ergo pour vos utilisateurs</p></li><li><p>User flow : Pensez le parcours utilisateur nominal</p></li><li><p>Créer une maquette haute fidélité : Dessiner une version simple de l''application</p></li></ul>"
+-
+  title: Synthèse
+  description: '<ul><li><p>Un vision produit claire : compréhension de ce qui va apporter de la valeur</p></li><li><p>Arbitrage technique : Estimer le coût de développement pour votre V1</p></li></ul>'
+
+----
+
+Accompaniment-title: Avec notre accompagnement Product Starter vous repartirez avec :
+
+----
+
+Accompaniment-items:
+
+-
+  icon:
+    - 'file://ovimw1unjpexqy4m'
+  text: '<p>UN PROTOTYPE <strong>À VOTRE IMAGE</strong></p>'
+-
+  icon:
+    - 'file://omy9sic89eqtyarn'
+  text: '<p>UNE VISION PRODUIT <strong>CLARIFIÉE</strong></p>'
+-
+  icon:
+    - 'file://kug0zmm1esnqdnpk'
+  text: '<p>UN PRODUCT BACKLOG <strong>COHÉRENT</strong></p>'
+-
+  icon:
+    - 'file://hdmjydkmpe0tpehk'
+  text: '<p>UN ARBITRAGE BUDGÉTAIRE <strong>OPTIMISÉ</strong></p>'
+-
+  icon:
+    - 'file://kulxtkcbtizos0bi'
+  text: '<p>UNE ROADMAP <strong>BIEN PENSÉE</strong></p>'
+
+----
+
+Accompaniment-button-text: Lancez-vous !
+
+----
+
+Accompaniment-button-link: #contact
+
+----
+
+Expertise-title-line1: POURQUOI UN ACCOMPAGNEMENT
+
+----
+
+Expertise-title-line2: À 3 EXPERTISES ?
+
+----
+
+Expertise-text1: <p>Grâce à nos talents combinés, nous avons une réponse <strong>pour chaque problématique</strong></p>
+
+----
+
+Expertise-text2: <p>On aligne <strong>product, design et tech</strong> dès le départ pour construire un produit cohérent, utile et faisable. Chaque décision est partagée, chaque étape est éclairée par les trois expertises.</p>
+
+----
+
+Expertise-button-text: CONSULTEZ NOTRE PAGE DÉDIÉE
+
+----
+
+Expertise-button-link: 
+
+----
+
+Faq-title-line1: Foire aux
+
+----
+
+Faq-title-line2: questions
+
+----
+
+Faq-subtitle: VENEZ EN APPRENDRE DAVANTAGE
+
+----
+
+Faq-items:
+
+-
+  question: 'Tu sais ce que tu veux faire, mais tu ne sais pas par où commencer ?'
+  answer: '<p>On co-construit un produit <strong>testable</strong>, aligné avec tes utilisateurs et tes enjeux business.</p>'
+-
+  question: 'Vous avez une idée de produit digital/numérique, mais vous ne savez pas par où commencer ?'
+  answer: "<p>On vous accompagne dès la <strong>validation de votre idée</strong> jusqu'au prototype fonctionnel. On structure votre vision produit, on définit les fonctionnalités essentielles et on vous guide pas à pas.</p>"
+-
+  question: 'Tu as fait un MVP, une première version et tu souhaites aller plus loin ?'
+  answer: "<p>Oui, tu as tout fait en <strong>no-code low code</strong>, tu as quelques métriques et tu te rends compte qu'il va falloir re-développer ton produit (et c'est normal), alors on est là pour t'aider pour mettre en ligne ta v2.</p>"
+-
+  question: "Vous ne pouvez pas tout développer d''un coup ?"
+  answer: "<p>Exactement ! On privilégie une approche <strong>itérative et progressive</strong>. On commence par les fonctionnalités les plus critiques, on teste, on apprend, puis on développe la suite. C'est plus sûr et plus efficace.</p>"
+-
+  question: "Vous avez déjà les bases mais rien n''est cohérent ?"
+  answer: "<p>On fait le point sur ce qui existe, on identifie les incohérences et on <strong>restructure votre produit</strong> pour qu'il soit cohérent, utilisable et évolutif. On repart sur de bonnes bases.</p>"
+
+----
+
+Cta-title-line1: En savoir
+
+----
+
+Cta-title-line2: plus ?
+
+----
+
+Cta-subtitle: Explorez notre site
+
+----
+
+Cta-button1-text: DÉCOUVREZ LE COLLECTIF QUALITYTEAM
+
+----
+
+Cta-button1-link: about
+
+----
+
+Cta-button2-text: DÉCOUVREZ NOS RÉALISATIONS
+
+----
+
+Cta-button2-link: portfolio
+
+----
+
+Mvp-title: Votre MVP prêt :
+
+----
+
+Mvp-price: 30H - 2850 €
+
+----
+
+Mvp-button-text: DÉMARRE TON PROJET
+
+----
+
+Expertise-icon: []
+
+----
+
+Hero-title: Co-construisons ensemble !
+
+----
+
+Hero-subtitle: QualityTeam s'occupe de tout
+
+----
+
 Bg-image: - 'file://2qzsqmrgloowybjd'
 
 ----
@@ -46,22 +276,6 @@ Construction-headline: Co-construisons ensemble !
 
 ----
 
-Construction-text: <p>QualityTeam s’occupe de tout </p>
-
-----
-
-Mvp-image: - 'file://2gx871ivc6j1jdki'
-
-----
-
-Team-text: Une équipe produit soudée, un accompagnement pas à pas, un prototype qui fait mouche.
-
-----
-
-Example-text: Applications mobiles iOS/Android, sites web, outils métiers : on construit un produit numérique robuste, clair et validé.
-
-----
-
 Used-method:
 
 -
@@ -83,56 +297,7 @@ Accompagnement-text: <p>Avec notre accompagnement Product Starter  vous repart
 
 ----
 
-Accompagnement-text-images:
-
--
-  image:
-    - 'file://kulxtkcbtizos0bi'
-  texte: '<p>UN PROTOTYPE <span class="highlight">À VOTRE IMAGE</span></p>'
--
-  image:
-    - 'file://omy9sic89eqtyarn'
-  texte: '<p>UNE VISION PRODUIT <span class="highlight">CLARIFIÉE</span></p>'
--
-  image:
-    - 'file://kug0zmm1esnqdnpk'
-  texte: '<p>UN PRODUCT BACKLOG <span class="highlight">COHÉRENT</span></p>'
--
-  image:
-    - 'file://hdmjydkmpe0tpehk'
-  texte: '<p>UN ARBITRAGE BUDGÉTAIRE <span class="highlight">OPTIMISÉ</span></p>'
--
-  image:
-    - 'file://kulxtkcbtizos0bi'
-  texte: '<p>UNE ROADMAP <span class="highlight">BIEN PENSÉE</span></p>'
-
-----
-
 Faq-title: Foire aux questions
-
-----
-
-Faq-subtitle: VENEZ EN APPRENDRE DAVANTAGE
-
-----
-
-Faq-items:
-
--
-  question: 'Tu sais ce que tu veux faire, mais tu ne sais pas par où commencer ?'
-  answer: '<p>On co-construit un produit <strong>testable</strong>, aligné avec tes utilisateurs et tes enjeux business.</p>'
--
-  question: 'Vous avez une idée de produit digital/numérique, mais vous ne savez pas par où commencer ?'
-  answer: '<p>On vous accompagne dès la <strong>validation de votre idée</strong> jusqu''au prototype fonctionnel. On structure votre vision produit, on définit les fonctionnalités essentielles et on vous guide pas à pas.</p>'
--
-  question: 'Tu as fait un MVP, une première version et tu souhaites aller plus loin ?'
-  answer: '<p>Oui, tu as tout fait en <strong>no-code low code</strong>, tu as quelques métriques et tu te rends compte qu''il va falloir re-développer ton produit (et c''est normal), alors on est là pour t''aider pour mettre en ligne ta v2.</p>'
--
-  question: "Vous ne pouvez pas tout développer d'un coup ?"
-  answer: '<p>Exactement ! On privilégie une approche <strong>itérative et progressive</strong>. On commence par les fonctionnalités les plus critiques, on teste, on apprend, puis on développe la suite. C''est plus sûr et plus efficace.</p>'
--
-  question: "Vous avez déjà les bases mais rien n'est cohérent ?"
-  answer: '<p>On fait le point sur ce qui existe, on identifie les incohérences et on <strong>restructure votre produit</strong> pour qu''il soit cohérent, utilisable et évolutif. On repart sur de bonnes bases.</p>'
 
 ----
 

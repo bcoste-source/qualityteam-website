@@ -1,21 +1,17 @@
-# Each page blueprint must have a title, the title may be different from the file name
+# Home Page Blueprint - QualityTeam Website
 title: Home
-
-# Each page can have an icon that is shown in page listings when no preview image is available.
 icon: 🏠
 
-# Page options allow you to control how users can interact with the page.
-# Here we prevent changing the page status (the home page cannot be renamed or deleted by default)
-# More about page options: https://getkirby.com/docs/reference/panel/blueprints/page#options
 options:
   changeStatus: false
 
-# Here we define an info section and a pages section (`photography`)
 sections:
   content:
     type: fields
     fields:
-      bg_image:
+      # Hero Section
+      hero_image:
+        label: Image de fond hero
         type: files
         multiple: false
         layout: grid
@@ -23,18 +19,18 @@ sections:
           cover: true
         uploads:
           template: image
-        width: 1
-      headline:
+        width: 1/2
+        help: "Image de fond pour la section hero"
+
+      # Companies Section
+      companies_title:
+        label: Titre section entreprises
         type: text
-        width: 1
-      subheadline:
-        type: text
-        width: 1
-      companies:
-        type: text
-        width: 1
-      companies_logo:
-        label: Companies Logo
+        width: 1/2
+        help: "Titre de la section entreprises"
+
+      companies_logos:
+        label: Logos entreprises
         type: files
         multiple: true
         layout: cards
@@ -42,22 +38,47 @@ sections:
           cover: true
         uploads:
           template: image
-        width: 1
-        help: "Upload des logos des entreprises"
-      images_texts:
+        width: 1/2
+        help: "Logos des entreprises partenaires"
+
+      # Problem Section
+      problem_items:
+        label: Problématiques
         type: structure
-        extends: sections/images_text
+        fields:
+          icon:
+            label: Icône
+            type: files
+            multiple: false
+            layout: grid
+            image:
+              cover: true
+            uploads:
+              template: image
+            width: 1/3
+          text:
+            label: Texte
+            type: writer
+            width: 2/3
         width: 1
-      construction_headline:
-        label: Construction Headline
+        help: "Les 3 problématiques principales"
+
+      # Construction Section
+      construction_title:
+        label: Titre construction
         type: text
         width: 1/2
+        help: "Titre de la section construction"
+
       construction_text:
-        label: Construction Text
+        label: Texte construction
         type: writer
         width: 1/2
+        help: "Description de la section construction"
+
+      # MVP Section
       mvp_image:
-        label: MVP Image
+        label: Image MVP
         type: files
         multiple: false
         layout: grid
@@ -65,43 +86,158 @@ sections:
           cover: true
         uploads:
           template: image
-        width: 1
+        width: 1/2
+        help: "Image du MVP"
+
+      mvp_button_link:
+        label: Lien bouton MVP
+        type: text
+        width: 1/3
+        help: "Lien du bouton MVP"
+
+      # Team Section
       team_text:
-        label: Team Text
+        label: Texte équipe
         type: text
         width: 1/2
+        help: "Description de l'équipe"
+
       example_text:
-        label: Example Text
+        label: Texte exemples
         type: text
         width: 1/2
-      used_method:
-        label: Méthode utilisée
+        help: "Exemples de réalisations"
+
+      # Purple Section - Method
+      method_title:
+        label: Titre méthode
+        type: text
+        width: 1/2
+        help: "Titre de la section méthode"
+
+      method_duration:
+        label: Durée méthode
+        type: text
+        width: 1/2
+        help: "Durée de la méthode (ex: 30H)"
+
+      method_description:
+        label: Description méthode
+        type: text
+        width: 1
+        help: "Description de la méthode"
+
+      method_steps:
+        label: Étapes de la méthode
         type: structure
         fields:
-          titre:
-            label: Titre
+          title:
+            label: Titre étape
             type: text
-            width: 1
+            width: 1/3
           description:
-            label: Description (liste à puces)
-            type: list
-            width: 1
-      accompagnement_text:
-        label: Accompagnement texte
-        type: writer
+            label: Description étape
+            type: writer
+            width: 2/3
         width: 1
-      accompagnement_text_images:
-        label: Images pour l'accompagnement
-        extends: sections/images_text
-        width: 1
-      faq_title:
-        label: Titre FAQ
+        help: "Les étapes de la méthode"
+
+      # Accompaniment Section
+      accompaniment_title:
+        label: Titre accompagnement
         type: text
         width: 1
+        help: "Titre de la section accompagnement"
+
+      accompaniment_items:
+        label: Éléments accompagnement
+        type: structure
+        fields:
+          icon:
+            label: Icône
+            type: files
+            multiple: false
+            layout: grid
+            image:
+              cover: true
+            uploads:
+              template: image
+            width: 1/3
+          text:
+            label: Texte
+            type: writer
+            width: 2/3
+        width: 1
+        help: "Les 5 éléments de l'accompagnement"
+
+      accompaniment_button_text:
+        label: Texte bouton accompagnement
+        type: text
+        width: 1/2
+        help: "Texte du bouton d'accompagnement"
+
+      accompaniment_button_link:
+        label: Lien bouton accompagnement
+        type: text
+        width: 1/2
+        help: "Lien du bouton d'accompagnement"
+
+      # Black Section - Expertise
+      expertise_title_line1:
+        label: Ligne 1 titre expertise
+        type: text
+        width: 1/2
+        help: "Première ligne du titre expertise"
+
+      expertise_title_line2:
+        label: Ligne 2 titre expertise
+        type: text
+        width: 1/2
+        help: "Deuxième ligne du titre expertise"
+
+      expertise_text1:
+        label: Texte expertise 1
+        type: writer
+        width: 2/3
+        help: "Premier paragraphe de la section expertise"
+
+      expertise_text2:
+        label: Texte expertise 2
+        type: writer
+        width: 1
+        help: "Deuxième paragraphe de la section expertise"
+
+      expertise_button_text:
+        label: Texte bouton expertise
+        type: text
+        width: 1/2
+        help: "Texte du bouton expertise"
+
+      expertise_button_link:
+        label: Lien bouton expertise
+        type: text
+        width: 1/2
+        help: "Lien du bouton expertise"
+
+      # FAQ Section
+      faq_title_line1:
+        label: Ligne 1 titre FAQ
+        type: text
+        width: 1/2
+        help: "Première ligne du titre FAQ"
+
+      faq_title_line2:
+        label: Ligne 2 titre FAQ
+        type: text
+        width: 1/2
+        help: "Deuxième ligne du titre FAQ"
+
       faq_subtitle:
         label: Sous-titre FAQ
         type: text
         width: 1
+        help: "Sous-titre de la section FAQ"
+
       faq_items:
         label: Questions FAQ
         type: structure
@@ -115,3 +251,47 @@ sections:
             type: writer
             width: 1
         width: 1
+        help: "Questions et réponses de la FAQ"
+
+      # Green Section - CTA
+      cta_title_line1:
+        label: Ligne 1 titre CTA
+        type: text
+        width: 1/2
+        help: "Première ligne du titre CTA"
+
+      cta_title_line2:
+        label: Ligne 2 titre CTA
+        type: text
+        width: 1/2
+        help: "Deuxième ligne du titre CTA"
+
+      cta_subtitle:
+        label: Sous-titre CTA
+        type: text
+        width: 1
+        help: "Sous-titre de la section CTA"
+
+      cta_button1_text:
+        label: Texte bouton CTA 1
+        type: text
+        width: 1/2
+        help: "Texte du premier bouton CTA"
+
+      cta_button1_link:
+        label: Lien bouton CTA 1
+        type: text
+        width: 1/2
+        help: "Lien du premier bouton CTA"
+
+      cta_button2_text:
+        label: Texte bouton CTA 2
+        type: text
+        width: 1/2
+        help: "Texte du deuxième bouton CTA"
+
+      cta_button2_link:
+        label: Lien bouton CTA 2
+        type: text
+        width: 1/2
+        help: "Lien du deuxième bouton CTA"

@@ -1,0 +1,189 @@
+/* Color System - QualityTeam Website */
+
+:root {
+  /* Base Colors */
+  --color-black: #000000;
+  --color-white: #ffffff;
+  --color-grey: #777777;
+  --color-light-grey: #efefef;
+
+  /* Brand Colors */
+  --color-primary: #483EB8;      /* Purple */
+  --color-secondary: #35C475;    /* Green */
+  --color-accent: #C991F9;       /* Pink */
+
+  /* Semantic Colors */
+  --color-text: var(--color-black);
+  --color-text-secondary: var(--color-grey);
+  --color-background: var(--color-white);
+  --color-background-dark: var(--color-black);
+  --color-background-purple: var(--color-primary);
+  --color-background-green: var(--color-secondary);
+
+  /* Text Colors */
+  --color-text-primary: var(--color-black);
+  --color-text-secondary: var(--color-grey);
+  --color-text-white: var(--color-white);
+  --color-text-purple: var(--color-primary);
+  --color-text-green: var(--color-secondary);
+  --color-text-pink: var(--color-accent);
+
+  /* Background Colors */
+  --color-bg-white: var(--color-white);
+  --color-bg-black: var(--color-black);
+  --color-bg-purple: var(--color-primary);
+  --color-bg-green: var(--color-secondary);
+  --color-bg-light: var(--color-light-grey);
+
+  /* Border Colors */
+  --color-border-light: #e5e5e5;
+  --color-border-medium: #cccccc;
+  --color-border-dark: var(--color-black);
+  --color-border-purple: var(--color-primary);
+  --color-border-white: var(--color-white);
+
+  /* Shadow Colors */
+  --color-shadow-light: rgba(0, 0, 0, 0.1);
+  --color-shadow-medium: rgba(0, 0, 0, 0.2);
+  --color-shadow-dark: rgba(0, 0, 0, 0.3);
+  --color-shadow-purple: rgba(72, 62, 184, 0.18);
+}
+
+/* Text Color Classes */
+.text-primary { color: var(--color-text-primary); }
+.text-secondary { color: var(--color-text-secondary); }
+.text-white { color: var(--color-text-white); }
+.text-purple { color: var(--color-text-purple); }
+.text-green { color: var(--color-text-green); }
+.text-pink { color: var(--color-text-pink); }
+
+/* Background Color Classes */
+.bg-white { background-color: var(--color-bg-white); }
+.bg-black { background-color: var(--color-bg-black); }
+.bg-purple { background-color: var(--color-bg-purple); }
+.bg-green { background-color: var(--color-bg-green); }
+.bg-light { background-color: var(--color-bg-light); }
+
+/* Border Color Classes */
+.border-light { border-color: var(--color-border-light); }
+.border-medium { border-color: var(--color-border-medium); }
+.border-dark { border-color: var(--color-border-dark); }
+.border-purple { border-color: var(--color-border-purple); }
+.border-white { border-color: var(--color-border-white); }
+
+/* Mixed Text Colors (for phrases with multiple colors) */
+.text-mixed {
+  color: var(--color-text-primary);
+}
+
+.text-mixed strong-white {
+  color: var(--color-text-white);
+}
+
+.text-mixed strong-green {
+  color: var(--color-text-green);
+}
+
+.text-mixed strong-purple {
+  color: var(--color-text-purple);
+}
+
+.text-mixed strong-pink {
+  color: var(--color-text-pink);
+}
+
+/* Section-specific text colors */
+.section-hero .text-mixed {
+  color: var(--color-text-white);
+}
+
+.section-hero .text-mixed strong-green {
+  color: var(--color-text-green);
+}
+
+.section-purple .text-mixed {
+  color: var(--color-text-white);
+}
+
+.section-purple .text-mixed strong-green {
+  color: var(--color-text-green);
+}
+
+.section-black .text-mixed {
+  color: var(--color-text-white);
+}
+
+.section-black .text-mixed strong-green {
+  color: var(--color-text-green);
+}
+
+.section-white .text-mixed {
+  color: var(--color-text-primary);
+}
+
+.section-white .text-mixed strong-green {
+  color: var(--color-text-green);
+}
+
+.section-green .text-mixed {
+  color: var(--color-text-white);
+}
+
+.section-green .text-mixed strong-purple {
+  color: var(--color-text-purple);
+}
+
+/* Utility classes for common color combinations */
+.text-white-green {
+  color: var(--color-text-white);
+}
+
+.text-white-green strong {
+  color: var(--color-text-green);
+}
+
+/* New: strong tags are the highlight markers */
+.text-white-green strong {
+  color: var(--color-text-green);
+}
+
+.text-black-green {
+  color: var(--color-text-primary);
+}
+
+.text-black-green strong {
+  color: var(--color-text-green);
+}
+
+.text-black-green {
+  color: var(--color-text-primary);
+}
+
+.text-black-green strong {
+  color: var(--color-text-green);
+}
+
+.text-black-green strong {
+  color: var(--color-text-green);
+}
+
+.text-white-purple {
+  color: var(--color-text-white);
+}
+
+.text-white-purple strong {
+  color: var(--color-text-purple);
+}
+
+/* Focus and hover states */
+.text-hover-white:hover {
+  color: var(--color-text-white);
+}
+
+.text-hover-green:hover {
+  color: var(--color-text-green);
+}
+
+.text-hover-purple:hover {
+  color: var(--color-text-purple);
+}

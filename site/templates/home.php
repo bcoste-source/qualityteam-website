@@ -30,10 +30,8 @@
   <?php endif ?>
 </section>
 
-<div class="backgrond-vector-green">
-
+<div class="background-vector-green">
   <div class="body-padding body-centered">
-
     <!-- Companies Section -->
     <?php if ($page->companies()->isNotEmpty()): ?>
       <section class="companies">
@@ -128,76 +126,93 @@
   <!-- Transition Rectangle -->
   <div class="transition-rectangle"></div>
   <section class="purple-section">
-    <div class="backgrond-vector-purple">
-      <div class="hourglass-container" style="text-align: center;">
-        <img class="hourglass" src="/assets/images/other/hourglass.png">
-      </div>
+    <div class="hourglass-container" style="text-align: center;">
+      <img class="hourglass" src="/assets/images/other/hourglass.png">
+    </div>
 
-      <div style="text-align: center;">
-        <div class="offre-decouverte text-white">
-          <div class="offre-title">
-            Une offre découverte imparable
-          </div>
-          <div class="offre-duree text-green">
-            30H
-          </div>
-          <div class="offre-description" style="font-size: 1.1rem; text-align: center;">
-            pour passer de l’idée au prototype<br>avec un max de valeur
-          </div>
+    <div style="text-align: center;">
+      <div class="offre-decouverte text-white">
+        <div class="offre-title">
+          Une offre découverte imparable
+        </div>
+        <div class="offre-duree text-green">
+          30H
+        </div>
+        <div class="offre-description" style="font-size: 1.1rem; text-align: center;">
+          pour passer de l’idée au prototype<br>avec un max de valeur
         </div>
       </div>
-      <div class="arrow-container">
-        <img class="purple-arrow" src="/assets/images/spots/purple-arrow.png" alt="Flèche violette">
-        <div>
-          La méthode utilisée :
-        </div>
+    </div>
+    <div class="arrow-container">
+      <img class="purple-arrow" src="/assets/images/spots/purple-arrow.png" alt="Flèche violette">
+      <div>
+        La méthode utilisée :
       </div>
-      <section class="padding-section" />
-      <?php if ($page->used_method()->isNotEmpty()): ?>
-        <section class="used-method">
-          <div class="method-steps">
-            <?php foreach ($page->used_method()->toStructure() as $index => $step): ?>
-              <div class="method-step">
-                <div class="step-number"><?= $index + 1 ?></div>
-                <div class="step-content">
-                  <h3 class="step-title"><?= $step->titre()->esc() ?></h3>
-                  <div class="step-description">
-                    <?= $step->description()->kirbytext() ?>
-                  </div>
+    </div>
+    <section class="padding-section" />
+    <?php if ($page->used_method()->isNotEmpty()): ?>
+      <section class="used-method">
+        <div class="method-steps">
+          <?php foreach ($page->used_method()->toStructure() as $index => $step): ?>
+            <div class="method-step">
+              <div class="step-number"><?= $index + 1 ?></div>
+              <div class="step-content">
+                <h3 class="step-title"><?= $step->titre()->esc() ?></h3>
+                <div class="step-description">
+                  <?= $step->description()->kirbytext() ?>
                 </div>
               </div>
-            <?php endforeach ?>
-          </div>
-        </section>
+            </div>
+          <?php endforeach ?>
+        </div>
+      </section>
+    <?php endif ?>
+
+
+    <section class="padding-section" />
+
+
+    <!-- Accompagnement Text Section -->
+    <section class="accompagnement-text-section">
+      <?php if ($page->accompagnement_text()->isNotEmpty()): ?>
+        <div class="accompagnement-text-content">
+          <?= $page->accompagnement_text()->kirbytext() ?>
+        </div>
       <?php endif ?>
 
 
-      <!-- Accompagnement Text Section -->
-      <section class="accompagnement-text-section">
-        <?php if ($page->accompagnement_text()->isNotEmpty()): ?>
-          <div class="accompagnement-text-content">
-            <?= $page->accompagnement_text()->kirbytext() ?>
-          </div>
-        <?php endif ?>
+      <section class="padding-section" />
 
-        <?php if ($page->accompagnement_text_images()->isNotEmpty()): ?>
-          <div class="accompagnement-grid">
-            <?php foreach ($page->accompagnement_text_images()->toStructure() as $item): ?>
-              <div class="accompagnement-item">
-                <?php if ($item->image()->isNotEmpty()): ?>
-                  <div class="accompagnement-icon">
-                    <?= $item->image()->toFile()->html(['alt' => '']) ?>
-                  </div>
-                <?php endif ?>
-                <div class="accompagnement-text">
-                  <?= $item->texte()->kirbytext() ?>
+      <?php if ($page->accompagnement_text_images()->isNotEmpty()): ?>
+        <div class="accompagnement-grid">
+          <?php foreach ($page->accompagnement_text_images()->toStructure() as $item): ?>
+            <div class="accompagnement-item">
+              <?php if ($item->image()->isNotEmpty()): ?>
+                <div class="accompagnement-icon">
+                  <?= $item->image()->toFile()->html(['alt' => '']) ?>
                 </div>
+              <?php endif ?>
+              <div class="accompagnement-text">
+                <?= $item->texte()->kirbytext() ?>
               </div>
-            <?php endforeach ?>
-          </div>
-        <?php endif ?>
-      </section>
+            </div>
+          <?php endforeach ?>
+        </div>
+      <?php endif ?>
+    </section>
+
+    <section class="padding-section" />
+
+    <div class="button-spots">
+      <img class="button-spot-left" src="/assets/images/spots/button-spot-left.png" alt="Spot gauche">
+      <img class="button-spot-right" src="/assets/images/spots/button-spot-right.png" alt="Spot droite">
     </div>
+
+    <div class="cta-accompagnement">
+      <a class="btn-launch" href="#contact">Lancez-vous !</a>
+    </div>
+    <section class="padding-section" />
+
 
     <!-- Used Method Section -->
 

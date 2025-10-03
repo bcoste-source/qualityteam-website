@@ -533,24 +533,29 @@ hr {
 }
 
 .padding-section {
-  padding-top: var(--padding);
+  padding-top: 5rem;
 }
 
 .purple-section {
   background-color: var(--color-code-purple);
   position: relative;
-}
-
-.backgrond-vector-green {
-  background-image: url('/assets/images/background-vectors/vector-green.png');
+  background-image: url('/assets/images/background-vectors/vector-purple.png');
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
 }
 
+.black-section {
+  background-color: var(--color-black);
+  position: relative;
+  background-image: url('/assets/images/background-vectors/vector-black.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
 
-.backgrond-vector-purple {
-  background-image: url('/assets/images/background-vectors/vector-purple.png');
+.background-vector-green {
+  background-image: url('/assets/images/background-vectors/vector-green.png');
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;

@@ -33,8 +33,8 @@
 
     <!-- Companies Section -->
     <?php if ($page->companies_title()->isNotEmpty()): ?>
-      <section class="companies">
-        <h2 class="h2"><?= $page->companies_title()->esc() ?></h2>
+      <section class="companies text-purple">
+        <h3><?= $page->companies_title()->esc() ?></h3>
         <?php if ($page->companies_logos()->isNotEmpty()): ?>
           <div class="companies-logo">
             <?php foreach ($page->companies_logos()->toFiles() as $logo): ?>
@@ -76,12 +76,12 @@
       <?php if ($page->construction_title()->isNotEmpty() || $page->construction_text()->isNotEmpty()): ?>
         <section class="construction">
           <?php if ($page->construction_title()->isNotEmpty()): ?>
-            <h2 class="h2 text-black"><?= $page->construction_title()->esc() ?></h2>
+            <h2 class="text-black"><?= $page->construction_title()->esc() ?></h2>
           <?php endif ?>
           <?php if ($page->construction_text()->isNotEmpty()): ?>
-            <div class="construction-text text-black-green">
-              <?= $page->construction_text()->kirbytext() ?>
-            </div>
+            <h2 class="construction-text text-black-green">
+              <strong>QualityTeam</strong> s’occupe de tout
+            </h2>
           <?php endif ?>
         </section>
       <?php endif ?>
@@ -135,13 +135,13 @@
 
   <div class="method-header">
     <?php if ($page->method_title()->isNotEmpty()): ?>
-      <h2 class="h2 text-white"><?= $page->method_title()->esc() ?></h2>
+      <p class="text-pink"><?= $page->method_title()->esc() ?></p>
     <?php endif ?>
     <?php if ($page->method_duration()->isNotEmpty()): ?>
-      <div class="method-duration text-green"><?= $page->method_duration()->esc() ?></div>
+      <h1 class="method-duration text-green"><?= $page->method_duration()->esc() ?></h1>
     <?php endif ?>
     <?php if ($page->method_description()->isNotEmpty()): ?>
-      <div class="method-description text-white"><?= $page->method_description()->esc() ?></div>
+      <h4 class="method-description text-white"><?= $page->method_description()->esc() ?></h4>
     <?php endif ?>
   </div>
 
@@ -156,7 +156,7 @@
     <section class="method-steps">
       <?php foreach ($page->method_steps()->toStructure() as $index => $step): ?>
         <div class="method-step">
-          <div class="step-number text-green"><?= $index + 1 ?></div>
+          <h1 class="step-number text-green"><?= $index + 1 ?></h1>
           <div class="step-content">
             <h3 class="step-title text-green"><?= $step->title()->esc() ?></h3>
             <div class="step-description text-white">
@@ -174,7 +174,7 @@
   <?php if ($page->accompaniment_title()->isNotEmpty()): ?>
     <section class="accompaniment-section">
       <div class="accompaniment-header">
-        <h2 class="h2 text-white"><?= $page->accompaniment_title()->esc() ?></h2>
+        <h2 class="text-white"><?= $page->accompaniment_title()->esc() ?></h2>
       </div>
 
       <?php if ($page->accompaniment_items()->isNotEmpty()): ?>

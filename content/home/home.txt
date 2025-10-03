@@ -38,7 +38,7 @@ Construction-title: Co-construisons ensemble !
 
 ----
 
-Construction-text: <p><strong>QualityTeam</strong> s’occupe de tout </p>
+Construction-text: <p><strong>QualityTeam</strong> s’occupe de tout</p>
 
 ----
 
@@ -58,7 +58,7 @@ Example-text: Applications mobiles iOS/Android, sites web, outils métiers : on 
 
 ----
 
-Method-title: Une offre découverte imparable
+Method-title: UNE OFFRE DÉCOUVERTE INCROYABLE
 
 ----
 

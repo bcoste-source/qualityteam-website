@@ -1,5 +1,6 @@
 @import url('fonts.css');
 @import url('typography.css');
+@import url('sizes.css');
 @import url('colors.css');
 
 * {
@@ -191,12 +192,6 @@ small {
   grid-gap: var(--gutter);
   grid-template-columns: repeat(auto-fit, minmax(var(--min), 1fr));
   grid-auto-flow: dense;
-}
-
-h1, h2, h3, h4, h5, h6 {
-  font-size: inherit;
-  font-weight: inherit;
-  line-height: inherit;
 }
 
 .text {

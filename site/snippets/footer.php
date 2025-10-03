@@ -9,43 +9,67 @@
   https://getkirby.com/docs/guide/templates/snippets
 */
 ?>
-  </main>
+</main>
 
-  <footer class="footer">
+<footer class="footer purple-section">
+  <div class="body-padding">
     <div class="grid">
-      <div class="column" style="--columns: 8">
-        <h2><a href="https://getkirby.com">Made with Kirby</a></h2>
-        <p>
-          Kirby: the file-based CMS that adapts to any project, loved by developers and editors alike
-        </p>
-      </div>
-      <div class="column" style="--columns: 2">
-        <h2>Pages</h2>
+      <div class="column" style="--columns: 3">
+        <h2 class="h3 text-white">Le Blog</h2>
         <ul>
-          <?php foreach ($site->children()->listed() as $example): ?>
-          <li><a href="<?= $example->url() ?>"><?= $example->title()->esc() ?></a></li>
+          <li><a class="text-white" href="#">Ressources</a></li>
+          <li><a class="text-white" href="#">Témoignages</a></li>
+          <li><a class="text-white" href="#">Podcasts</a></li>
+          <li><a class="text-white" href="#">Articles</a></li>
+        </ul>
+      </div>
+
+      <div class="column" style="--columns: 3">
+        <h2 class="h3 text-white">Le Collectif</h2>
+        <ul>
+          <li><a class="text-white" href="#">Nous rencontrer</a></li>
+          <li><a class="text-white" href="#">Notre réseau</a></li>
+          <li><a class="text-white" href="#">FrenchTech</a></li>
+          <li><a class="text-white" href="#">UNITEC</a></li>
+          <li><a class="text-white" href="#">Auberge numérique</a></li>
+        </ul>
+      </div>
+
+      <div class="column" style="--columns: 3">
+        <h2 class="h3 text-white">Nos réalisations</h2>
+        <ul>
+          <?php foreach ($site->children()->listed() as $page): ?>
+            <li><a class="text-white" href="<?= $page->url() ?>"><?= $page->title()->esc() ?></a></li>
           <?php endforeach ?>
         </ul>
       </div>
-      <div class="column" style="--columns: 2">
-        <h2>Kirby</h2>
+
+      <div class="column" style="--columns: 3">
+        <h2 class="h3 text-white">Mentions légales</h2>
         <ul>
-          <li><a href="https://getkirby.com">Website</a></li>
-          <li><a href="https://getkirby.com/docs">Docs</a></li>
-          <li><a href="https://forum.getkirby.com">Forum</a></li>
-          <li><a href="https://chat.getkirby.com">Chat</a></li>
-          <li><a href="https://github.com/getkirby">GitHub</a></li>
+          <li><a class="text-white" href="#">CGV</a></li>
+          <li><a class="text-white" href="#">À propos</a></li>
         </ul>
       </div>
     </div>
-  </footer>
 
-  <?= js([
-    'assets/js/prism.js',
-    'assets/js/lightbox.js',
-    'assets/js/index.js',
-    '@auto'
-  ]) ?>
+
+  </div>
+
+  <div class="end-footer-container">
+    <img class="end-footer-logo" src="/assets/images/other/logo-alone.png" alt="QualityTeam" />
+    <p class="text-white text-small">© 2025 QualityTeam. Tous droits réservés.</p>
+    <p class="text-white text-small">Toutes les photographies présentes sur ce site sont la propriété exclusive de QualityTeam.</p>
+  </div>
+</footer>
+
+<?= js([
+  'assets/js/prism.js',
+  'assets/js/lightbox.js',
+  'assets/js/index.js',
+  '@auto'
+]) ?>
 
 </body>
+
 </html>

@@ -274,11 +274,11 @@
 
     <div class="faq-header">
       <h2 class="faq-title">
-        <span class="faq-title-part1 text-grey"><?= $page->faq_title_line1()->esc() ?></span>
+        <span class="faq-title-part1 text-black"><?= $page->faq_title_line1()->esc() ?></span>
         <span class="faq-title-part2 text-green"><?= $page->faq_title_line2()->esc() ?></span>
       </h2>
       <?php if ($page->faq_subtitle()->isNotEmpty()): ?>
-        <p class="faq-subtitle text-grey"><?= $page->faq_subtitle()->esc() ?></p>
+        <p class="faq-subtitle"><?= $page->faq_subtitle()->esc() ?></p>
       <?php endif ?>
     </div>
 
@@ -295,9 +295,9 @@
               <div class="faq-answer" data-faq-content="<?= $index ?>">
                 <div class="faq-answer-content">
                   <span class="faq-checkmark text-green">✓</span>
-                  <div class="faq-answer-text text-grey">
+                  <span class="faq-answer-text text-small">
                     <?= $item->answer()->kirbytext() ?>
-                  </div>
+                  </span>
                 </div>
               </div>
             <?php endif ?>

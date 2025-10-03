@@ -1,5 +1,5 @@
-Title: QualityTeam
+Title: Mægazine
 
 ----
 
-Logo_image: qualityteam-logo.png
+Logo-image: - 'file://ecdvxmibpl9cup2e'

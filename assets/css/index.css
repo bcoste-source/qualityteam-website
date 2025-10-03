@@ -376,16 +376,8 @@ hr {
 }
 
 .footer {
-  padding: 9rem 0 6rem;
+  padding: 3rem 0 6rem;
   line-height: 1.5em;
-}
-.footer:before {
-  content: "";
-  display: block;
-  width: 1.5rem;
-  height: 2px;
-  background: var(--color-black);
-  margin-bottom: 1.5rem;
 }
 
 .footer h2 {
@@ -393,14 +385,31 @@ hr {
   margin-bottom: .75rem;
 }
 .footer ul,
-.footer p {
-  color: var(--color-text-grey);
-}
-.footer p {
-  max-width: 15rem;
-}
+
 .footer a:hover {
   color: var(--color-text);
+}
+
+.end-footer-container {
+  grid-column: 1 / -1;
+  margin: 2rem auto 0;
+  text-align: center;
+  color: var(--color-white);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.end-footer-logo {
+  max-width: 30px;
+  height: auto;
+  display: block;
+  margin: 0 auto 0.75rem;
+}
+
+.end-footer-container p {
+  color: var(--color-white);
 }
 
 

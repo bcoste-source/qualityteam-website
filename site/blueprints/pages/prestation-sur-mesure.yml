@@ -33,7 +33,8 @@ sections:
           icon:
             label: Icône (optionnel)
             type: files
-            multiple: false
+            multiple: true
+            max: 1
             uploads:
               template: image
           text:

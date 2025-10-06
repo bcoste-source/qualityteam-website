@@ -6,7 +6,7 @@
 
 # The layout of this form has two columns:
 columns:
-  - width: 1
+  - width: 1/2
     sections:
       logo:
         type: fields

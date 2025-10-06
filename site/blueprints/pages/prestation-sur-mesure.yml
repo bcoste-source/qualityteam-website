@@ -30,6 +30,12 @@ sections:
         label: Pourquoi items
         type: structure
         fields:
+          icon:
+            label: Icône (optionnel)
+            type: files
+            multiple: false
+            uploads:
+              template: image
           text:
             label: Texte
             type: writer
@@ -40,9 +46,9 @@ sections:
         label: Comment items
         type: structure
         fields:
-          text:
-            label: Texte
-            type: writer
+          item:
+            label: Élément
+            type: text
       custom_team_text:
         label: Texte équipe
         type: writer

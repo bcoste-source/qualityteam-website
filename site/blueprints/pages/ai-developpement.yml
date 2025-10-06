@@ -27,6 +27,12 @@ sections:
         label: Pourquoi items
         type: structure
         fields:
+          icon:
+            label: Icône (optionnel)
+            type: files
+            multiple: false
+            uploads:
+              template: image
           text:
             label: Texte
             type: writer

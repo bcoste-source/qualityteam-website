@@ -156,6 +156,9 @@
 }
 .why-list li { margin-bottom: .5rem; }
 
+.why-item { display: flex; align-items: center; gap: .75rem; }
+.why-item-icon { width: 20px; height: 20px; object-fit: contain; flex-shrink: 0; }
+
 .steps {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -170,8 +173,9 @@
 
 .step { text-align: left; }
 
-.deliverables { text-align: left; max-width: 60rem; margin: 0 auto; }
-.deliverables ul { margin-top: .75rem; }
+.deliverables { text-align: left; margin: 0 auto; }
+.deliverables ul li { margin-top: .75rem; }
+
 
 .ready { margin-top: 2rem; }
 

@@ -15,10 +15,14 @@
       <?= $page->custom_intro_emphase()->kirbytext() ?>
     </div>
 
+    <div class="padding-section-small" />
+
     <div class="adapt-text">
       <strong><?= $page->custom_intro_adapt_text()->esc() ?></strong>
       <img class="wave-spot-large" src="/assets/images/spots/purple-wave-spot-double.png" alt="Spot vert équipe">
     </div>
+
+    <div class="padding-section-small" />
 
 
     <div class="text-white" style="max-width:52rem; margin:1rem auto 0; text-align: left;">
@@ -36,7 +40,14 @@
     <?php if ($page->custom_why_items()->isNotEmpty()): ?>
       <ul class="why-list text-white">
         <?php foreach ($page->custom_why_items()->toStructure() as $w): ?>
-          <li><?= $w->text()->kirbytext() ?></li>
+          <li>
+            <div class="why-item">
+              <?php if ($w->icon()->isNotEmpty()): ?>
+                <?= $w->icon()->toFile()->html(['alt' => '', 'class' => 'why-item-icon']) ?>
+              <?php endif ?>
+              <div class="why-item-text"><?= $w->text()->kirbytext() ?></div>
+            </div>
+          </li>
         <?php endforeach ?>
       </ul>
     <?php endif ?>
@@ -49,11 +60,13 @@
       </div>
     <?php endif ?>
     <?php if ($page->custom_how_items()->isNotEmpty()): ?>
-      <ul class="why-list text-white">
-        <?php foreach ($page->custom_how_items()->toStructure() as $h): ?>
-          <li><?= $h->text()->kirbytext() ?></li>
-        <?php endforeach ?>
-      </ul>
+      <div class="deliverables text-white">
+        <ul>
+          <?php foreach ($page->custom_how_items()->toStructure() as $h): ?>
+            <li>• <?= $h->item()->esc() ?></li>
+          <?php endforeach ?>
+        </ul>
+      </div>
     <?php endif ?>
 
     <section class="padding-section" />

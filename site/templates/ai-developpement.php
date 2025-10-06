@@ -36,7 +36,14 @@
     <?php if ($page->ai_why_items()->isNotEmpty()): ?>
       <ul class="why-list">
         <?php foreach ($page->ai_why_items()->toStructure() as $i): ?>
-          <li class="text-white"><?= $i->text()->kirbytext() ?></li>
+          <li>
+            <div class="why-item">
+              <?php if ($i->icon()->isNotEmpty()): ?>
+                <?= $i->icon()->toFile()->html(['alt' => '', 'class' => 'why-item-icon']) ?>
+              <?php endif ?>
+              <div class="text-white why-item-text"><?= $i->text()->kirbytext() ?></div>
+            </div>
+          </li>
         <?php endforeach ?>
       </ul>
     <?php endif ?>
@@ -51,33 +58,33 @@
 
     <section class="padding-section-small" />
 
-    <?php if ($page->ai_how_steps()->isNotEmpty()): ?>
-      <?php $steps = $page->ai_how_steps()->toStructure();
-      $total = $steps->count(); ?>
-      <div class="timeline">
-        <img class="timeline-arrow" src="/assets/images/other/arrow-down-timeline.png" alt="Flèche timeline" />
-        <ul class="timeline-list">
-          <?php foreach ($steps as $i => $s): $isLast = ($i === $total - 1); ?>
-            <li class="timeline-item<?= $isLast ? ' is-last' : '' ?>">
-              <span class="timeline-connector<?= $isLast ? ' is-last' : '' ?>">
-                <span class="connector-dot"></span>
-                <span class="connector-line"></span>
-              </span>
-              <div class="text-white-purple timeline-bubble<?= $isLast ? ' is-last' : '' ?>"><?= $s->text()->kirbytext() ?></div>
-            </li>
-          <?php endforeach ?>
-        </ul>
-      </div>
-    <?php endif ?>
+
+    <?php $steps = $page->ai_how_steps()->toStructure();
+    $total = $steps->count(); ?>
+    <div class="timeline">
+      <img class="timeline-arrow" src="/assets/images/other/arrow-down-timeline.png" alt="Flèche timeline" />
+      <ul class="timeline-list">
+        <?php foreach ($steps as $i => $s): $isLast = ($i === $total - 1); ?>
+          <li class="timeline-item<?= $isLast ? ' is-last' : '' ?>">
+            <span class="timeline-connector<?= $isLast ? ' is-last' : '' ?>">
+              <span class="connector-dot"></span>
+              <span class="connector-line"></span>
+            </span>
+            <div class="text-white-purple timeline-bubble<?= $isLast ? ' is-last' : '' ?>"><?= $s->text()->kirbytext() ?></div>
+          </li>
+        <?php endforeach ?>
+      </ul>
+    </div>
 
     <section class="padding-section" />
+
 
     <div class="deliverables text-white">
       <?= $page->ai_benefits_intro()->kirbytext() ?>
       <?php if ($page->ai_benefits()->isNotEmpty()): ?>
         <ul>
-          <?php foreach ($page->ai_benefits()->toStructure() as $b): ?>
-            <li class="text-white"><?= $b->item()->esc() ?></li>
+          <?php foreach ($page->ai_benefits()->toStructure() as $d): ?>
+            <li>• <?= $d->item()->esc() ?></li>
           <?php endforeach ?>
         </ul>
       <?php endif ?>
@@ -95,6 +102,7 @@
       <?php endif ?>
     </div>
   </div>
+  <section class="padding-section" />
 </section>
 
 <?php snippet('footer') ?>

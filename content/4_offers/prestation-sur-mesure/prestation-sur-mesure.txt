@@ -29,12 +29,20 @@ Custom-why-title: Pourquoi as-tu besoin de cette offre ?
 Custom-why-items:
 
 -
+  icon:
+    - 'file://xgc5lmsyddxgznun'
   text: "<p>Tu as besoin d'un renfort technique ponctuel.</p>"
 -
+  icon:
+    - 'file://8atts3wglihlwb33'
   text: "<p>Tu as besoin de valider une vision produit ou d'être rassuré sur ton Legacy.</p>"
 -
+  icon:
+    - 'file://erzglw12tlkmhxri'
   text: "<p>Tu as besoin d'un design pour un nouveau projet ou module.</p>"
 -
+  icon:
+    - 'file://pipcxmcaou9n5pk5'
   text: "<p>Ton budget ne te permet pas d'embaucher à plein temps.</p>"
 
 ----
@@ -46,11 +54,18 @@ Custom-how-title: Comment ça se passe ?
 Custom-how-items:
 
 -
+  item: "C'est simple : tu nous expliques ton besoin."
   text: "<ul><li><p>C'est simple : tu nous expliques ton besoin.</p></li></ul>"
 -
+  item: 'On évalue ensemble la meilleure solution et les compétences nécessaires.'
   text: '<ul><li><p>On évalue ensemble la meilleure solution et les compétences nécessaires.</p></li></ul>'
 -
+  item: 'On te propose un accompagnement sur mesure, adapté à ton budget et à tes délais.'
   text: '<ul><li><p>On te propose un accompagnement sur mesure, adapté à ton budget et à tes délais.</p></li></ul>'
+
+----
+
+Custom-how-html: 
 
 ----
 

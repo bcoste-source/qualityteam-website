@@ -25,10 +25,16 @@ Ai-why-title: Pourquoi as-tu besoin de cette offre ?
 Ai-why-items:
 
 -
+  icon:
+    - 'file://mopmnysi1js1wgfd'
   text: "<p>Ton produit prend beaucoup de temps à être développé, et tu n'en peux plus d'attendre.</p>"
 -
+  icon:
+    - 'file://gvlvnxmspbxkiikm'
   text: "<p>Ton time-to-market est limité, tu n'as plus le temps.</p>"
 -
+  icon:
+    - 'file://zrvcezlo9ibepnea'
   text: '<p>Tu veux voir le produit fini pour le montrer au monde entier.</p>'
 
 ----
@@ -47,6 +53,10 @@ Ai-how-steps:
   text: '<p><strong>Jour 4-5 :</strong> On affine le tout et on prépare une démo complète.</p>'
 -
   text: '<p><strong>Jour 5 :</strong> On te présente la démo, on prend tes feedbacks et on apporte les dernières modifications.</p>'
+
+----
+
+Ai-how-html: <ol><li><p>Une v1 fonctionnelle en un temps record.</p></li><li><p>Une base technique robuste qui pourra évoluer sans problème.</p></li><li><p>Pas de coûts de licences, seulement des frais d'hébergement.</p></li><li><p>Une intégration totale dans l'accompagnement, avec des ajustements jusqu'à la dernière heure.</p></li></ol>
 
 ----
 

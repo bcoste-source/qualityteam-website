@@ -10,7 +10,7 @@ sections:
     fields:
       ai_title:
         label: Titre
-        type: text
+        type: writer
       ai_subtitle:
         label: Sous-titre
         type: text
@@ -55,7 +55,7 @@ sections:
         type: writer
       ai_cta_text:
         label: Texte bouton
-        type: text
+        type: writer
       ai_cta_link:
         label: Lien bouton
         type: text

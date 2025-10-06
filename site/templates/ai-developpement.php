@@ -1,58 +1,100 @@
 <?php snippet('header') ?>
 
 <section class="green-section">
-    <div class="body-padding body-centered">
-        <h2 class="text-white"><?= $page->ai_title()->esc() ?></h2>
-        <p class="text-white"><?= $page->ai_subtitle()->esc() ?></p>
+  <div class="body-padding body-centered">
+    <section class="padding-section-small" />
 
-        <div class="text-white"><?= $page->ai_paragraph1()->kirbytext() ?></div>
-        <div class="text-white"><?= $page->ai_paragraph2()->kirbytext() ?></div>
+    <h2 class="text-white-purple"><?= $page->ai_title()->kirbytext() ?></h2>
 
-        <h3 class="text-white" style="margin-top:2rem;">
-            <?= $page->ai_why_title()->esc() ?></h3>
-        <?php if ($page->ai_why_items()->isNotEmpty()): ?>
-            <ul class="why-list">
-                <?php foreach ($page->ai_why_items()->toStructure() as $i): ?>
-                    <li class="text-white"><?= $i->text()->kirbytext() ?></li>
-                <?php endforeach ?>
-            </ul>
-        <?php endif ?>
+    <p class="text-purple text-small" style="margin: 0; font-weight: 600;">
+      <?= mb_strtoupper($page->ai_subtitle()->esc(), 'UTF-8') ?>
+    </p>
 
-        <h3 class="text-white" style="margin-top:1.5rem;">
-            <?= $page->ai_how_title()->esc() ?></h3>
-        <?php if ($page->ai_how_steps()->isNotEmpty()): ?>
-            <ul class="why-list">
-                <?php foreach ($page->ai_how_steps()->toStructure() as $s): ?>
-                    <li class="text-white"><?= $s->text()->kirbytext() ?></li>
-                <?php endforeach ?>
-            </ul>
-        <?php endif ?>
+    <section class="padding-section-small" />
 
-        <div class="deliverables text-white">
-            <?= $page->ai_benefits_intro()->kirbytext() ?>
-            <?php if ($page->ai_benefits()->isNotEmpty()): ?>
-                <ul>
-                    <?php foreach ($page->ai_benefits()->toStructure() as $b): ?>
-                        <li class="text-white"><?= $b->item()->esc() ?></li>
-                    <?php endforeach ?>
-                </ul>
-            <?php endif ?>
-        </div>
-
-        <div class="ready">
-            <div class="text-white"><?= $page->ai_ready_text()->kirbytext() ?></div>
-            <?php if ($page->ai_cta_text()->isNotEmpty()): ?>
-                <a href="<?= $page->ai_cta_link()->or('#contact')->esc() ?>" class="btn-green" style="margin-top:1rem; background:var(--color-white); color:var(--color-code-green); border-color:var(--color-white);">
-                    <?= $page->ai_cta_text()->esc() ?>
-                </a>
-            <?php endif ?>
-        </div>
-
-        <section class="padding-section" />
-        <div class="text-white-purple">
-            <?= $page->parent()->hero_title()->kirbytext() ?>
-        </div>
+    <div style="display: flex; align-items: center; justify-content: center; gap: 1rem;">
+      <img src="/assets/images/spots/purple-flash-left.png" alt="Flash violet gauche" style="height: 32px; width: auto; margin-right: 1rem;">
+      <div class="text-white">
+        <?= $page->ai_paragraph1()->kirbytext() ?>
+      </div>
+      <img src="/assets/images/spots/purple-flash-right.png" alt="Flash violet droite" style="height: 32px; width: auto; margin-left: 1rem;">
     </div>
+
+    <section class="padding-section" />
+
+    <div class="text-white" style="text-align: left;">
+      <?= $page->ai_paragraph2()->kirbytext() ?>
+    </div>
+
+    <section class="padding-section-small" />
+
+    <?php if ($page->ai_why_title()->isNotEmpty()): ?>
+      <div class="offer-title-container">
+        <h4 class="offer-question-title"><?= $page->ai_why_title()->esc() ?></h4>
+      </div>
+    <?php endif ?>
+    <?php if ($page->ai_why_items()->isNotEmpty()): ?>
+      <ul class="why-list">
+        <?php foreach ($page->ai_why_items()->toStructure() as $i): ?>
+          <li class="text-white"><?= $i->text()->kirbytext() ?></li>
+        <?php endforeach ?>
+      </ul>
+    <?php endif ?>
+
+    <section class="padding-section-small" />
+
+    <?php if ($page->ai_how_title()->isNotEmpty()): ?>
+      <div class="offer-title-container">
+        <h4 class="offer-question-title"><?= $page->ai_how_title()->esc() ?></h4>
+      </div>
+    <?php endif ?>
+
+    <section class="padding-section-small" />
+
+    <?php if ($page->ai_how_steps()->isNotEmpty()): ?>
+      <?php $steps = $page->ai_how_steps()->toStructure();
+      $total = $steps->count(); ?>
+      <div class="timeline">
+        <img class="timeline-arrow" src="/assets/images/other/arrow-down-timeline.png" alt="Flèche timeline" />
+        <ul class="timeline-list">
+          <?php foreach ($steps as $i => $s): $isLast = ($i === $total - 1); ?>
+            <li class="timeline-item<?= $isLast ? ' is-last' : '' ?>">
+              <span class="timeline-connector<?= $isLast ? ' is-last' : '' ?>">
+                <span class="connector-dot"></span>
+                <span class="connector-line"></span>
+              </span>
+              <div class="text-white-purple timeline-bubble<?= $isLast ? ' is-last' : '' ?>"><?= $s->text()->kirbytext() ?></div>
+            </li>
+          <?php endforeach ?>
+        </ul>
+      </div>
+    <?php endif ?>
+
+    <section class="padding-section" />
+
+    <div class="deliverables text-white">
+      <?= $page->ai_benefits_intro()->kirbytext() ?>
+      <?php if ($page->ai_benefits()->isNotEmpty()): ?>
+        <ul>
+          <?php foreach ($page->ai_benefits()->toStructure() as $b): ?>
+            <li class="text-white"><?= $b->item()->esc() ?></li>
+          <?php endforeach ?>
+        </ul>
+      <?php endif ?>
+    </div>
+
+    <section class="padding-section" />
+
+    <div class="ready">
+      <div class="text-white-purple">
+        <?= $page->ai_ready_text()->kirbytext() ?>
+      </div>
+      <section class="padding-section-small" />
+      <?php if ($page->ai_cta_text()->isNotEmpty()): ?>
+        <button class="btn-purple text-white-green"><?= mb_strtoupper($page->ai_cta_text()->kirbytext()) ?></button>
+      <?php endif ?>
+    </div>
+  </div>
 </section>
 
 <?php snippet('footer') ?>

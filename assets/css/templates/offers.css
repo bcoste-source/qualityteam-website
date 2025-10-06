@@ -80,6 +80,11 @@
     position: relative;
     margin-top: 0;
   }
+  .offer-card:hover {
+    transform: translateY(-20px);
+    box-shadow: 0 0 10px 0 var(--color-bg-purple);
+    scale: 1.01;
+  }
   /* On applique un décalage vertical négatif pour créer l'overlap de haut en bas */
   .offer-card:nth-child(3n+2) {
     margin-top: -120px;
@@ -148,7 +153,6 @@
 .why-list {
   text-align: left;
   margin: 1rem auto 2rem;
-  max-width: 50rem;
 }
 .why-list li { margin-bottom: .5rem; }
 
@@ -166,7 +170,7 @@
 
 .step { text-align: left; }
 
-.deliverables { text-align: left; max-width: 50rem; margin: 0 auto; }
+.deliverables { text-align: left; max-width: 60rem; margin: 0 auto; }
 .deliverables ul { margin-top: .75rem; }
 
 .ready { margin-top: 2rem; }
@@ -215,9 +219,9 @@
   margin-bottom: 1rem;
   border: 2px solid var(--color-code-purple);
   border-radius: 1.5rem 1.5rem 0 1.5rem;
-  /* coin bas droit non arrondi */
-  padding: 0.75rem 1.5rem;
+  padding: 1rem;
   color: var(--color-code-purple);
+  background: var(--color-white);
   display: inline-block;
   box-sizing: border-box;
 }
@@ -227,4 +231,128 @@
   flex-direction: column;
   align-items: flex-start;
   justify-content: flex-start;
+}
+
+.btn-purple {
+  background: var(--color-code-purple);
+  color: var(--color-white);
+  padding: 0.75rem 3rem;
+  border-radius: 0.5rem;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  border: 2px solid var(--color-code-purple);
+}
+
+.btn-purple:hover {
+  background: var(--color-white);
+  color: var(--color-code-purple);
+  border: 2px solid var(--color-code-purple);
+}
+
+/* AI timeline */
+.timeline {
+  position: relative;
+  max-width: 70rem;
+  margin: 0 0 2rem 0;
+  width: 100%;
+  min-width: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start; /* centre à gauche */
+  justify-content: flex-start;
+}
+
+.timeline-arrow {
+  position: absolute;
+  left: 4px;
+  top: -6px;
+  width: 24px;
+  /* La hauteur de la flèche s'adapte dynamiquement à la hauteur de la timeline */
+  height: 110%;
+  object-fit: contain;
+  pointer-events: none;
+  margin-left: -0.07rem; /* décale légèrement la barre vers la gauche */
+
+}
+
+.timeline-list {
+  list-style: none;
+  margin: 0;
+  padding: 0 0 0 2.5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  width: 100%;
+  min-width: 0;
+  align-items: flex-start; /* centre à gauche */
+  justify-content: flex-start;
+}
+.timeline-item {
+  position: relative;
+  max-width: 90%;
+  min-width: 0;
+  display: flex;
+  align-items: flex-start;
+  transition: all 0.3s ease;
+}
+
+.timeline-item:hover {
+  margin-left: 1.5rem; /* décale légèrement la barre vers la gauche */
+  transform: scale(1.05);
+}
+
+.timeline-connector {
+  position: absolute;
+  left: -2.2rem; /* positionne le cercle au centre de la flèche (24px) */
+  top: 50%;
+  transform: translateY(-50%);
+  display: flex;
+  align-items: center;
+  gap: .5rem;
+}
+.connector-dot {
+  width: 14px;
+  height: 14px;
+  border-radius: 50%;
+  background: var(--color-code-green);
+  border: 3px solid var(--color-white);
+  display: inline-block;
+  flex-shrink: 0;
+  z-index: 1;
+}
+.connector-line {
+  width: 1.5rem;
+  height: 3px;
+  background: var(--color-white);
+  opacity: .9;
+  display: inline-block;
+  flex-shrink: 0;
+  margin-left: -0.5rem; /* décale légèrement la barre vers la gauche */
+  z-index: 0;
+}
+.timeline-bubble {
+  border: 3px solid var(--color-white);
+  background: var(--color-code-green);
+  padding: 0.5rem 1.5rem; /* padding haut/bas réduit */
+  border-radius: 2rem;
+  text-align: left; /* alignement du texte à gauche */
+  width: fit-content;
+  min-width: 0;
+  display: inline-block;
+  z-index: 1;
+}
+.timeline-item.is-last .connector-dot {
+  background: var(--color-white);
+  border-color: var(--color-code-purple);
+}
+.timeline-bubble.is-last {
+  background: var(--color-white);
+  color: var(--color-code-purple);
+  border-color: var(--color-code-purple);
+  text-align: left;
+}
+
+@media (max-width: 700px) {
+  .timeline-list { gap: 1rem; }
+  .timeline-bubble { font-size: .95rem; }
 }

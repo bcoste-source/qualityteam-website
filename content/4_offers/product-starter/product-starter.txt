@@ -85,7 +85,7 @@ Deliverables:
 
 ----
 
-Ready-text: <p><strong><em>Prêt à te lancer ?</em></strong> </p><p>Pour 2850 € HT, obtiens toutes les clés pour passer de l'idée au projet concret.</p>
+Ready-text: <p><strong><em>Prêt à te lancer ?</em></strong> </p><p>Pour <strong>2850 € HT</strong>, obtiens toutes les clés pour passer de l'idée au projet concret.</p>
 
 ----
 

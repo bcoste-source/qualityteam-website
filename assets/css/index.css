@@ -236,14 +236,12 @@ small {
 .h1,
 .intro {
   font-size: 2rem;
-  margin-bottom: 3rem;
   line-height: 1.25em;
 }
 .text h2,
 .h2 {
   font-size: 1.25rem;
   font-weight: 600;
-  margin-bottom: 1.25rem;
 }
 .text h3,
 .h3 {
@@ -451,6 +449,10 @@ hr {
 
 .padding-section {
   padding-top: 4rem;
+}
+
+.padding-section-small {
+  padding-top: 2rem;
 }
 
 /* Responsive navbar */

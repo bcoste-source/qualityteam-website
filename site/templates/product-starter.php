@@ -27,7 +27,7 @@
       <?php endif ?>
     </div>
 
-    <section class="padding-section" />
+    <section class="padding-section-small" />
 
     <?php if ($page->section2_transform()->isNotEmpty()): ?>
       <div>
@@ -100,8 +100,10 @@
 
     <div class="ready">
       <div class="text-purple-black"><?= $page->ready_text()->kirbytext() ?></div>
+      <section class="padding-section" />
+
       <?php if ($page->cta_text()->isNotEmpty()): ?>
-        <a href="<?= $page->cta_link()->or('#contact')->esc() ?>" class="btn-green" style="margin-top:1rem; background:var(--color-white); color:var(--color-code-green); border-color:var(--color-white);"><?= $page->cta_text()->esc() ?></a>
+        <button class="btn-purple"><?= $page->cta_text()->esc() ?></button>
       <?php endif ?>
     </div>
   </div>

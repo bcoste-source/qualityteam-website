@@ -33,6 +33,7 @@
   --color-bg-black: var(--color-black);
   --color-bg-purple: var(--color-primary);
   --color-bg-green: var(--color-secondary);
+  --color-bg-pink: var(--color-accent);
   --color-bg-light: var(--color-light-grey);
 
   /* Border Colors */

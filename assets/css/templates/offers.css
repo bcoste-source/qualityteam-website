@@ -1,0 +1,171 @@
+.offers-cards {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  margin-top: 2rem;
+  justify-content: center;
+  justify-items: center;
+  position: relative;
+  padding-left: 120px; /* réduit le padding */
+  gap: 1.5rem; /* réduit l'espacement */
+}
+
+.offer-card {
+  border-radius: 60px; /* réduit le border-radius */
+  padding: 2.8rem 2rem; /* padding légèrement augmenté */
+  min-height: 240px; /* hauteur minimale légèrement augmentée */
+  min-width: 420px; /* largeur minimale légèrement augmentée */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-left: -120px; /* réduit le décalage */
+  z-index: 1;
+  transition: all 0.3s;
+  font-size: 1rem; /* taille du texte légèrement augmentée */
+}
+
+.offer-card:nth-child(3n+1) {
+  background: var(--color-bg-purple);
+  background-image: url('/assets/images/background-vectors/vector-purple.png');
+  z-index: 1;
+}
+.offer-card:nth-child(3n+1) p,
+.offer-card:nth-child(3n+1) img {
+  margin-right: 5rem; /* réduit le décalage du contenu */
+}
+.offer-card:nth-child(3n+2) {
+  background: #7C6DEB;
+  background-image: url('/assets/images/background-vectors/vector-pink.png');
+  z-index: 2;
+}
+.offer-card:nth-child(3n+2) p,
+.offer-card:nth-child(3n+2) img {
+  margin-right: 5rem; /* réduit le décalage du contenu */
+}
+.offer-card:nth-child(3n+3) {
+  background: var(--color-bg-black);
+  background-image: url('/assets/images/background-vectors/vector-black.png');
+  z-index: 3;
+}
+
+.offer-spot {
+  width: 30px; /* réduit la taille du spot */
+  height: auto;
+  margin-bottom: 2rem;
+}
+
+/* Responsive : sur mobile, on garde la colonne unique mais on décale les cartes verticalement pour créer un overlap de haut en bas */
+@media (max-width: 1200px) {
+  .offers-cards {
+    grid-template-columns: 1fr;
+    padding-left: 0;
+    gap: 2rem;
+    position: relative;
+  }
+  .offer-card {
+    min-width: 0;
+    width: 100%;
+    margin-left: 0;
+    border-radius: 40px;
+    padding: 2.5rem 1.5rem;
+    max-width: 400px;
+    /* On retire le décalage horizontal */
+    transition: all 0.3s;
+    position: relative;
+    margin-top: 0;
+  }
+  /* On applique un décalage vertical négatif pour créer l'overlap de haut en bas */
+  .offer-card:nth-child(3n+2) {
+    margin-top: -120px;
+    z-index: 2;
+  }
+  .offer-card:nth-child(3n+3) {
+    margin-top: -120px;
+    z-index: 3;
+  }
+  .offer-card:nth-child(3n+1) {
+    margin-top: 0;
+    z-index: 1;
+  }
+  /* On retire le décalage horizontal sur les contenus */
+  .offer-card:nth-child(3n+1) p,
+  .offer-card:nth-child(3n+1) img,
+  .offer-card:nth-child(3n+2) p,
+  .offer-card:nth-child(3n+2) img {
+    margin-right: 0;
+  }
+
+  /* On réduit le padding-top pour remonter le texte et l'image du premier et deuxième card */
+  .offer-card:nth-child(3n+1),
+  .offer-card:nth-child(3n+2) {
+    padding-top: 0rem;
+    padding-bottom: 5rem;
+  }
+
+  .offer-spot {
+    margin-bottom: 1.5rem;
+  }
+}
+
+/* Encore plus petit : on réduit les paddings et radius */
+@media (max-width: 700px) {
+  .offer-card {
+    border-radius: 20px;
+    padding: 1.5rem 0.5rem;
+    min-height: 200px;
+  }
+}
+
+.vector-green {
+  background-image: url('/assets/images/background-vectors/vector-green-full.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.pairs {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 2rem;
+  margin: 2rem 0;
+}
+.pair img { width: 100%; height: auto; object-fit: contain; }
+.pair-text { text-align: left; }
+
+.why-list {
+  text-align: left;
+  margin: 1rem auto 2rem;
+  max-width: 50rem;
+}
+.why-list li { margin-bottom: .5rem; }
+
+.steps {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.5rem;
+  margin: 1.5rem 0 2rem;
+}
+.step { text-align: left; }
+
+.deliverables { text-align: left; max-width: 50rem; margin: 0 auto; }
+.deliverables ul { margin-top: .75rem; }
+
+.ready { margin-top: 2rem; }
+
+/* Sur-mesure (purple) */
+.why-list.text-white li { color: var(--color-white); }
+.why-chip {
+  display: inline-block;
+  background: var(--color-white);
+  color: var(--color-code-purple);
+  padding: .5rem 1rem;
+  border-radius: 10px;
+  margin: 1.5rem auto 1rem;
+}
+
+@media (max-width: 900px) {
+  .offers-cards { grid-template-columns: 1fr; }
+  .pairs { grid-template-columns: 1fr; }
+  .steps { grid-template-columns: 1fr; }
+}
+

@@ -191,19 +191,6 @@
   margin: 0 auto;
 }
 
-.transition-spot {
-  position: relative;
-  z-index: 10;
-  text-align: center;
-  margin: -30px 0;
-}
-
-.transition-spot img {
-  width: 60px;
-  height: auto;
-  object-fit: contain;
-}
-
 .double-transition-spot {
   position: relative;
   z-index: 10;

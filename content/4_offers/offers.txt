@@ -1,0 +1,268 @@
+Title: Nos Offres
+
+----
+
+Hero-title: <p>Une offre <strong>de qualité</strong></p>
+
+----
+
+Hero-subtitle: QualityTeam : l’alliance de l’expertise
+
+----
+
+Hero-description: Découvrez ce que nous vous apportons
+
+----
+
+Products:
+
+-
+  title: '<p><strong><em>Product</em></strong><em> Starter</em></p>'
+  description: '<p>Accompagnement en <strong>30 heures</strong> pour passer de l’idée à un proto comportant un max de valeur orienté produit.</p>'
+-
+  title: '<p><strong><em>IA</em></strong><em> Développement</em></p>'
+  description: '<p>Une itération de <strong>5 jours</strong>, permettant de passer d’un proto bien ficelé à une première version testable.</p>'
+-
+  title: '<p><strong><em>Prestation</em></strong><em> sur-mesure</em></p>'
+  description: '<p>Parce chaque projet n’a pas les mêmes besoins, UX, Dev, Product et pas la même maturité. Nous avons une offre <strong>sur mesure</strong> pour votre accompagner au mieux.</p>'
+
+----
+
+Section2-title: <p>L’accompagnement <strong class="strong-green">Product Starter</strong></p>
+
+----
+
+Section2-subtitle: Parce qu’il faut bien commencer quelque part
+
+----
+
+Section2-pairs:
+
+-
+  image: []
+  text: '<p>Ton budget est serré et tu ne veux pas le gaspiller ?</p>'
+-
+  image: []
+  text: '<p>Tu as une idée de génie, mais tu ne sais pas par où commencer ?</p>'
+
+----
+
+Section2-known: On connaît ça.
+
+----
+
+Section2-transform: Transforme ton intuition en un projet solide et concret.
+
+----
+
+Section2-purple-black: <p><strong class="strong-purple">Oublie les suppositions.</strong> Avec notre accompagnement produit, on valide ta vision avant d’écrire la moindre ligne de code. On te fait gagner du temps et de l’argent en t’aidant à prendre les bonnes décisions dès le départ.</p>
+
+----
+
+Why-title: Pourquoi as-tu besoin de cette offre ?
+
+----
+
+Why-items:
+
+-
+  icon: []
+  text: "<p>Tu as une idée d'application ou de logiciel, mais tu ne sais pas par où commencer.</p>"
+-
+  icon: []
+  text: '<p>Tu as besoin de convaincre des utilisateurs, des investisseurs ou des associés.</p>'
+-
+  icon: []
+  text: "<p>Tu veux prendre des décisions basées sur des faits (interviews, prototypes), et non sur l'intuition.</p>"
+
+----
+
+How-title: Comment ça se passe ?
+
+----
+
+Steps:
+
+-
+  title: Discovery
+  description: '<p>On démarre par un <strong>Kick-off</strong> et une immersion dans ton projet. On mène des interviews utilisateurs et la méthode <strong>Value Proposition Canvas</strong> pour comprendre qui tu aides et à quel problème tu résous.</p>'
+-
+  title: Stratégie
+  description: '<p>On organise un atelier produit pour prioriser les fonctionnalités. On utilise les méthodes <strong>MoSCoW</strong> et <strong>T-shirt sizing</strong> pour structurer le backlog et définir la roadmap.</p>'
+-
+  title: Solution
+  description: "<p>On conçoit les parcours, les wireframes et l'interface. Côté tech, on valide la faisabilité technique pour s'assurer que le produit est réalisable sans mauvaise surprise.</p>"
+
+----
+
+Deliverables-intro: <p>En seulement 30 heures, tu repars avec tout ce qu'il te faut pour être prêt à passer au développement, pitcher ou convaincre :</p>
+
+----
+
+Deliverables:
+
+-
+  item: 'Un prototype cliquable sur Figma.'
+-
+  item: 'Une vision produit clarifiée (Vision Board, Value Proposition).'
+-
+  item: 'Un backlog priorisé et un arbitrage budgétaire clair.'
+-
+  item: 'Une roadmap sur-mesure et des recommandations pour la suite.'
+
+----
+
+Ready-text: <p><strong class="strong-purple">Prêt à te lancer ?</strong> Pour 2850 € HT, obtiens toutes les clés pour passer de l'idée au projet concret.</p>
+
+----
+
+Cta-text: JE ME LANCE
+
+----
+
+Cta-link: #contact
+
+----
+
+Ai-title: L’offre AI Développement
+
+----
+
+Ai-subtitle: Toujours à la pointe
+
+----
+
+Ai-paragraph1: <p>On t'a dit que ton produit prendrait des mois de développement ? Nous te promettons un livrable fonctionnel en moins d'une semaine. Non, ce n'est pas de la magie, c'est l'IA et l’approche itérative.</p>
+
+----
+
+Ai-paragraph2: <p>Avec l'IA, ton <strong>time-to-market</strong> n'est plus un obstacle. On transforme ton prototype design en une v1 fonctionnelle et robuste en un temps record.</p>
+
+----
+
+Ai-why-title: Pourquoi as-tu besoin de cette offre ?
+
+----
+
+Ai-why-items:
+
+-
+  text: "<p>Ton produit prend beaucoup de temps à être développé, et tu n'en peux plus d'attendre.</p>"
+-
+  text: "<p>Ton time-to-market est limité, tu n'as plus le temps.</p>"
+-
+  text: '<p>Tu veux voir le produit fini pour le montrer au monde entier.</p>'
+
+----
+
+Ai-how-title: Comment ça se passe ?
+
+----
+
+Ai-how-steps:
+
+-
+  text: '<p>Jour 1 : Matin, on passe du prototype au prompt. À midi, le prompt est prêt.</p>'
+-
+  text: "<p>Jour 1-4 : On laisse notre dev et l'IA transformer le prompt en une application fonctionnelle.</p>"
+-
+  text: '<p>Jour 4-5 : On affine le tout et on prépare une démo complète.</p>'
+-
+  text: '<p>Jour 5 : On te présente la démo, on prend tes feedbacks et on apporte les dernières modifications.</p>'
+
+----
+
+Ai-benefits-intro: <p>Finis les technologies limitées et les licences coûteuses. On te livre une V1 robuste, évolutive et sans surcoût.</p>
+
+----
+
+Ai-benefits:
+
+-
+  item: 'Une v1 fonctionnelle en un temps record.'
+-
+  item: 'Une base technique robuste qui pourra évoluer sans problème.'
+-
+  item: "Pas de coûts de licences, seulement des frais d'hébergement."
+-
+  item: "Une intégration totale dans l'accompagnement, avec des ajustements jusqu'à la dernière heure."
+
+----
+
+Ai-ready-text: <p>L'heure est venue de passer à la vitesse supérieure. Pour <strong class="strong-purple">3550 € HT</strong> obtiens une V1 technique de ton produit en un temps record.</p>
+
+----
+
+Ai-cta-text: Je passe à la vitesse supérieure
+
+----
+
+Ai-cta-link: #contact
+
+----
+
+Custom-title: La prestation sur mesure
+
+----
+
+Custom-tagline: on répond à tous les défis
+
+----
+
+Custom-intro-emphase: <p><em>Chaque startup est unique.</em> Ton projet n'a pas les mêmes besoins que le voisin.  Un renfort technique ? Un coup de pouce sur le design ? Un regard neuf sur ta vision produit ?</p>
+
+----
+
+Custom-intro-text: <p>On s'adapte à toi.</p><p>Parfois, tu n'as pas besoin d'un package complet, mais d'une expertise ciblée. Que tu sois une startup en pleine croissance ou une entreprise SaaS établie, nous avons les compétences pour t'épauler là où ça compte le plus.</p>
+
+----
+
+Custom-why-title: Pourquoi as-tu besoin de cette offre ?
+
+----
+
+Custom-why-items:
+
+-
+  text: "<p>Tu as besoin d'un renfort technique ponctuel.</p>"
+-
+  text: "<p>Tu as besoin de valider une vision produit ou d'être rassuré sur ton Legacy.</p>"
+-
+  text: "<p>Tu as besoin d'un design pour un nouveau projet ou module.</p>"
+-
+  text: "<p>Ton budget ne te permet pas d'embaucher à plein temps.</p>"
+
+----
+
+Custom-how-title: Comment ça se passe ?
+
+----
+
+Custom-how-items:
+
+-
+  text: "<p>C'est simple : tu nous expliques ton besoin.</p>"
+-
+  text: '<p>On évalue ensemble la meilleure solution et les compétences nécessaires.</p>'
+-
+  text: '<p>On te propose un accompagnement sur mesure, adapté à ton budget et à tes délais.</p>'
+
+----
+
+Custom-team-text: <p>Une équipe de Product Managers, de Designers et de Développeurs expérimentés est là pour toi.  Tu bénéficies d'une prestation 100 % personnalisée et modulable, sans les contraintes d'un accompagnement standard.</p>
+
+----
+
+Custom-contact-text: <p>Dis-nous ce dont tu as besoin.  On discute de ton projet et on te propose une solution sur mesure.</p>
+
+----
+
+Custom-cta-text: J’ai besoin de sur mesure
+
+----
+
+Custom-cta-link: #contact
+
+----
+
+Uuid: g0uyb8nvztxq8s30

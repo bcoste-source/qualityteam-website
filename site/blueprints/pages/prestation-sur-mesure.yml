@@ -10,13 +10,16 @@ sections:
     fields:
       custom_title:
         label: Titre
-        type: text
+        type: writer
       custom_tagline:
         label: Tagline
         type: text
       custom_intro_emphase:
         label: Intro emphase
         type: writer
+      custom_intro_adapt_text:
+        label: Intro suite
+        type: text
       custom_intro_text:
         label: Intro suite
         type: writer
@@ -48,7 +51,7 @@ sections:
         type: writer
       custom_cta_text:
         label: Texte bouton
-        type: text
+        type: writer
       custom_cta_link:
         label: Lien bouton
         type: text

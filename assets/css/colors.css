@@ -175,6 +175,14 @@
   color: var(--color-text-purple);
 }
 
+.text-white-pink {
+  color: var(--color-text-white);
+}
+
+.text-white-pink strong {
+  color: var(--color-accent);
+}
+
 /* Focus and hover states */
 .text-hover-white:hover {
   color: var(--color-text-white);

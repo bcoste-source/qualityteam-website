@@ -2,7 +2,7 @@ Title: Prestation sur mesure
 
 ----
 
-Custom-title: La prestation sur mesure
+Custom-title: <p>La prestation <strong><em>sur mesure</em></strong></p>
 
 ----
 
@@ -10,11 +10,15 @@ Custom-tagline: on répond à tous les défis
 
 ----
 
-Custom-intro-emphase: <p><em>Chaque startup est unique.</em> Ton projet n'a pas les mêmes besoins que le voisin.  Un renfort technique ? Un coup de pouce sur le design ? Un regard neuf sur ta vision produit ?</p>
+Custom-intro-emphase: <p><strong><em>Chaque startup est unique</em></strong><em>.</em> Ton projet n'a pas les mêmes besoins que le voisin.  </p><p>Un renfort technique ? Un coup de pouce sur le design ? Un regard neuf sur ta vision produit ?</p>
 
 ----
 
-Custom-intro-text: <p>On s'adapte à toi.</p><p>Parfois, tu n'as pas besoin d'un package complet, mais d'une expertise ciblée. Que tu sois une startup en pleine croissance ou une entreprise SaaS établie, nous avons les compétences pour t'épauler là où ça compte le plus.</p>
+Custom-intro-adapt-text: On s'adapte à toi.
+
+----
+
+Custom-intro-text: <p>Parfois, tu n'as pas besoin d'un package complet, mais d'une expertise ciblée. Que tu sois une startup en pleine croissance ou une entreprise SaaS établie, nous avons les compétences pour t'épauler là où ça compte le plus.</p>
 
 ----
 
@@ -42,11 +46,11 @@ Custom-how-title: Comment ça se passe ?
 Custom-how-items:
 
 -
-  text: "<p>C'est simple : tu nous expliques ton besoin.</p>"
+  text: "<ul><li><p>C'est simple : tu nous expliques ton besoin.</p></li></ul>"
 -
-  text: '<p>On évalue ensemble la meilleure solution et les compétences nécessaires.</p>'
+  text: '<ul><li><p>On évalue ensemble la meilleure solution et les compétences nécessaires.</p></li></ul>'
 -
-  text: '<p>On te propose un accompagnement sur mesure, adapté à ton budget et à tes délais.</p>'
+  text: '<ul><li><p>On te propose un accompagnement sur mesure, adapté à ton budget et à tes délais.</p></li></ul>'
 
 ----
 
@@ -54,11 +58,11 @@ Custom-team-text: <p>Une équipe de Product Managers, de Designers et de Dévelo
 
 ----
 
-Custom-contact-text: <p>Dis-nous ce dont tu as besoin.  On discute de ton projet et on te propose une solution sur mesure.</p>
+Custom-contact-text: <p><strong><em>Dis-nous ce dont tu as besoin.</em></strong> </p><p>On discute de ton projet et on te propose une solution sur mesure.</p>
 
 ----
 
-Custom-cta-text: J’ai besoin de sur mesure
+Custom-cta-text: <p>J’ai besoin de <strong>sur mesure</strong></p>
 
 ----
 

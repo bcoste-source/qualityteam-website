@@ -2,7 +2,7 @@ Title: Product Starter
 
 ----
 
-Section2-title: <p>L’accompagnement <strong class="strong-green">Product Starter</strong></p>
+Section2-title: <p>L’accompagnement <strong><em>Product Starter</em></strong></p>
 
 ----
 

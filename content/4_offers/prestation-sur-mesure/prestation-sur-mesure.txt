@@ -1,0 +1,69 @@
+Title: Prestation sur mesure
+
+----
+
+Custom-title: La prestation sur mesure
+
+----
+
+Custom-tagline: on répond à tous les défis
+
+----
+
+Custom-intro-emphase: <p><em>Chaque startup est unique.</em> Ton projet n'a pas les mêmes besoins que le voisin.  Un renfort technique ? Un coup de pouce sur le design ? Un regard neuf sur ta vision produit ?</p>
+
+----
+
+Custom-intro-text: <p>On s'adapte à toi.</p><p>Parfois, tu n'as pas besoin d'un package complet, mais d'une expertise ciblée. Que tu sois une startup en pleine croissance ou une entreprise SaaS établie, nous avons les compétences pour t'épauler là où ça compte le plus.</p>
+
+----
+
+Custom-why-title: Pourquoi as-tu besoin de cette offre ?
+
+----
+
+Custom-why-items:
+
+-
+  text: "<p>Tu as besoin d'un renfort technique ponctuel.</p>"
+-
+  text: "<p>Tu as besoin de valider une vision produit ou d'être rassuré sur ton Legacy.</p>"
+-
+  text: "<p>Tu as besoin d'un design pour un nouveau projet ou module.</p>"
+-
+  text: "<p>Ton budget ne te permet pas d'embaucher à plein temps.</p>"
+
+----
+
+Custom-how-title: Comment ça se passe ?
+
+----
+
+Custom-how-items:
+
+-
+  text: "<p>C'est simple : tu nous expliques ton besoin.</p>"
+-
+  text: '<p>On évalue ensemble la meilleure solution et les compétences nécessaires.</p>'
+-
+  text: '<p>On te propose un accompagnement sur mesure, adapté à ton budget et à tes délais.</p>'
+
+----
+
+Custom-team-text: <p>Une équipe de Product Managers, de Designers et de Développeurs expérimentés est là pour toi.  Tu bénéficies d'une prestation 100 % personnalisée et modulable, sans les contraintes d'un accompagnement standard.</p>
+
+----
+
+Custom-contact-text: <p>Dis-nous ce dont tu as besoin.  On discute de ton projet et on te propose une solution sur mesure.</p>
+
+----
+
+Custom-cta-text: J’ai besoin de sur mesure
+
+----
+
+Custom-cta-link: #contact
+
+----
+
+Uuid: 0dvnohqs9eddlfk5

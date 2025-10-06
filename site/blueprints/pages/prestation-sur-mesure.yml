@@ -1,0 +1,54 @@
+title: Prestation sur mesure
+icon: 🟪
+
+options:
+  changeStatus: true
+
+sections:
+  content:
+    type: fields
+    fields:
+      custom_title:
+        label: Titre
+        type: text
+      custom_tagline:
+        label: Tagline
+        type: text
+      custom_intro_emphase:
+        label: Intro emphase
+        type: writer
+      custom_intro_text:
+        label: Intro suite
+        type: writer
+      custom_why_title:
+        label: Titre Pourquoi
+        type: text
+      custom_why_items:
+        label: Pourquoi items
+        type: structure
+        fields:
+          text:
+            label: Texte
+            type: writer
+      custom_how_title:
+        label: Titre Comment
+        type: text
+      custom_how_items:
+        label: Comment items
+        type: structure
+        fields:
+          text:
+            label: Texte
+            type: writer
+      custom_team_text:
+        label: Texte équipe
+        type: writer
+      custom_contact_text:
+        label: Texte contact
+        type: writer
+      custom_cta_text:
+        label: Texte bouton
+        type: text
+      custom_cta_link:
+        label: Lien bouton
+        type: text

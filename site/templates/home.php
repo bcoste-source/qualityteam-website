@@ -28,7 +28,7 @@
 </section>
 
 <!-- Green Background Section -->
-<div class="background-vector-green">
+<div class="background-white-with-green-vector">
   <div class="body-padding body-centered">
 
     <!-- Companies Section -->

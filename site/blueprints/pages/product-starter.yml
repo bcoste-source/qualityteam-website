@@ -1,0 +1,83 @@
+title: Product Starter
+icon: 🟩
+
+options:
+  changeStatus: true
+
+sections:
+  content:
+    type: fields
+    fields:
+      section2_title:
+        label: Titre (vector-green)
+        type: writer
+      section2_subtitle:
+        label: Sous-titre
+        type: text
+      section2_pairs:
+        label: Images + description (x2)
+        type: structure
+        fields:
+          image:
+            label: Image
+            type: files
+            multiple: false
+            uploads:
+              template: image
+          text:
+            label: Texte
+            type: writer
+      section2_known:
+        label: "On connaît ça"
+        type: text
+      section2_transform:
+        label: Phrase transformation
+        type: text
+      section2_purple_black:
+        label: Texte explicatif (strong violet)
+        type: writer
+
+      why_title:
+        label: Titre Pourquoi
+        type: text
+      why_items:
+        label: Points Pourquoi
+        type: structure
+        fields:
+          text:
+            label: Texte
+            type: writer
+
+      how_title:
+        label: Titre Comment
+        type: text
+      steps:
+        label: Étapes (Discovery / Stratégie / Solution)
+        type: structure
+        fields:
+          title:
+            label: Titre
+            type: text
+          description:
+            label: Description
+            type: writer
+
+      deliverables_intro:
+        label: Intro livrables
+        type: writer
+      deliverables:
+        label: Livrables
+        type: structure
+        fields:
+          item:
+            label: Élément
+            type: text
+      ready_text:
+        label: Texte final (strong violet)
+        type: writer
+      cta_text:
+        label: Texte bouton
+        type: text
+      cta_link:
+        label: Lien bouton
+        type: text

@@ -1,0 +1,61 @@
+title: AI Développement
+icon: 🟩
+
+options:
+  changeStatus: true
+
+sections:
+  content:
+    type: fields
+    fields:
+      ai_title:
+        label: Titre
+        type: text
+      ai_subtitle:
+        label: Sous-titre
+        type: text
+      ai_paragraph1:
+        label: Paragraphe 1
+        type: writer
+      ai_paragraph2:
+        label: Paragraphe 2
+        type: writer
+      ai_why_title:
+        label: Titre Pourquoi
+        type: text
+      ai_why_items:
+        label: Pourquoi items
+        type: structure
+        fields:
+          text:
+            label: Texte
+            type: writer
+      ai_how_title:
+        label: Titre Comment
+        type: text
+      ai_how_steps:
+        label: Étapes
+        type: structure
+        fields:
+          text:
+            label: Étape
+            type: writer
+      ai_benefits_intro:
+        label: Intro bénéfices
+        type: writer
+      ai_benefits:
+        label: Bénéfices (liste)
+        type: structure
+        fields:
+          item:
+            label: Élément
+            type: text
+      ai_ready_text:
+        label: Texte final
+        type: writer
+      ai_cta_text:
+        label: Texte bouton
+        type: text
+      ai_cta_link:
+        label: Lien bouton
+        type: text

@@ -1,0 +1,29 @@
+{
+  "name": "kirby-browsersync-demo",
+  "version": "1.0.0",
+  "description": "My Kirby Browsersync Demo",
+  "scripts": {
+    "serve": "concurrently \"npm run serve-php\" \"npm run sync\"",
+    "serve-php": "php -S localhost:8000 kirby/router.php &> /dev/null",
+    "sync": "node browsersync.js"
+  },
+  "devDependencies": {
+    "browser-sync": "^2.26.7",
+    "concurrently": "^5.0.0"
+  },
+  "browserSync": {
+    "proxy": "localhost:8000",
+    "watch": [
+      "assets",
+      "content",
+      "site/snippets",
+      "site/templates",
+      "site/blueprints",
+      "site/languages"
+    ],
+    "ignore": [
+      "**/.lock",
+      "**/.DS_Store"
+    ]
+  }
+}

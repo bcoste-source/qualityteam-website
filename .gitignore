@@ -51,3 +51,7 @@ Icon
 /site/config/config.starterkit.test.php
 
 /figma_images/
+
+node_modules/
+
+package-lock.json

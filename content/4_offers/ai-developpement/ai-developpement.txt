@@ -1,0 +1,82 @@
+Title: AI Développement
+
+----
+
+Ai-title: L’offre AI Développement
+
+----
+
+Ai-subtitle: Toujours à la pointe
+
+----
+
+Ai-paragraph1: <p>On t'a dit que ton produit prendrait des mois de développement ? Nous te promettons un livrable fonctionnel en moins d'une semaine. Non, ce n'est pas de la magie, c'est l'IA et l’approche itérative.</p>
+
+----
+
+Ai-paragraph2: <p>Avec l'IA, ton <strong>time-to-market</strong> n'est plus un obstacle. On transforme ton prototype design en une v1 fonctionnelle et robuste en un temps record.</p>
+
+----
+
+Ai-why-title: Pourquoi as-tu besoin de cette offre ?
+
+----
+
+Ai-why-items:
+
+-
+  text: "<p>Ton produit prend beaucoup de temps à être développé, et tu n'en peux plus d'attendre.</p>"
+-
+  text: "<p>Ton time-to-market est limité, tu n'as plus le temps.</p>"
+-
+  text: '<p>Tu veux voir le produit fini pour le montrer au monde entier.</p>'
+
+----
+
+Ai-how-title: Comment ça se passe ?
+
+----
+
+Ai-how-steps:
+
+-
+  text: '<p>Jour 1 : Matin, on passe du prototype au prompt. À midi, le prompt est prêt.</p>'
+-
+  text: "<p>Jour 1-4 : On laisse notre dev et l'IA transformer le prompt en une application fonctionnelle.</p>"
+-
+  text: '<p>Jour 4-5 : On affine le tout et on prépare une démo complète.</p>'
+-
+  text: '<p>Jour 5 : On te présente la démo, on prend tes feedbacks et on apporte les dernières modifications.</p>'
+
+----
+
+Ai-benefits-intro: <p>Finis les technologies limitées et les licences coûteuses. On te livre une V1 robuste, évolutive et sans surcoût.</p>
+
+----
+
+Ai-benefits:
+
+-
+  item: 'Une v1 fonctionnelle en un temps record.'
+-
+  item: 'Une base technique robuste qui pourra évoluer sans problème.'
+-
+  item: "Pas de coûts de licences, seulement des frais d'hébergement."
+-
+  item: "Une intégration totale dans l'accompagnement, avec des ajustements jusqu'à la dernière heure."
+
+----
+
+Ai-ready-text: <p>L'heure est venue de passer à la vitesse supérieure. Pour <strong class="strong-purple">3550 € HT</strong> obtiens une V1 technique de ton produit en un temps record.</p>
+
+----
+
+Ai-cta-text: Je passe à la vitesse supérieure
+
+----
+
+Ai-cta-link: #contact
+
+----
+
+Uuid: ym7kebrhg9fg9arx

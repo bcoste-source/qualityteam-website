@@ -1,0 +1,100 @@
+Title: Product Starter
+
+----
+
+Section2-title: <p>L’accompagnement <strong class="strong-green">Product Starter</strong></p>
+
+----
+
+Section2-subtitle: Parce qu’il faut bien commencer quelque part
+
+----
+
+Section2-pairs:
+
+-
+  image:
+    - 'file://nmmrjrb8hi942woc'
+  text: '<p>Ton budget est serré et tu ne veux pas le gaspiller ?</p>'
+-
+  image:
+    - 'file://zeubdqhgk6gvtkho'
+  text: '<p>Tu as une idée de génie, mais tu ne sais pas par où commencer ?</p>'
+
+----
+
+Section2-known: On connaît ça.
+
+----
+
+Section2-transform: Transforme ton intuition en un projet solide et concret.
+
+----
+
+Section2-purple-black: <p><strong class="strong-purple">Oublie les suppositions.</strong> Avec notre accompagnement produit, on valide ta vision avant d’écrire la moindre ligne de code. On te fait gagner du temps et de l’argent en t’aidant à prendre les bonnes décisions dès le départ.</p>
+
+----
+
+Why-title: Pourquoi as-tu besoin de cette offre ?
+
+----
+
+Why-items:
+
+-
+  text: "<p>Tu as une idée d'application ou de logiciel, mais tu ne sais pas par où commencer.</p>"
+-
+  text: '<p>Tu as besoin de convaincre des utilisateurs, des investisseurs ou des associés.</p>'
+-
+  text: "<p>Tu veux prendre des décisions basées sur des faits (interviews, prototypes), et non sur l'intuition.</p>"
+
+----
+
+How-title: Comment ça se passe ?
+
+----
+
+Steps:
+
+-
+  title: Discovery
+  description: '<p>On démarre par un <strong>Kick-off</strong> et une immersion dans ton projet. On mène des interviews utilisateurs et la méthode <strong>Value Proposition Canvas</strong> pour comprendre qui tu aides et à quel problème tu résous.</p>'
+-
+  title: Stratégie
+  description: '<p>On organise un atelier produit pour prioriser les fonctionnalités. On utilise les méthodes <strong>MoSCoW</strong> et <strong>T-shirt sizing</strong> pour structurer le backlog et définir la roadmap.</p>'
+-
+  title: Solution
+  description: "<p>On conçoit les parcours, les wireframes et l'interface. Côté tech, on valide la faisabilité technique pour s'assurer que le produit est réalisable sans mauvaise surprise.</p>"
+
+----
+
+Deliverables-intro: <p>En seulement 30 heures, tu repars avec tout ce qu'il te faut pour être prêt à passer au développement, pitcher ou convaincre :</p>
+
+----
+
+Deliverables:
+
+-
+  item: 'Un prototype cliquable sur Figma.'
+-
+  item: 'Une vision produit clarifiée (Vision Board, Value Proposition).'
+-
+  item: 'Un backlog priorisé et un arbitrage budgétaire clair.'
+-
+  item: 'Une roadmap sur-mesure et des recommandations pour la suite.'
+
+----
+
+Ready-text: <p><strong><em>Prêt à te lancer ?</em></strong> </p><p>Pour 2850 € HT, obtiens toutes les clés pour passer de l'idée au projet concret.</p>
+
+----
+
+Cta-text: JE ME LANCE
+
+----
+
+Cta-link: #contact
+
+----
+
+Uuid: 1erxlbxmrk1kkdly

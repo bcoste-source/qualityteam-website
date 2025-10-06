@@ -143,11 +143,6 @@
   color: var(--color-text-green);
 }
 
-/* New: strong tags are the highlight markers */
-.text-white-green strong {
-  color: var(--color-text-green);
-}
-
 .text-black-green {
   color: var(--color-text-primary);
 }
@@ -156,16 +151,20 @@
   color: var(--color-text-green);
 }
 
-.text-black-green {
-  color: var(--color-text-primary);
+.text-purple-green {
+  color: var(--color-text-purple);
 }
 
-.text-black-green strong {
+.text-purple-green strong {
   color: var(--color-text-green);
 }
 
-.text-black-green strong {
-  color: var(--color-text-green);
+.text-purple-black {
+  color: var(--color-text-black);
+}
+
+.text-purple-black strong {
+  color: var(--color-text-purple);
 }
 
 .text-white-purple {

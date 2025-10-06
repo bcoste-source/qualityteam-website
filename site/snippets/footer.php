@@ -11,7 +11,7 @@
 ?>
 </main>
 
-<footer class="footer purple-section">
+<footer class="footer black-section">
   <div class="body-padding">
     <div class="grid">
       <div class="column" style="--columns: 3">

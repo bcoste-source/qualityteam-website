@@ -22,7 +22,7 @@ sections:
         type: text
         width: 1
       products:
-        label: Produits
+        label: Produits (cartes de navigation)
         type: structure
         fields:
           title:
@@ -31,228 +31,24 @@ sections:
           description:
             label: Description
             type: writer
+          link:
+            label: Lien vers la page
+            type: pages
+            multiple: false
         width: 1
+
+  children:
+    type: pages
+    label: Sous-pages Offres
+    templates:
+      - product-starter
+      - ai-developpement
+      - prestation-sur-mesure
+    create:
+      - product-starter
+      - ai-developpement
+      - prestation-sur-mesure
 
       # Transition spot (automatique dans le template)
 
-      # Section vector-green
-      section2_title:
-        label: Titre (vector-green)
-        type: writer
-        width: 1/2
-      section2_subtitle:
-        label: Sous-titre (vector-green)
-        type: text
-        width: 1/2
-      section2_pairs:
-        label: Images + description (x2)
-        type: structure
-        fields:
-          image:
-            label: Image
-            type: files
-            multiple: false
-            layout: grid
-            image:
-              cover: true
-            uploads:
-              template: image
-          text:
-            label: Texte
-            type: writer
-        width: 1
-      section2_known:
-        label: Texte "On connait ça"
-        type: text
-        width: 1
-      section2_transform:
-        label: Phrase transformation
-        type: text
-        width: 1
-      section2_purple_black:
-        label: Texte explicatif (purple strong / noir)
-        type: writer
-        width: 1
-
-      why_title:
-        label: Titre Pourquoi as-tu besoin de cette offre ?
-        type: text
-        width: 1
-      why_items:
-        label: Points Pourquoi
-        type: structure
-        fields:
-          icon:
-            label: Icône (optionnel)
-            type: files
-            multiple: false
-          text:
-            label: Texte
-            type: writer
-        width: 1
-
-      how_title:
-        label: Titre Comment ça se passe ?
-        type: text
-        width: 1
-      steps:
-        label: Étapes (Discovery / Stratégie / Solution)
-        type: structure
-        fields:
-          title:
-            label: Titre
-            type: text
-          description:
-            label: Description
-            type: writer
-        width: 1
-
-      deliverables_intro:
-        label: Intro livrables (30h...)
-        type: writer
-        width: 1
-      deliverables:
-        label: Livrables (liste)
-        type: structure
-        fields:
-          item:
-            label: Élément
-            type: text
-        width: 1
-
-      ready_text:
-        label: Texte prêt à te lancer (writer, strong violet)
-        type: writer
-        width: 1
-      cta_text:
-        label: Texte bouton
-        type: text
-        width: 1/2
-      cta_link:
-        label: Lien bouton
-        type: text
-        width: 1/2
-
-      # AI Développement section (green)
-      ai_title:
-        label: Titre (AI Développement)
-        type: text
-        width: 1/2
-      ai_subtitle:
-        label: Sous-titre (AI Développement)
-        type: text
-        width: 1/2
-      ai_paragraph1:
-        label: Paragraphe 1
-        type: writer
-        width: 1
-      ai_paragraph2:
-        label: Paragraphe 2
-        type: writer
-        width: 1
-      ai_why_title:
-        label: Titre Pourquoi (AI)
-        type: text
-        width: 1
-      ai_why_items:
-        label: Pourquoi items (AI)
-        type: structure
-        fields:
-          text:
-            label: Texte
-            type: writer
-        width: 1
-      ai_how_title:
-        label: Titre Comment (AI)
-        type: text
-        width: 1
-      ai_how_steps:
-        label: Étapes (AI)
-        type: structure
-        fields:
-          text:
-            label: Étape
-            type: writer
-        width: 1
-      ai_benefits_intro:
-        label: Intro bénéfices
-        type: writer
-        width: 1
-      ai_benefits:
-        label: Bénéfices (liste)
-        type: structure
-        fields:
-          item:
-            label: Élément
-            type: text
-        width: 1
-      ai_ready_text:
-        label: Texte final (writer)
-        type: writer
-        width: 1
-      ai_cta_text:
-        label: Texte bouton
-        type: text
-        width: 1/2
-      ai_cta_link:
-        label: Lien bouton
-        type: text
-        width: 1/2
-
-      # Prestation sur mesure (purple section)
-      custom_title:
-        label: Titre (Prestation sur mesure)
-        type: text
-        width: 1/2
-      custom_tagline:
-        label: Tagline (on répond à tous les défis)
-        type: text
-        width: 1/2
-      custom_intro_emphase:
-        label: Intro emphase (italique)
-        type: writer
-        width: 1
-      custom_intro_text:
-        label: Intro suite
-        type: writer
-        width: 1
-      custom_why_title:
-        label: Titre Pourquoi (sur mesure)
-        type: text
-        width: 1
-      custom_why_items:
-        label: Pourquoi items
-        type: structure
-        fields:
-          text:
-            label: Texte
-            type: writer
-        width: 1
-      custom_how_title:
-        label: Titre Comment (sur mesure)
-        type: text
-        width: 1
-      custom_how_items:
-        label: Comment items
-        type: structure
-        fields:
-          text:
-            label: Texte
-            type: writer
-        width: 1
-      custom_team_text:
-        label: Texte équipe/assurance
-        type: writer
-        width: 1
-      custom_contact_text:
-        label: Texte contact
-        type: writer
-        width: 1
-      custom_cta_text:
-        label: Texte bouton CTA
-        type: text
-        width: 1/2
-      custom_cta_link:
-        label: Lien bouton CTA
-        type: text
-        width: 1/2
+      # Note: Les sections détaillées sont désormais sur les sous-pages

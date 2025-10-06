@@ -13,6 +13,7 @@
 ?>
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
 
   <meta charset="utf-8">
@@ -49,6 +50,7 @@
   ?>
   <link rel="shortcut icon" type="image/x-icon" href="<?= url('favicon.ico') ?>">
 </head>
+
 <body>
 
   <header class="header">
@@ -90,7 +92,19 @@
       */
       ?>
       <?php foreach ($site->children()->listed() as $item): ?>
-      <a <?php e($item->isOpen(), 'aria-current="page"') ?> href="<?= $item->url() ?>"><?= $item->title()->esc() ?></a>
+        <?php $children = $item->children()->listed(); ?>
+        <?php if ($children->count()): ?>
+          <div class="menu-item has-dropdown" tabindex="0">
+            <a <?php e($item->isOpen(), 'aria-current="page"') ?> href="<?= $item->url() ?>"><?= $item->title()->esc() ?></a>
+            <div class="dropdown">
+              <?php foreach ($children as $child): ?>
+                <a href="<?= $child->url() ?>"><?= $child->title()->esc() ?></a>
+              <?php endforeach ?>
+            </div>
+          </div>
+        <?php else: ?>
+          <a <?php e($item->isOpen(), 'aria-current="page"') ?> href="<?= $item->url() ?>"><?= $item->title()->esc() ?></a>
+        <?php endif ?>
       <?php endforeach ?>
     </nav>
   </header>

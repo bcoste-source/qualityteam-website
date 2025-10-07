@@ -2,23 +2,27 @@ Title: AI Développement
 
 ----
 
-Ai-title: <p><strong>L’offre </strong><em>AI Développement</em></p>
+Ai-title: <p><em>AI Développement</em></p>
 
 ----
 
-Ai-subtitle: Toujours à la pointe
+Ai-subtitle: Ton application mobile sur mesure en moins d’une semaine.
 
 ----
 
-Ai-paragraph1: <p>On t'a dit que ton produit prendrait des mois de développement ? </p><p>Nous te promettons un livrable fonctionnel en moins d'une semaine. </p><p>Non, ce n'est pas de la magie, c'est l'IA et l’approche itérative.</p>
+Ai-paragraph1: <p>Notre objectif est de te faire passer de l’idée au <strong>produit numérique concret</strong>, tout en respectant ton budget et ton planning, avec une <strong>base technique solide et évolutive</strong>.</p>
 
 ----
 
-Ai-paragraph2: <p>Avec l'IA, ton <strong>time-to-market</strong> n'est plus un obstacle. On transforme ton prototype design en une v1 fonctionnelle et robuste en un temps record.</p>
+Ai-paragraph2-title: On t’a dit que ton produit prendrait des mois à développer ?
 
 ----
 
-Ai-why-title: Pourquoi as-tu besoin de cette offre ?
+Ai-paragraph2: <p>Chez QualityTeam, on fait le pari inverse : grâce à l’<strong>IA</strong> et à notre méthode itérative, on te livre une <strong>application mobile sur mesure</strong> ou un logiciel fonctionnel en moins d’une semaine.<br>Pas de magie, juste une approche intelligente et efficace pour transformer ton prototype en une <strong>V1 utilisable</strong>, prête à convaincre tes utilisateurs et investisseurs.</p>
+
+----
+
+Ai-why-title: Pourquoi choisir l’AI Développement
 
 ----
 
@@ -27,15 +31,19 @@ Ai-why-items:
 -
   icon:
     - 'file://mopmnysi1js1wgfd'
-  text: "<p>Ton produit prend beaucoup de temps à être développé, et tu n'en peux plus d'attendre.</p>"
+  text: '<p>Tu rêves de lancer ton <strong>application mobile sur mesure</strong>, mais tu es freiné par le temps et les coûts de développement ?</p>'
 -
   icon:
     - 'file://gvlvnxmspbxkiikm'
-  text: "<p>Ton time-to-market est limité, tu n'as plus le temps.</p>"
+  text: '<p>Ton lancement doit se faire vite et tu ne peux pas attendre des mois ?</p>'
 -
   icon:
     - 'file://zrvcezlo9ibepnea'
-  text: '<p>Tu veux voir le produit fini pour le montrer au monde entier.</p>'
+  text: '<p>Tu veux montrer une version utilisable de ton produit à des investisseurs, clients, partenaires, sans délais interminables ?</p>'
+
+----
+
+Ai-why-paragraph: <p>Avec AI Développement, finis les mois d’attente et les technologies limitées :<br><br></p><ul><li><p><strong>- Tu passes rapidement de ton prototype design à une V1 fonctionnelle.</strong></p></li><li><p><strong>- Ton produit est robuste et évolutif</strong>, prêt à évoluer avec les besoins de tes utilisateurs.</p></li><li><p><strong>- Tu gagnes en crédibilité</strong> auprès des investisseurs, partenaires et clients.</p></li></ul><p><br>Que ce soit pour une <strong>application mobile</strong>, un <strong>logiciel métier</strong> ou une <strong>plateforme web</strong>, notre approche te permet de rester focus sur ton business tout en avançant concrètement sur ton projet.</p>
 
 ----
 
@@ -43,49 +51,55 @@ Ai-how-title: Comment ça se passe ?
 
 ----
 
+Ai-how-paragraph: <p>Un accompagnement express, pensé pour livrer ta <strong>V1 fonctionnelle</strong> d’<strong>application mobile sur mesure</strong> en seulement 5 jours. Chaque étape est claire, rapide et orientée résultat.</p>
+
+----
+
 Ai-how-steps:
 
 -
-  text: '<p><strong>Jour 1 :</strong> Matin, on passe du prototype au prompt. À midi, le prompt est prêt.</p>'
+  text: '<p><strong>Jour 1 – Du design au prompt :</strong> </p><p>On part de ton prototype ou de ton idée et on le transforme en prompts concrets pour l’IA. À midi, ton plan de développement est prêt à être exécuté. Cette étape garantit que ton application mobile sur mesure sera conforme à ton concept et à tes besoins utilisateurs.</p>'
 -
-  text: "<p><strong>Jour 1-4 :</strong> On laisse notre dev et l'IA transformer le prompt en une application fonctionnelle.</p>"
+  text: '<p><strong>Jour 1-4 Développement accéléré:</strong> </p><p>Notre développeur et l’IA travaillent ensemble pour créer ton produit numérique. Chaque jour, tu vois ton application mobile sur mesure prendre forme et devenir utilisable.</p><p>On se concentre sur les fonctionnalités essentielles pour ton MVP, tout en préparant une base technique évolutive pour la V2. Cette approche te permet de tester rapidement ton produit et de réduire les risques techniques.</p>'
 -
-  text: '<p><strong>Jour 4-5 :</strong> On affine le tout et on prépare une démo complète.</p>'
+  text: '<p><strong>Jours 4 et 5 – Affinage et démo</strong> <strong>:</strong> </p><p>On peaufine les détails et corrige les points de friction. Ensuite, nous préparons une <strong>démo complète</strong> de ton produit.</p>'
 -
-  text: '<p><strong>Jour 5 :</strong> On te présente la démo, on prend tes feedbacks et on apporte les dernières modifications.</p>'
+  text: '<p><strong>Jour 5 :</strong> </p><p>Le dernier jour, tu découvres ta V1 fonctionnelle, tu partages tes retours et nous ajustons tout pour que ton application mobile sur mesure soit prête à être utilisée ou présentée.</p>'
 
 ----
 
-Ai-how-html: <ol><li><p>Une v1 fonctionnelle en un temps record.</p></li><li><p>Une base technique robuste qui pourra évoluer sans problème.</p></li><li><p>Pas de coûts de licences, seulement des frais d'hébergement.</p></li><li><p>Une intégration totale dans l'accompagnement, avec des ajustements jusqu'à la dernière heure.</p></li></ol>
-
-----
-
-Ai-benefits-intro: <p>Finis les technologies limitées et les licences coûteuses. On te livre une V1 robuste, évolutive et sans surcoût.</p>
+Ai-benefits-intro: <p>En moins d’une semaine, tu obtiens :</p>
 
 ----
 
 Ai-benefits:
 
 -
-  item: 'Une v1 fonctionnelle en un temps record.'
+  item: 'Une application mobile sur mesure ou un logiciel métier déjà utilisable.'
 -
-  item: 'Une base technique robuste qui pourra évoluer sans problème.'
+  item: 'Une V1 robuste et évolutive, prête pour les mises à jour et la suite du développement.'
 -
-  item: "Pas de coûts de licences, seulement des frais d'hébergement."
+  item: 'Zéro coût de licence caché, seulement les frais d’hébergement nécessaires.'
 -
-  item: "Une intégration totale dans l'accompagnement, avec des ajustements jusqu'à la dernière heure."
+  item: 'Une intégration totale avec ton projet, incluant les ajustements jusqu’à la livraison finale.'
+-
+  item: 'Une avancée concrète : tu passes de l’idée à la réalité plus vite que tes concurrents.'
 
 ----
 
-Ai-ready-text: <p><strong>L'heure est venue de passer à la vitesse supérieure</strong>. </p><p>Pour <strong>3550 € HT</strong> obtiens une V1 technique de ton produit en un temps record.</p>
+Ai-ready-text: <p>Cette approche combinant <strong>IA et expertise humaine</strong>, te permet de <strong>gagner du temps, économiser de l’argent</strong> et obtenir un produit prêt à convaincre tes utilisateurs et investisseurs sans sacrifier la qualité.</p><h2><br>Prêt à passer à la vitesse supérieure ?</h2><p><br>Pour <strong>3550 € HT</strong>, tu obtiens une V1 technique complète de ton application mobile sur mesure, <strong>en seulement 5 jours</strong>. Tu gagnes des semaines de développement et tu avances enfin avec du concret.</p>
 
 ----
 
-Ai-cta-text: <p>Je passe à la <strong>vitesse supérieure</strong></p>
+Ai-cta-text: <p>Lancer mon application <strong>maintenant !</strong></p>
 
 ----
 
 Ai-cta-link: #contact
+
+----
+
+Ai-how-html: <ol><li><p>Une v1 fonctionnelle en un temps record.</p></li><li><p>Une base technique robuste qui pourra évoluer sans problème.</p></li><li><p>Pas de coûts de licences, seulement des frais d'hébergement.</p></li><li><p>Une intégration totale dans l'accompagnement, avec des ajustements jusqu'à la dernière heure.</p></li></ol>
 
 ----
 

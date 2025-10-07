@@ -11,7 +11,7 @@
 
     <section class="padding-section-small" />
 
-    <div class="text-white" style="max-width:52rem; margin:0 auto;">
+    <div class="text-white-pink" style="text-align: left;">
       <?= $page->custom_intro_emphase()->kirbytext() ?>
     </div>
 
@@ -25,7 +25,7 @@
     <div class="padding-section-small" />
 
 
-    <div class="text-white" style="max-width:52rem; margin:1rem auto 0; text-align: left;">
+    <div class="text-white-pink" style="text-align: left;">
       <?= $page->custom_intro_text()->kirbytext() ?>
     </div>
 
@@ -37,6 +37,13 @@
         <h4 class="offer-question-title"><?= $page->custom_why_title()->esc() ?></h4>
       </div>
     <?php endif ?>
+
+    <section class="padding-section-small" />
+
+    <div class="text-white-pink" style="text-align: left;">
+      <?= $page->custom_why_paragraph()->kirbytext() ?>
+    </div>
+
     <?php if ($page->custom_why_items()->isNotEmpty()): ?>
       <ul class="why-list text-white">
         <?php foreach ($page->custom_why_items()->toStructure() as $w): ?>
@@ -52,6 +59,11 @@
       </ul>
     <?php endif ?>
 
+
+    <div class="text-white-pink" style="text-align: left;">
+      <?= $page->custom_why_paragraph_end()->kirbytext() ?>
+    </div>
+
     <section class="padding-section-small" />
 
     <?php if ($page->custom_how_title()->isNotEmpty()): ?>
@@ -59,20 +71,11 @@
         <h4 class="offer-question-title"><?= $page->custom_how_title()->esc() ?></h4>
       </div>
     <?php endif ?>
-    <?php if ($page->custom_how_items()->isNotEmpty()): ?>
-      <div class="deliverables text-white">
-        <ul>
-          <?php foreach ($page->custom_how_items()->toStructure() as $h): ?>
-            <li>• <?= $h->item()->esc() ?></li>
-          <?php endforeach ?>
-        </ul>
-      </div>
-    <?php endif ?>
 
-    <section class="padding-section" />
+    <section class="padding-section-small" />
 
-    <div class="text-white" style="max-width:52rem; margin:0 auto; text-align: left;">
-      <?= $page->custom_team_text()->kirbytext() ?>
+    <div class="text-white-pink" style="text-align: left;">
+      <?= $page->custom_how_paragraph()->kirbytext() ?>
     </div>
 
     <section class="padding-section" />

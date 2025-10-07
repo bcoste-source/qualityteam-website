@@ -8,6 +8,17 @@
     </h2>
     <p class="text-green text-small" style="font-weight: bold;"><?= mb_strtoupper($page->section2_subtitle()->esc(), 'UTF-8') ?></p>
 
+    <section class="padding-section-small" />
+    <div class="text-purple-black" style="text-align: left;">
+      <?= $page->product_starter_paragraph()->kirbytext() ?>
+    </div>
+    <section class="padding-section" />
+
+    <?php if ($page->section2_pairs_title()->isNotEmpty()): ?>
+      <h3 class="text-purple-green"><?= $page->section2_pairs_title()->esc() ?></h3>
+    <?php endif ?>
+
+
     <?php if ($page->section2_pairs()->isNotEmpty()): ?>
       <div class="pairs">
         <?php foreach ($page->section2_pairs()->toStructure() as $pair): ?>
@@ -26,6 +37,13 @@
         <p class="text-purple"><?= $page->section2_known()->esc() ?></p>
         <img class="wave-spot" src="/assets/images/spots/purple-wave-spot.png" alt="Spot vert équipe">
       <?php endif ?>
+    </div>
+
+
+    <section class="padding-section-small" />
+
+    <div class="text-purple-black" style="text-align: left;">
+      <?= $page->idea_paragraph()->kirbytext() ?>
     </div>
 
     <section class="padding-section-small" />
@@ -61,6 +79,11 @@
       </ul>
     <?php endif ?>
 
+
+    <div class="text-purple-black" style="text-align: left;">
+      <?= $page->results_paragraph()->kirbytext() ?>
+    </div>
+
     <section class="padding-section" />
 
     <?php if ($page->how_title()->isNotEmpty()): ?>
@@ -68,6 +91,14 @@
         <h4 class="offer-question-title"><?= $page->how_title()->esc() ?></h4>
       </div>
     <?php endif ?>
+
+    <section class="padding-section-small" />
+
+    <div class="text-purple-black">
+      <?= $page->how_paragraph()->kirbytext() ?>
+    </div>
+
+    <section class="padding-section-small" />
 
     <?php if ($page->steps()->isNotEmpty()): ?>
       <div class="steps">
@@ -86,6 +117,8 @@
     <div style="text-align: left;">
       <?= $page->deliverables_intro()->kirbytext() ?>
     </div>
+
+
 
     <div class="deliverables">
       <?php if ($page->deliverables()->isNotEmpty()): ?>

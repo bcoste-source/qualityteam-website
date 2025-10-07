@@ -26,6 +26,9 @@ sections:
       custom_why_title:
         label: Titre Pourquoi
         type: text
+      custom_why_paragraph:
+        label: Paragraphe Pourquoi
+        type: writer
       custom_why_items:
         label: Pourquoi items
         type: structure
@@ -40,18 +43,14 @@ sections:
           text:
             label: Texte
             type: writer
+      custom_why_paragraph_end:
+        label: Paragraphe Comment
+        type: writer
       custom_how_title:
         label: Titre Comment
         type: text
-      custom_how_items:
-        label: Comment items
-        type: structure
-        fields:
-          item:
-            label: Élément
-            type: text
-      custom_team_text:
-        label: Texte équipe
+      custom_how_paragraph:
+        label: Paragraphe Comment
         type: writer
       custom_contact_text:
         label: Texte contact

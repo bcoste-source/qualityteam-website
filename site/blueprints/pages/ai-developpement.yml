@@ -17,6 +17,9 @@ sections:
       ai_paragraph1:
         label: Paragraphe 1
         type: writer
+      ai_paragraph2_title:
+        label: Titre Paragraphe 2
+        type: text
       ai_paragraph2:
         label: Paragraphe 2
         type: writer
@@ -37,9 +40,15 @@ sections:
           text:
             label: Texte
             type: writer
+      ai_why_paragraph:
+        label: Paragraphe Pourquoi
+        type: writer
       ai_how_title:
         label: Titre Comment
         type: text
+      ai_how_paragraph:
+        label: Paragraphe Comment
+        type: writer
       ai_how_steps:
         label: Étapes
         type: structure

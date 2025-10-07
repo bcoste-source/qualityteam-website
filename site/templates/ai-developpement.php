@@ -22,17 +22,24 @@
 
     <section class="padding-section" />
 
-    <div class="text-white" style="text-align: left;">
+    <?php if ($page->ai_paragraph2_title()->isNotEmpty()): ?>
+      <div class="offer-title-container">
+        <h4 class="offer-question-title"><?= $page->ai_paragraph2_title()->esc() ?></h4>
+      </div>
+    <?php endif ?>
+
+    <div class="text-white-purple" style="text-align: left;">
       <?= $page->ai_paragraph2()->kirbytext() ?>
     </div>
 
-    <section class="padding-section-small" />
+    <section class="padding-section" />
 
     <?php if ($page->ai_why_title()->isNotEmpty()): ?>
       <div class="offer-title-container">
         <h4 class="offer-question-title"><?= $page->ai_why_title()->esc() ?></h4>
       </div>
     <?php endif ?>
+
     <?php if ($page->ai_why_items()->isNotEmpty()): ?>
       <ul class="why-list">
         <?php foreach ($page->ai_why_items()->toStructure() as $i): ?>
@@ -48,7 +55,14 @@
       </ul>
     <?php endif ?>
 
-    <section class="padding-section-small" />
+
+
+    <div class="text-white-purple" style="text-align: left;">
+      <?= $page->ai_why_paragraph()->kirbytext() ?>
+    </div>
+
+
+    <section class="padding-section" />
 
     <?php if ($page->ai_how_title()->isNotEmpty()): ?>
       <div class="offer-title-container">
@@ -56,8 +70,12 @@
       </div>
     <?php endif ?>
 
-    <section class="padding-section-small" />
 
+    <div class="text-white-purple" style="text-align: left;">
+      <?= $page->ai_how_paragraph()->kirbytext() ?>
+    </div>
+
+    <section class="padding-section-small" />
 
     <?php $steps = $page->ai_how_steps()->toStructure();
     $total = $steps->count(); ?>
@@ -76,8 +94,7 @@
       </ul>
     </div>
 
-    <section class="padding-section" />
-
+    <section class="padding-section-small" />
 
     <div class="deliverables text-white">
       <?= $page->ai_benefits_intro()->kirbytext() ?>

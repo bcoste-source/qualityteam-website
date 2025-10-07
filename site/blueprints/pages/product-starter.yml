@@ -14,6 +14,12 @@ sections:
       section2_subtitle:
         label: Sous-titre
         type: text
+      product_starter_paragraph:
+        label: Paragraphe
+        type: writer
+      section2_pairs_title:
+        label: Titre images + description (x2)
+        type: text
       section2_pairs:
         label: Images + description (x2)
         type: structure
@@ -47,10 +53,16 @@ sections:
           text:
             label: Texte
             type: writer
+      results_paragraph:
+        label: Paragraphe résultats
+        type: writer
 
       how_title:
         label: Titre Comment
         type: text
+      how_paragraph:
+        label: Paragraphe comment
+        type: writer
       steps:
         label: Étapes (Discovery / Stratégie / Solution)
         type: structure

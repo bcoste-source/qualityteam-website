@@ -2,11 +2,19 @@ Title: Product Starter
 
 ----
 
-Section2-title: <p>L’accompagnement <strong><em>Product Starter</em></strong></p>
+Section2-title: <p>Product Starter</p>
 
 ----
 
-Section2-subtitle: Parce qu’il faut bien commencer quelque part
+Section2-subtitle: Ton MVP en 30 heures, sans gaspiller ton budget.
+
+----
+
+Product-starter-paragraph: <p>Chez <strong>QualityTeam</strong>, on accompagne les startups pour passer de l’intuition à un vrai <strong>MVP</strong> (Minimum Viable Product) : <strong>prototype fonctionnel et validé</strong>, prêt à convaincre tes utilisateurs et investisseurs.</p><p>‎ </p><p>Notre trio d’experts – <strong>product manager, UX designer et développeur</strong> – travaille main dans la main avec toi pour transformer ton idée en <strong>produit numérique concret</strong>, tout en respectant ton budget et ton planning</p>
+
+----
+
+Section2-pairs-title: Une idée de génie ? On t’aide à la transformer en produit concret.
 
 ----
 
@@ -15,11 +23,15 @@ Section2-pairs:
 -
   image:
     - 'file://nmmrjrb8hi942woc'
-  text: '<p>Ton budget est serré et tu ne veux pas le gaspiller ?</p>'
+  text: '<p>Tu as une idée d’appli mobile ou de logiciel métier qui reste sur le papier ?</p>'
 -
   image:
     - 'file://zeubdqhgk6gvtkho'
-  text: '<p>Tu as une idée de génie, mais tu ne sais pas par où commencer ?</p>'
+  text: '<p>Ton <strong>MVP</strong> attend d’être testé, mais tu ne sais pas par où commencer ?</p>'
+-
+  image:
+    - 'file://vajetzcxamnn8ike'
+  text: '<p>Ton budget est limité et tu veux éviter de le cramer en tests inutiles ?</p>'
 
 ----
 
@@ -27,26 +39,30 @@ Section2-known: On connaît ça.
 
 ----
 
-Section2-transform: Transforme ton intuition en un projet solide et concret.
+Section2-transform: Avec Product Starter, tu bénéficies :
 
 ----
 
-Section2-purple-black: <p><strong class="strong-purple">Oublie les suppositions.</strong> Avec notre accompagnement produit, on valide ta vision avant d’écrire la moindre ligne de code. On te fait gagner du temps et de l’argent en t’aidant à prendre les bonnes décisions dès le départ.</p>
+Section2-purple-black: <ul><li><p>- D’une <strong>méthode claire</strong> pour avancer rapidement.</p></li><li><p>- D’un <strong>prototype MVP tangible</strong>, prêt à tester ou à présenter.</p></li><li><p>- D’une <strong>roadmap produit structurée</strong> pour prendre les bonnes décisions sans perdre de temps.</p></li></ul><p>‎ </p><p>Que ce soit pour une <strong>application mobile, un site web ou un outil métier</strong>, notre objectif est le même : te faire passer <strong>de l’idée au concret</strong> en quelques semaines.</p>
 
 ----
 
-Why-title: Pourquoi as-tu besoin de cette offre ?
+Why-title: Pourquoi le Product Starter est fait pour toi.
 
 ----
 
 Why-items:
 
 -
-  text: "<p>Tu as une idée d'application ou de logiciel, mais tu ne sais pas par où commencer.</p>"
+  text: '<p>Transformer une idée floue en <strong>produit numérique structuré</strong></p>'
 -
-  text: '<p>Tu as besoin de convaincre des utilisateurs, des investisseurs ou des associés.</p>'
+  text: '<p>Convaincre des utilisateurs, investisseurs ou partenaires avec un<strong> prototype</strong> <strong>MVP tangible</strong>.<br></p>'
 -
-  text: "<p>Tu veux prendre des décisions basées sur des faits (interviews, prototypes), et non sur l'intuition.</p>"
+  text: '<p>Prendre des décisions basées sur des faits (interviews, tests, priorisation) plutôt que sur l’intuition.</p>'
+
+----
+
+Results-paragraph: <p><strong>Résultat</strong> : tu gagnes du temps, tu économises de l’argent et tu évites les erreurs courantes qui font perdre des mois de développement.&nbsp;</p>
 
 ----
 
@@ -54,46 +70,58 @@ How-title: Comment ça se passe ?
 
 ----
 
-Steps:
-
--
-  title: Discovery
-  description: '<p>On démarre par un <strong>Kick-off</strong> et une immersion dans ton projet. On mène des interviews utilisateurs et la méthode <strong>Value Proposition Canvas</strong> pour comprendre qui tu aides et à quel problème tu résous.</p>'
--
-  title: Stratégie
-  description: '<p>On organise un atelier produit pour prioriser les fonctionnalités. On utilise les méthodes <strong>MoSCoW</strong> et <strong>T-shirt sizing</strong> pour structurer le backlog et définir la roadmap.</p>'
--
-  title: Solution
-  description: "<p>On conçoit les parcours, les wireframes et l'interface. Côté tech, on valide la faisabilité technique pour s'assurer que le produit est réalisable sans mauvaise surprise.</p>"
+How-paragraph: <p>Un accompagnement clair en 3 étapes, pensé pour les startups qui veulent avancer vite et efficacement.</p>
 
 ----
 
-Deliverables-intro: <p>En seulement 30 heures, tu repars avec tout ce qu'il te faut pour être prêt à passer au développement, pitcher ou convaincre :</p>
+Steps:
+
+-
+  title: 'Discovery – Comprendre et cadrer'
+  description: '<p>Nous commençons par une session d’échange pour <strong>cerner ton idée et tes objectifs</strong>. On réalise des <strong>interviews utilisateurs</strong> pour comprendre leurs besoins réels.</p><p><br>On utilise le <strong>Value Proposition Canvas</strong>, un outil simple et efficace, pour vérifier que ton produit répond à un vrai problème et apporte de la valeur.</p><p>Cette phase permet de <strong>valider l’intérêt du produit numérique</strong> avant de passer à la conception.</p>'
+-
+  title: 'Stratégie – Prioriser et décider'
+  description: '<p>Une fois l’idée validée, nous organisons un <strong>atelier produit</strong> pour hiérarchiser les fonctionnalités : ce qui est indispensable pour ton MVP et ce qui peut être ajouté plus tard. <br><br>Pour structurer cette priorisation, nous utilisons des outils simples et efficaces comme la <strong>méthode MoSCoW et le T-shirt sizing</strong>. Résultat : un <strong>plan d’actions clair</strong>, facile à suivre, qui évite les pertes de temps et les développements inutiles.&nbsp;<br><br>Cette étape te permet d’avoir <strong>une roadmap produit réaliste</strong> et des décisions alignées avec tes objectifs business.</p>'
+-
+  title: 'Solution – Donner vie à ton idée'
+  description: '<p>Nous passons à la <strong>conception concrète du produit</strong> avec la création du <strong>parcours utilisateur</strong> et des premiers écrans UX/UI (wireframes) pour visualiser ton MVP. <br><br>On réalise une <strong>maquette testable</strong>, prête à être présentée aux utilisateurs, et on valide la <strong>faisabilité technique</strong> pour que le développement se fasse sans mauvaises surprises.</p>'
+
+----
+
+Deliverables-intro: <p><strong>En seulement 30 heures, tu repars avec :</strong></p>
 
 ----
 
 Deliverables:
 
 -
-  item: 'Un prototype cliquable sur Figma.'
+  item: 'Un prototype cliquable sur Figma, prêt à être testé ou pitché.'
 -
   item: 'Une vision produit clarifiée (Vision Board, Value Proposition).'
 -
-  item: 'Un backlog priorisé et un arbitrage budgétaire clair.'
+  item: 'Un plan d’actions priorisé et un budget estimé pour ton MVP.'
 -
-  item: 'Une roadmap sur-mesure et des recommandations pour la suite.'
+  item: 'Une roadmap sur-mesure et des recommandations pour passer à la suite.'
 
 ----
 
-Ready-text: <p><strong><em>Prêt à te lancer ?</em></strong> </p><p>Pour <strong>2850 € HT</strong>, obtiens toutes les clés pour passer de l'idée au projet concret.</p>
+Ready-text: <p>Bref, toutes les clés pour <strong>lancer ton MVP rapidement</strong> et convaincre autour de toi</p><h2><strong><em><br>Prêt à te lancer ?</em></strong> </h2><p><br>Pour <strong>2850 € HT</strong>, obtiens toutes les clés pour passer de l'idée au projet concret.</p>
 
 ----
 
-Cta-text: JE ME LANCE
+Cta-text: DÉMARRER MON PROJET MAINTENANT !
 
 ----
 
 Cta-link: #contact
+
+----
+
+Idea-title: 
+
+----
+
+Idea-paragraph: 
 
 ----
 

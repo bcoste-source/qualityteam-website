@@ -3,6 +3,7 @@
 @import url('sizes.css');
 @import url('colors.css');
 @import url('templates/offers.css');
+@import url('templates/about.css');
 
 * {
   margin: 0;

@@ -57,4 +57,4 @@ small { font-size: clamp(0.875rem, 0.3vw + 0.75rem, 0.95rem) !important; }
 
 /* Tailles utilitaires de texte (optionnel) */
 .text-lead { font-size: clamp(1.125rem, 0.9vw + 0.9rem, 1.5rem) !important; line-height: 1.5 !important; }
-.text-small { font-size: clamp(0.875rem, 0.25vw + 0.8rem, 1rem) !important; }
+.text-small, .text-small p { font-size: clamp(0.875rem, 0.25vw + 0.8rem, 1rem) !important; }

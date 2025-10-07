@@ -1,0 +1,136 @@
+Title: Le Collectif
+
+----
+
+About-title: <p>Le collectif <strong>QualityTeam</strong></p>
+
+----
+
+About-subtitle: Les plus beaux projets sont faits ensemble
+
+----
+
+About-gallery:
+
+- 'file://y5nlv7r9sm0j9ib9'
+- 'file://cqlctq9tuufvu14z'
+- 'file://mlc0khfppfkihnza'
+- 'file://j06hrtkmxjljo2il'
+
+----
+
+Team-description: <p>Un <strong>designer</strong>, un <strong>développeur</strong>, une <strong>product designer/ product manager</strong>, mais surtout, des humains à l’écoute, qui posent les bonnes questions et qui aiment travailler en équipe pour gagner le match !</p>
+
+----
+
+Teammates:
+
+-
+  image:
+    - 'file://oagvbtzee5quboii'
+  firstname: Benoit
+  nickname: 'Le Capitaine'
+  role: 'Coach / Product Manager'
+  specialty: 'Vision produit & prise de décision'
+  description: '<p>Sur le terrain, c’est lui qui donne le rythme. Il lit la partie avant tout le monde, oriente les passes et écoute les joueurs. Avec lui, que des trajectoires claires et impactantes. Il ne pense qu’à une chose, gagner le championnat avec la meilleure équipe.</p>'
+-
+  image:
+    - 'file://tkspcvvxhawg7vqe'
+  firstname: David
+  nickname: 'Le Tireur de Précision'
+  role: 'Arrière technique / UX Designer'
+  specialty: 'Expérience utilisateur & interface'
+  description: '<p>Il ne court pas après la balle. Il la reçoit, la place au millimètre et fait mouche à chaque fois. Ses prototypes sont des passes décisives. Ses parcours, des lignes claires vers le but.</p><p>Ce que tu prends pour de l’évidence ? C’est lui qui l’a designé.</p>'
+-
+  image:
+    - 'file://dfoqmyh5iw7pvdbg'
+  firstname: Rayan
+  nickname: 'Le Pilier Technique'
+  role: 'Pivot / Développeur web et mobile'
+  specialty: 'Dev mobile, architecture & performance'
+  description: '<p>Solide, fiable, rapide : c’est le genre de joueur qui ne parle pas, mais fait avancer l’équipe à une vitesse fulgurante. Il transforme la stratégie en réalité concrète, ligne après ligne.</p>'
+-
+  image:
+    - 'file://wptp9p2bzaq5b8a4'
+  firstname: Angéla
+  nickname: L’Éclaireuse
+  role: 'Coach et Meneuse à la fois / Product designer'
+  specialty: 'Vision produit, UX design & dynamique utilisateur'
+  description: "<p>Elle a la vision du jeu et le sens du terrain. Elle entre, observe, pose deux questions... et le plan se redessine. Elle capte les attentes, clarifie les usages, recentre les efforts.</p><p>Design, stratégie, vision : elle fait avancer l'équipe vers le but sans détour, ni feinte inutile.</p><p>Un peu comme Benoit, mais en mieux.</p>"
+-
+  image:
+    - 'file://g4b1dpn3wz4hmtza'
+  firstname: Lisa
+  nickname: 'L’organisatrice du match'
+  role: 'L’agent sportif / Commerciale'
+  specialty: 'Identifier le besoin / mettre en avant le jouer ensemble'
+  description: '<p>Sans elle, pas de match, et un joueur en moins sur la feuille de match. Elle est là pour trouver les équipes, faire en sorte que le jeu se passe bien et surtout faire en sorte que toutes les conditions soient réunies pour dépasser les objectifs.</p>'
+
+----
+
+Last-firstname: Vous !
+
+----
+
+Last-nickname: Le most valuable player MVP
+
+----
+
+Last-role: L'investisseur amateur de jeux / Le client
+
+----
+
+Last-specialty: 
+
+----
+
+Last-description: <p>Vous avez compris qu'être accompagné des bonnes personnes vous permettrait de progresser très rapidement. Votre objectif rester dans le game quoi qu’il arrive et dépasser les objectifs initiaux, à chaque fois.</p>
+
+----
+
+Team-final-image: - 'file://crvvgrap1d9klfao'
+
+----
+
+Values-title: <p>Nos <strong>valeurs</strong></p>
+
+----
+
+Values-description: Ce qui nous unit et nous guide, projet après projet.
+
+----
+
+Values-paragraph: <p><em>S’il n’y avait que </em><strong><em>3 mots</em></strong><em> à retenir ce serait :</em></p>
+
+----
+
+Values-items:
+
+-
+  image:
+    - 'file://7l0eo6cklekdfddb'
+  text: '<h3>QUALITÉ</h3><p>Chaque projet mérite notre exigence : dans l’écoute, le design, le code, le suivi. On ne sort rien à moitié fait, parce que vous méritez mieux qu’un service bancal. Le bon produit, bien fait, au bon moment. C’est ça, notre standard.</p>'
+-
+  image:
+    - 'file://egwqs8q7zm5csm9d'
+  text: '<h3>INTÉGRITÉ</h3><p>On dit ce qu’on fait, on fait ce qu’on dit. On prend les décisions en conscience, avec honnêteté et transparence. On est là pour construire avec vous, pas pour vous embarquer dans un tunnel sans fin.</p>'
+-
+  image:
+    - 'file://msx011k8xclht7jd'
+  text: '<h3>EXCELLENCE</h3><p>Excellence ne veut pas dire sérieux ou ennuyeux. On vise haut, mais avec le sourire. Une ambiance de confiance, et une vraie joie de faire ensemble. Parce qu’un bon produit, ça commence souvent par une bonne énergie.</p>'
+
+----
+
+About-description: <p>Un designer, un développeur, une product designer/ product manager, mais surtout, des humains à l’écoute, qui posent les bonnes questions et qui aiment travailler en équipe pour gagner le match !</p>
+
+----
+
+About-paragraph: 
+
+----
+
+About-created-at: Créé en 2025
+
+----
+
+Uuid: ydyxntjjaua5ky56

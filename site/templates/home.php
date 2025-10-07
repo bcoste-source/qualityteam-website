@@ -30,11 +30,27 @@
 <!-- Green Background Section -->
 <div class="background-white-with-green-vector">
   <div class="body-padding body-centered">
+    <?php if ($page->hero_description()->isNotEmpty()): ?>
+      <div class="hero-description text-purple-black">
+        <?= $page->hero_description()->kirbytext() ?>
+      </div>
+    <?php endif ?>
 
+    <section class="padding-section" />
+
+    <?php if ($page->hero_button_text()->isNotEmpty()): ?>
+      <div class="cta-accompaniment">
+        <a href="<?= $page->hero_button_link()->esc() ?>" class="btn-launch">
+          <?= $page->hero_button_text()->esc() ?>
+        </a>
+      </div>
+    <?php endif ?>
+
+    <section class="padding-section-small" />
     <!-- Companies Section -->
     <?php if ($page->companies_title()->isNotEmpty()): ?>
-      <section class="companies text-purple">
-        <h3><?= $page->companies_title()->esc() ?></h3>
+      <section class="companies">
+        <div class="text-purple-black"><?= $page->companies_title()->kirbytext() ?></div>
         <?php if ($page->companies_logos()->isNotEmpty()): ?>
           <div class="companies-logo">
             <?php foreach ($page->companies_logos()->toFiles() as $logo): ?>
@@ -52,6 +68,8 @@
     <!-- Problem Section -->
     <?php if ($page->problem_items()->isNotEmpty()): ?>
       <section class="problem-section">
+        <div class="problem-title"><?= $page->problem_title()->kirbytext() ?></div>
+        <section class="padding-section-small" />
         <div class="problem-grid">
           <?php foreach ($page->problem_items()->toStructure() as $item): ?>
             <div class="problem-item">
@@ -187,7 +205,7 @@
                 </div>
               <?php endif ?>
               <div class="accompaniment-text text-white">
-                <?= $item->text()->kirbytext() ?>
+                <?= mb_strtoupper($item->text()->kirbytext(), 'UTF-8') ?>
               </div>
             </div>
           <?php endforeach ?>
@@ -241,7 +259,7 @@
             </div>
           <?php endif ?>
           <?php if ($page->expertise_text2()->isNotEmpty()): ?>
-            <div class="text-white">
+            <div class="text-white-green">
               <?= $page->expertise_text2()->kirbytext() ?>
             </div>
           <?php endif ?>

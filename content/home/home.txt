@@ -6,7 +6,19 @@ Hero-image: - 'file://2qzsqmrgloowybjd'
 
 ----
 
-Companies-title: Les plus belles entreprises nous font confiance
+Hero-description: <p>Tu as une idée en tête, un projet qui dort dans un carnet ou un MVP qui demande à être testé ? Chez <strong>QualityTeam</strong>, on transforme les intuitions en vrais <strong>produits numériques</strong> : applis mobiles, logiciels métiers, plateformes web. Notre trio, chef de produit, UX designer et développeur, t’accompagne pas à pas pour transformer ton concept en <strong>prototype fonctionnel et validé</strong>, afin que tu avances vite, sans exploser ton budget.</p>
+
+----
+
+Hero-button-text: Discuter de mon projet !
+
+----
+
+Hero-button-link: https://google.fr
+
+----
+
+Companies-title: <h3><strong>Des entreprises qui passent à l’action avec nous. Pourquoi pas toi ?</strong></h3><p>Nous accompagnons des startups et entreprises ambitieuses dans la création de <strong>produits numériques solides et testés</strong>.</p>
 
 ----
 
@@ -17,24 +29,28 @@ Companies-logos:
 
 ----
 
+Problem-title: <p>Tu as une idée de produit numérique ? On te guide :</p>
+
+----
+
 Problem-items:
 
 -
   icon:
     - 'file://anqmlzmydixibnkh'
-  text: '<p>Vous avez une idée de <strong>projet numérique</strong> mais vous ne savez pas par où commencer ?</p>'
+  text: '<p>Tu ne sais pas par où commencer ?</p>'
 -
   icon:
     - 'file://kjmnglzuslvpwij8'
-  text: '<p>Votre projet est déjà lancé mais il vous manque la <strong>vision produit</strong> ?</p>'
+  text: '<p>Ton projet est lancé mais il manque une <strong>vision stratégique claire</strong> ?</p>'
 -
   icon:
     - 'file://tokp0fyerf9f6wcm'
-  text: "<p>Vous avez besoin de <strong>retours d'utilisateurs</strong> pour valider votre idée ?</p>"
+  text: '<p>Tu veux <strong>valider ton idée auprès de vrais utilisateurs</strong> avant d’investir davantage ?</p>'
 
 ----
 
-Construction-title: Co-construisons ensemble !
+Construction-title: Co-construisons ensemble ton produit numérique !
 
 ----
 
@@ -50,15 +66,15 @@ Mvp-button-link: contact
 
 ----
 
-Team-text: Une équipe produit soudée, un accompagnement pas à pas, un prototype qui fait mouche.
+Team-text: Tu es accompagné par une équipe soudée qui te guide étape par étape. Résultat : un prototype clair, testé et crédible, prêt à convaincre tes utilisateurs et investisseurs.
 
 ----
 
-Example-text: Applications mobiles iOS/Android, sites web, outils métiers : on construit un produit numérique robuste, clair et validé.
+Example-text: Applis mobiles iOS/Android, sites web ou outils métiers, on conçoit ensemble un produit numérique robuste qui met en valeur ton idée.
 
 ----
 
-Method-title: UNE OFFRE DÉCOUVERTE INCROYABLE
+Method-title: Notre offre découverte : Product Starter
 
 ----
 
@@ -74,20 +90,20 @@ Method-steps:
 
 -
   title: Exploration
-  description: "<ul><li><p>Choisir les fonctionnalités essentielles : Définir les fonctions principales de l'application</p></li><li><p>Analyser la concurrence : Étudier les applications similaires</p></li><li><p>Évaluer la complexité technique : Estimer la difficulté de développement</p></li></ul>"
+  description: '<ul><li><p><strong>Validation de ton idée de produit numérique</strong> pour confirmer qu’il y a un vrai besoin.</p></li><li><p><strong>Interviews utilisateurs</strong> pour comprendre leurs attentes et leurs frustrations.</p></li></ul>'
 -
   title: 'Étude produit'
-  description: "<ul><li><p>Choisir les fonctionnalités essentielles : Définir les fonctions principales de l'application</p></li><li><p>Analyser la concurrence : Étudier les applications similaires</p></li><li><p>Évaluer la complexité technique : Estimer la difficulté de développement</p></li></ul>"
+  description: '<ul><li><p>Choix des <strong>fonctionnalités clés</strong> pour ton MVP (Minimum Viable Product).</p></li><li><p>Analyse de la <strong>concurrence</strong> pour identifier ce qui fonctionne et ce qui peut se démarquer.</p></li><li><p>Évaluation de la <strong>faisabilité technique</strong> pour éviter les mauvaises surprises lors du développement.</p></li></ul>'
 -
   title: Prototypage
-  description: "<ul><li><p>Zoning : Pensez la première ergo pour vos utilisateurs</p></li><li><p>User flow : Pensez le parcours utilisateur nominal</p></li><li><p>Créer une maquette haute fidélité : Dessiner une version simple de l''application</p></li></ul>"
+  description: '<ul><li><p><strong>Zoning</strong> pour dessiner la structure de ton produit numérique.</p></li><li><p>Création d’un <strong>parcours utilisateur pas à pas</strong>.</p></li><li><p>Réalisation d’une <strong>maquette testable et réaliste</strong>, prête à être présentée aux utilisateurs.</p></li></ul>'
 -
   title: Synthèse
-  description: '<ul><li><p>Un vision produit claire : compréhension de ce qui va apporter de la valeur</p></li><li><p>Arbitrage technique : Estimer le coût de développement pour votre V1</p></li></ul>'
+  description: '<ul><li><p><strong>Vision produit claire</strong> pour savoir ce qui apporte le plus de valeur.</p></li><li><p>Estimation des <strong>coûts et efforts</strong> pour ta première version.</p></li><li><p>Priorisation des prochaines étapes et préparation d’une <strong>roadmap actionnable</strong>.</p></li></ul>'
 
 ----
 
-Accompaniment-title: <p>Avec notre accompagnement <strong>Product Starter</strong> </p><p>vous repartirez avec :</p>
+Accompaniment-title: <h3>Avec notre accompagnement <strong>Product Starter</strong> </h3><p>vous repartirez avec :</p>
 
 ----
 
@@ -96,23 +112,23 @@ Accompaniment-items:
 -
   icon:
     - 'file://ovimw1unjpexqy4m'
-  text: '<p>UN PROTOTYPE <strong>À VOTRE IMAGE</strong></p>'
+  text: '<p>Un prototype cliquable sur Figma <strong>à ton image</strong></p>'
 -
   icon:
     - 'file://omy9sic89eqtyarn'
-  text: '<p>UNE VISION PRODUIT <strong>CLARIFIÉE</strong></p>'
+  text: '<p>Une vision structurée et claire de <strong>ton produit numérique</strong></p>'
 -
   icon:
     - 'file://kug0zmm1esnqdnpk'
-  text: '<p>UN PRODUCT BACKLOG <strong>COHÉRENT</strong></p>'
+  text: '<p>Un plan d’actions <strong>concret</strong> et <strong>simple à suivre</strong></p>'
 -
   icon:
     - 'file://hdmjydkmpe0tpehk'
-  text: '<p>UN ARBITRAGE BUDGÉTAIRE <strong>OPTIMISÉ</strong></p>'
+  text: '<p>Un budget maîtrisé grâce à des <strong>arbitrages réfléchis</strong></p>'
 -
   icon:
     - 'file://kulxtkcbtizos0bi'
-  text: '<p>UNE ROADMAP <strong>BIEN PENSÉE</strong></p>'
+  text: '<p>Une <strong>roadmap précise</strong> pour le développement futur</p>'
 
 ----
 
@@ -124,23 +140,23 @@ Accompaniment-button-link: #contact
 
 ----
 
-Expertise-title-line1: POURQUOI UN ACCOMPAGNEMENT
+Expertise-title-line1: POURQUOI TRAVAILLER AVEC UN TRIO
 
 ----
 
-Expertise-title-line2: À 3 EXPERTISES ?
+Expertise-title-line2: PRODUIT, DESIGN ET TECH ?
 
 ----
 
-Expertise-text1: <p>Grâce à nos talents combinés, nous avons une réponse <strong>pour chaque problématique</strong></p>
+Expertise-text1: <p>Parce qu’un <strong>produit numérique qui fonctionne</strong>, ce n’est pas qu’une belle idée. C’est un équilibre entre :</p>
 
 ----
 
-Expertise-text2: <p>On aligne <strong>product, design et tech</strong> dès le départ pour construire un produit cohérent, utile et faisable. Chaque décision est partagée, chaque étape est éclairée par les trois expertises.</p>
+Expertise-text2: <ul><li><p>- Une stratégie produit solide pour répondre aux besoins utilisateurs et business.,</p></li><li><p>- Une expérience utilisateur fluide qui rend l’application intuitive,</p></li><li><p>- Une base technique réaliste pour garantir que le produit est faisable et évolutif.</p></li></ul><p>Chez <strong>QualityTeam</strong>, ces trois expertises travaillent ensemble dès le départ. Résultat : un produit numérique utile, cohérent et réalisable, pas juste un concept théorique.</p>
 
 ----
 
-Expertise-button-text: CONSULTEZ NOTRE PAGE DÉDIÉE
+Expertise-button-text: DÉCOUVRIR NOTRE TEAM
 
 ----
 
@@ -163,24 +179,24 @@ Faq-subtitle: VENEZ EN APPRENDRE DAVANTAGE
 Faq-items:
 
 -
-  question: 'Tu sais ce que tu veux faire, mais tu ne sais pas par où commencer ?'
-  answer: '<p>On co-construit un produit <strong>testable</strong>, aligné avec tes utilisateurs et tes enjeux business.</p>'
+  question: 'J’ai une idée de produit numérique, mais je ne sais pas par où commencer.'
+  answer: '<p>On t’aide à transformer ton idée en prototype testable, aligné avec tes utilisateurs et ton business.</p>'
 -
-  question: 'Vous avez une idée de produit digital/numérique, mais vous ne savez pas par où commencer ?'
-  answer: "<p>On vous accompagne dès la <strong>validation de votre idée</strong> jusqu'au prototype fonctionnel. On structure votre vision produit, on définit les fonctionnalités essentielles et on vous guide pas à pas.</p>"
+  question: 'Je dois convaincre un investisseur ou une direction. Comment faire ?'
+  answer: '<p>Un prototype cliquable parle plus qu’un long pitch. On t’aide à créer un démonstrateur solide pour embarquer tes partenaires.</p>'
 -
-  question: 'Tu as fait un MVP, une première version et tu souhaites aller plus loin ?'
-  answer: "<p>Oui, tu as tout fait en <strong>no-code low code</strong>, tu as quelques métriques et tu te rends compte qu'il va falloir re-développer ton produit (et c'est normal), alors on est là pour t'aider pour mettre en ligne ta v2.</p>"
+  question: 'Mon MVP en no-code ne suffit plus, que faire ?'
+  answer: '<p>&nbsp;C’est normal ! On t’accompagne pour passer en V2 avec un vrai socle technique.</p>'
 -
-  question: "Vous ne pouvez pas tout développer d''un coup ?"
-  answer: "<p>Exactement ! On privilégie une approche <strong>itérative et progressive</strong>. On commence par les fonctionnalités les plus critiques, on teste, on apprend, puis on développe la suite. C'est plus sûr et plus efficace.</p>"
+  question: 'Je ne peux pas tout développer d’un coup.'
+  answer: '<p>Parfait. On priorise avec toi pour maximiser la valeur sans exploser ton budget.</p>'
 -
-  question: "Vous avez déjà les bases mais rien n''est cohérent ?"
-  answer: "<p>On fait le point sur ce qui existe, on identifie les incohérences et on <strong>restructure votre produit</strong> pour qu'il soit cohérent, utilisable et évolutif. On repart sur de bonnes bases.</p>"
+  question: 'Mon produit numérique existe déjà mais manque de cohérence.'
+  answer: '<p>On remet de l’ordre entre tes idées, les besoins de tes utilisateurs et tes contraintes techniques pour clarifier ta vision produit.</p>'
 
 ----
 
-Cta-title-line1: En savoir
+Cta-title-line1: Envie d'en savoir
 
 ----
 
@@ -188,11 +204,11 @@ Cta-title-line2: plus ?
 
 ----
 
-Cta-subtitle: Explorez notre site
+Cta-subtitle: Le site est là pour ça.
 
 ----
 
-Cta-button1-text: DÉCOUVREZ LE COLLECTIF QUALITYTEAM
+Cta-button1-text: DÉCOUVRIR LE COLLECTIF QUALITYTEAM
 
 ----
 
@@ -200,11 +216,19 @@ Cta-button1-link: about
 
 ----
 
-Cta-button2-text: DÉCOUVREZ NOS RÉALISATIONS
+Cta-button2-text: CONSULTER NOS RÉALISATIONS
 
 ----
 
 Cta-button2-link: portfolio
+
+----
+
+Team-cta-text: Démarrer mon projet !
+
+----
+
+Team-cta-link: https://contact.fr
 
 ----
 

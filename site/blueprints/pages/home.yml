@@ -22,10 +22,28 @@ sections:
         width: 1/2
         help: "Image de fond pour la section hero"
 
+      hero_description:
+        label: Description hero
+        type: writer
+        width: 1
+        help: "Description de la section hero"
+
+      hero_button_text:
+        label: Texte bouton hero
+        type: text
+        width: 1/2
+        help: "Texte du bouton hero"
+
+      hero_button_link:
+        label: Lien bouton hero
+        type: text
+        width: 1/2
+        help: "Lien du bouton hero"
+
       # Companies Section
       companies_title:
         label: Titre section entreprises
-        type: text
+        type: writer
         width: 1/2
         help: "Titre de la section entreprises"
 
@@ -40,6 +58,12 @@ sections:
           template: image
         width: 1/2
         help: "Logos des entreprises partenaires"
+
+      problem_title:
+        label: Titre problématiques
+        type: writer
+        width: 1/2
+        help: "Titre de la section problématiques"
 
       # Problem Section
       problem_items:
@@ -95,7 +119,6 @@ sections:
         width: 1/3
         help: "Lien du bouton MVP"
 
-      # Team Section
       team_text:
         label: Texte équipe
         type: text

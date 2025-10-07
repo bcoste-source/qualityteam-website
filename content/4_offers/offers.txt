@@ -19,15 +19,15 @@ Products:
 -
   title: '<p><strong><em>Product</em></strong><em> Starter</em></p>'
   description: '<p>Accompagnement en <strong>30 heures</strong> pour passer de l’idée à un proto comportant un max de valeur orienté produit.</p>'
-  link: product-starter
+  link: []
 -
   title: '<p><strong><em>IA</em></strong><em> Développement</em></p>'
   description: '<p>Une itération de <strong>5 jours</strong>, permettant de passer d’un proto bien ficelé à une première version testable.</p>'
-  link: ai-developpement
+  link: []
 -
   title: '<p><strong><em>Prestation</em></strong><em> sur-mesure</em></p>'
   description: '<p>Parce chaque projet n’a pas les mêmes besoins, UX, Dev, Product et pas la même maturité. Nous avons une offre <strong>sur mesure</strong> pour votre accompagner au mieux.</p>'
-  link: prestation-sur-mesure
+  link: []
 
 ----
 

@@ -2,10 +2,11 @@
 
 <section class="background-white-with-green-vector">
   <div class="body-padding body-centered">
+    <section class="padding-section-small" />
     <h2 class="text-purple-green">
       <?= $page->section2_title()->kirbytext() ?>
     </h2>
-    <p class="text-green text-small"><?= mb_strtoupper($page->section2_subtitle()->esc(), 'UTF-8') ?></p>
+    <p class="text-green text-small" style="font-weight: bold;"><?= mb_strtoupper($page->section2_subtitle()->esc(), 'UTF-8') ?></p>
 
     <?php if ($page->section2_pairs()->isNotEmpty()): ?>
       <div class="pairs">
@@ -108,5 +109,9 @@
     </div>
   </div>
 </section>
+
+<?php snippet('offers-cards') ?>
+
+<section class="padding-section" />
 
 <?php snippet('footer') ?>

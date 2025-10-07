@@ -93,4 +93,6 @@
   <section class="padding-section" />
 </section>
 
+<?php snippet('offers-cards') ?>
+
 <?php snippet('footer') ?>

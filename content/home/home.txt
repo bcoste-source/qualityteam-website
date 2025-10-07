@@ -87,7 +87,7 @@ Method-steps:
 
 ----
 
-Accompaniment-title: Avec notre accompagnement Product Starter vous repartirez avec :
+Accompaniment-title: <p>Avec notre accompagnement <strong>Product Starter</strong> </p><p>vous repartirez avec :</p>
 
 ----
 

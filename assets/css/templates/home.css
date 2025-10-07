@@ -282,6 +282,7 @@
 .step-title {
   margin-bottom: 1rem;
   font-style: italic;
+  text-align: left;
 }
 
 .step-description {

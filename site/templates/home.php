@@ -47,7 +47,7 @@
 
     <section class="padding-section" />
     <img class="spot" src="/assets/images/spots/green-spot-1.png">
-    <section class="padding-section" />
+    <section class="padding-section-small" />
 
     <!-- Problem Section -->
     <?php if ($page->problem_items()->isNotEmpty()): ?>
@@ -174,7 +174,7 @@
   <?php if ($page->accompaniment_title()->isNotEmpty()): ?>
     <section class="accompaniment-section">
       <div class="accompaniment-header">
-        <h2 class="text-white"><?= $page->accompaniment_title()->esc() ?></h2>
+        <h3 class="text-white-green"><?= $page->accompaniment_title()->kirbytext() ?></h3>
       </div>
 
       <?php if ($page->accompaniment_items()->isNotEmpty()): ?>

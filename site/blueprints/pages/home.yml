@@ -145,7 +145,7 @@ sections:
       # Accompaniment Section
       accompaniment_title:
         label: Titre accompagnement
-        type: text
+        type: writer
         width: 1
         help: "Titre de la section accompagnement"
 

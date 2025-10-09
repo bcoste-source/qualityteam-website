@@ -661,3 +661,9 @@ hr {
 .hover-animation-rotate:hover {
   transform: rotate(3deg) scale(1.05);
 }
+
+.page-subtitle {
+  letter-spacing: .08em;
+  font-weight: 600;
+  text-transform: uppercase;
+}

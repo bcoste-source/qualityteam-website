@@ -4,7 +4,7 @@
   <div class="body-padding body-centered">
 
     <?php if ($page->about_subtitle()->isNotEmpty()): ?>
-      <p class="text-green text-small" style="text-transform: uppercase; letter-spacing:.08em; font-weight:600; margin:0 0 1rem 0;">
+      <p class="text-green text-small page-subtitle">
         <?= mb_strtoupper($page->about_subtitle()->esc(), 'UTF-8') ?>
       </p>
     <?php endif ?>

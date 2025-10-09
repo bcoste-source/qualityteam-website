@@ -9,10 +9,12 @@
     <?php endif ?>
 
     <?php if ($page->hero_subtitle()->isNotEmpty()): ?>
-      <p class="text-green text-small" style="text-transform: uppercase; letter-spacing:.08em; font-weight:600; margin:1rem ;">
+      <p class="text-green text-small page-subtitle">
         <?= mb_strtoupper($page->hero_subtitle()->esc(), 'UTF-8') ?>
       </p>
     <?php endif ?>
+
+    <section class="padding-section-small" />
 
     <?php if ($page->hero_paragraph1()->isNotEmpty()): ?>
       <div class="text-white" style="max-width:52rem; margin:0 auto;">

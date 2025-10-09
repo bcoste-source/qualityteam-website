@@ -6,7 +6,7 @@
 
     <h2 class="text-white-purple"><?= $page->ai_title()->kirbytext() ?></h2>
 
-    <p class="text-purple text-small" style="margin: 0; font-weight: 600;">
+    <p class="text-purple text-small page-subtitle">
       <?= mb_strtoupper($page->ai_subtitle()->esc(), 'UTF-8') ?>
     </p>
 

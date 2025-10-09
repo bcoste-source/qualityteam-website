@@ -6,7 +6,7 @@
     <h2 class="text-purple-green">
       <?= $page->section2_title()->kirbytext() ?>
     </h2>
-    <p class="text-green text-small" style="font-weight: bold;"><?= mb_strtoupper($page->section2_subtitle()->esc(), 'UTF-8') ?></p>
+    <p class="text-green text-small page-subtitle"><?= mb_strtoupper($page->section2_subtitle()->esc(), 'UTF-8') ?></p>
 
     <section class="padding-section-small" />
     <div class="text-purple-black" style="text-align: left;">
@@ -141,9 +141,10 @@
       <?php endif ?>
     </div>
   </div>
+
+  <?php snippet('offers-cards') ?>
 </section>
 
-<?php snippet('offers-cards') ?>
 
 <section class="padding-section" />
 

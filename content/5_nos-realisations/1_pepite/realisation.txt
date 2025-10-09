@@ -1,0 +1,41 @@
+Title: Pépite
+
+----
+
+Realisation-title: <p>Pépite - <strong>Valentine Bono</strong> et le <em>recrutement en restauration</em></p>
+
+----
+
+Realisation-description: <p>Contexte &amp; enjeux : <strong>Les défis du recrutement</strong> en restauration indépendante Dans le secteur de la <strong>restauration à Bordeaux</strong>, le recrutement est devenu un casse-tête.  Valentine Bono, gérante d’un établissement engagé dans une démarche humaine et durable, faisait face à des problématiques récurrentes</p>
+
+----
+
+Realisation-content: <p>Contexte &amp; enjeux : Les défis du recrutement en restauration indépendante</p><p><br>Dans le secteur de la restauration à Bordeaux, le recrutement est devenu un casse-tête.  Valentine Bono, gérante d’un établissement engagé dans une démarche humaine et durable, faisait face à des problématiques récurrentes :<br>Des profils inadaptés aux valeurs de l’établissement<br>Un processus artisanal et dispersé : entre WhatsApp, annonces papiers, et réseaux sociaux</p><h1>Titre 1</h1><p><br>Des plateformes généralistes inefficaces pour les besoins spécifiques des métiers CHR (Cafés, Hôtels, Restaurants)<br>Une perte de temps considérable à trier, organiser et suivre les candidatures<br>Une équipe non impliquée, et un turn-over élevé</p><p><br>Objectif :<br>Structurer un outil de recrutement sur-mesure, centré sur les usages terrain, pour gagner du temps, améliorer l’expérience candidat, et renforcer l’engagement de l’équipe.<br>Valentine a fait appel à QualityTeam (collectif bordelais spécialisé dans les MVP) pour structurer une vision produit claire et concevoir un prototype fonctionnel en seulement 30 heures.</p><p></p><h2>Contexte &amp; enjeux : Les défis du recrutement en restauration indépendante</h2><p><br>Dans le secteur de la restauration à Bordeaux, le recrutement est devenu un casse-tête.  Valentine Bono, gérante d’un établissement engagé dans une démarche humaine et durable, faisait face à des problématiques récurrentes :<br>Des profils inadaptés aux valeurs de l’établissement<br>Un processus artisanal et dispersé : entre WhatsApp, annonces papiers, et réseaux sociaux</p><p><br>Des plateformes généralistes inefficaces pour les besoins spécifiques des métiers CHR (Cafés, Hôtels, Restaurants)<br>Une perte de temps considérable à trier, organiser et suivre les candidatures<br>Une équipe non impliquée, et un turn-over élevé</p><h2><br>Objectif :</h2><p><br>Structurer un outil de recrutement sur-mesure, centré sur les usages terrain, pour gagner du temps, améliorer l’expérience candidat, et renforcer l’engagement de l’équipe.<br>Valentine a fait appel à QualityTeam (collectif bordelais spécialisé dans les MVP) pour structurer une vision produit claire et concevoir un prototype fonctionnel en seulement 30 heures.</p>
+
+----
+
+Realisation-main-image: - 'file://jtzoy62jfztzlsei'
+
+----
+
+Realisation-gallery:
+
+- 'file://svfuzbhmggr4rrtb'
+- 'file://2cf7jo0fqw2h2fnx'
+- 'file://traotsiwfibg6vnu'
+
+----
+
+Realisation-date: 2025-10-01
+
+----
+
+Realisation-responsibles:
+
+-
+  name: 'Benoit Coste'
+  image: []
+
+----
+
+Uuid: ab7wxhsppgdtmfab

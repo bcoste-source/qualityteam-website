@@ -21,7 +21,7 @@
     <?php if ($page->about_gallery()->isNotEmpty()): ?>
       <div class="about-gallery">
         <?php foreach ($page->about_gallery()->toFiles() as $img): ?>
-          <?= $img->html(['alt' => '']) ?>
+          <?= $img->html(['alt' => '', 'class' => 'hover-animation-rotate']) ?>
         <?php endforeach ?>
       </div>
     <?php endif ?>
@@ -49,7 +49,7 @@
           <div class="teammate <?= $idx % 2 === 0 ? 'is-even' : 'is-odd' ?>">
             <div class="teammate-image">
               <?php if ($t->image()->isNotEmpty()): ?>
-                <?= $t->image()->toFile()->html(['alt' => $t->firstname()->esc()]) ?>
+                <?= $t->image()->toFile()->html(['alt' => $t->firstname()->esc(), 'class' => 'hover-animation-rotate']) ?>
               <?php endif ?>
             </div>
             <div class="teammate-content">

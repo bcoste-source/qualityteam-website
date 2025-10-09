@@ -1,0 +1,31 @@
+title: Nos Réalisations
+icon: 🎯
+
+options:
+  changeStatus: true
+
+sections:
+  content:
+    type: fields
+    fields:
+      # Section Hero
+      hero_title:
+        label: Titre principal
+        type: writer
+      hero_subtitle:
+        label: Sous-titre
+        type: text
+      hero_paragraph1:
+        label: Premier paragraphe
+        type: writer
+      hero_paragraph2:
+        label: Deuxième paragraphe
+        type: writer
+
+children:
+  type: pages
+  template: realisation
+  sortBy: date desc
+  create:
+    - realisation
+  text: "{{ realisation_title }}"

@@ -139,7 +139,7 @@
   transition: transform 0.3s ease;
 }
 
-.btn-mvp:hover {
+.btn-mvp img:hover {
   cursor: pointer;
   transform: scale(1.05);
 }

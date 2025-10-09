@@ -47,6 +47,7 @@ columns:
           - about
           - home
           - offers
+          - nos-realisations
           - default
 
       offers_children:
@@ -61,3 +62,12 @@ columns:
           - product-starter
           - ai-developpement
           - prestation-sur-mesure
+
+      realisations_children:
+        type: pages
+        label: Réalisations
+        parent: site.find("nos-realisations")
+        templates:
+          - realisation
+        create:
+          - realisation

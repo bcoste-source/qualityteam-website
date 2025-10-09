@@ -1,0 +1,52 @@
+title: Réalisation
+icon: 📋
+
+options:
+  changeStatus: true
+
+sections:
+  content:
+    type: fields
+    fields:
+      realisation_title:
+        label: Titre
+        type: writer
+      realisation_description:
+        label: Description courte
+        type: writer
+      realisation_content:
+        label: Contenu détaillé
+        type: writer
+      realisation_main_image:
+        label: Image principale
+        type: files
+        multiple: false
+        uploads:
+          template: image
+        preset: gallery
+      realisation_gallery:
+        label: Galerie d'images
+        type: files
+        multiple: true
+        layout: cards
+        image:
+          cover: true
+        uploads:
+          template: image
+        preset: gallery
+      realisation_date:
+        label: Date
+        type: date
+      realisation_responsibles:
+        label: Responsables
+        type: structure
+        fields:
+          name:
+            label: Nom
+            type: text
+          image:
+            label: Photo
+            type: files
+            multiple: false
+            uploads:
+              template: image

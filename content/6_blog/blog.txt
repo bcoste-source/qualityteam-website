@@ -1,0 +1,21 @@
+Title: Le Blog
+
+----
+
+Hero-title: <p>Le <strong>Blog</strong></p>
+
+----
+
+Hero-subtitle: Les insights de QualityTeam en détail
+
+----
+
+Hero-paragraph: <p>Ici vous retrouverez les dernières nouvelles sur le numérique bordelais, les technologies, les ressources <strong>de QualityTeam</strong>.</p>
+
+----
+
+Search-placeholder: Rechercher un article, une news...
+
+----
+
+Uuid: blog-main

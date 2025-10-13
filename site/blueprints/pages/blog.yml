@@ -1,0 +1,43 @@
+title: Blog
+icon: 📰
+
+options:
+  changeStatus: true
+
+sections:
+  content:
+    type: fields
+    fields:
+      hero_title:
+        label: Titre principal
+        type: writer
+      hero_subtitle:
+        label: Sous-titre
+        type: text
+      hero_paragraph:
+        label: Paragraphe d'introduction
+        type: writer
+      search_placeholder:
+        label: Placeholder de recherche
+        type: text
+        default: Rechercher un article, une news...
+
+  articles:
+    type: pages
+    label: Articles
+    info: "{{ page.date.toDate('d/m/Y') }} - {{ page.views }} vues"
+    image:
+      cover: true
+      ratio: 3/2
+    sortBy: priority desc, date desc
+    template: article
+    empty: Aucun article pour le moment
+    layout: cards
+
+children:
+  type: pages
+  template: article
+  sortBy: priority desc, date desc
+  create:
+    - article
+  text: "{{ title }}"

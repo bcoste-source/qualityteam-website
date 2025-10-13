@@ -19,6 +19,8 @@
   display: grid;
   grid-template-columns: 1fr 1fr;
   min-height: 300px;
+  text-decoration: none;
+  color: inherit;
 }
 
 .realisation-card:hover {

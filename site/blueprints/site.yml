@@ -6,7 +6,7 @@
 
 # The layout of this form has two columns:
 columns:
-  - width: 1/2
+  - width: 1
     sections:
       logo:
         type: fields
@@ -22,7 +22,7 @@ columns:
               template: image
 
   # The second column has two sections, `notes` and `pages`
-  - width: 1/2
+  - width: 1
     sections:
       # The `pages` pages section shows other main pages of the site
       # Using the `templates` option, we limit which types of pages are shown
@@ -37,6 +37,7 @@ columns:
           - home
           - offers
           - nos-realisations
+          - blog
           - default
 
       offers_children:
@@ -60,3 +61,13 @@ columns:
           - realisation
         create:
           - realisation
+
+      blog_children:
+        type: pages
+        label: Articles de Blog
+        parent: site.find("blog")
+        templates:
+          - article
+        create:
+          - article
+        sortBy: priority desc, date desc

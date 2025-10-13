@@ -6,6 +6,7 @@
 @import url('templates/about.css');
 @import url('templates/nos-realisations.css');
 @import url('templates/realisation.css');
+@import url('templates/blog.css');
 
 * {
   margin: 0;

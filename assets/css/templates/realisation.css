@@ -44,6 +44,31 @@
   max-width: 52rem;
   margin: 0 auto;
   line-height: 1.7;
+  text-align: justify;
+}
+.realisation-content h1,
+.realisation-content h2,
+.realisation-content h3,
+.realisation-content h4,
+.realisation-content h5,
+.realisation-content h6 {
+  margin: 1.5rem 0 1rem 0;
+}
+
+.realisation-content h1,
+.realisation-content h2 {
+  color: var(--color-code-purple);
+}
+
+.realisation-content h3,
+.realisation-content h4,
+.realisation-content h5,
+.realisation-content h6 {
+  color: var(--color-code-green);
+}
+
+.realisation-content p {
+  margin-bottom: 1.5rem;
 }
 
 .realisation-content strong {

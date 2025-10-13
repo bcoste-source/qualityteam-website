@@ -59,7 +59,7 @@
     <?php if ($paginatedRealisations->count() > 0): ?>
       <div class="realisations-grid">
         <?php foreach ($paginatedRealisations as $realisation): ?>
-          <div class="realisation-card">
+          <a class="realisation-card" href="<?= $realisation->url() ?>">
             <div class="realisation-image">
               <?php if ($realisation->realisation_main_image()->isNotEmpty()): ?>
                 <?= $realisation->realisation_main_image()->toFile()->html(['alt' => $realisation->realisation_title()->esc()]) ?>
@@ -99,11 +99,9 @@
                 <?php endif ?>
               </div>
 
-              <a href="<?= $realisation->url() ?>" class="realisation-link">
-                Lire la suite →
-              </a>
+              <span class="realisation-link">Lire la suite →</span>
             </div>
-          </div>
+          </a>
         <?php endforeach ?>
       </div>
 

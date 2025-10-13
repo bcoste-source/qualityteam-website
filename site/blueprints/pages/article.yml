@@ -1,0 +1,43 @@
+title: Article
+icon: 📝
+
+options:
+  changeStatus: true
+
+sections:
+  content:
+    type: fields
+    fields:
+      main_image:
+        label: Image principale
+        type: files
+        multiple: false
+        uploads:
+          template: image
+        preset: gallery
+      title:
+        label: Titre
+        type: writer
+      description:
+        label: Description
+        type: writer
+      text:
+        label: Contenu
+        type: writer
+      date:
+        label: Date
+        type: date
+      priority:
+        label: Priorité
+        type: number
+        width: 1/2
+      views:
+        label: Nombre de vues
+        type: number
+        width: 1/2
+        default: 0
+        help: Ce champ est mis à jour automatiquement
+      tags:
+        label: Tags
+        type: tags
+        help: Séparez les tags par des virgules

@@ -11,7 +11,7 @@ sections:
     fields:
       # Hero Section
       hero_image:
-        label: Image de fond hero
+        label: Image de fond hero (Desktop)
         type: files
         multiple: false
         layout: grid
@@ -20,7 +20,19 @@ sections:
         uploads:
           template: image
         width: 1/2
-        help: "Image de fond pour la section hero"
+        help: "Image de fond pour la section hero (desktop)"
+
+      hero_image_mobile:
+        label: Image de fond hero (Mobile)
+        type: files
+        multiple: false
+        layout: grid
+        image:
+          cover: true
+        uploads:
+          template: image
+        width: 1/2
+        help: "Image de fond pour la section hero (mobile, optionnel)"
 
       hero_description:
         label: Description hero

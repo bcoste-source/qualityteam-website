@@ -28,16 +28,16 @@ function highlightText($text, $query)
 snippet('header');
 ?>
 
-<section class="purple-section">
+<section class="pink-section">
   <div class="body-padding body-centered">
     <section class="padding-section" />
 
     <?php if ($page->hero_title()->isNotEmpty()): ?>
-      <h1 class="text-white-green"><?= $page->hero_title()->kirbytext() ?></h1>
+      <h1 class="text-white-purple"><?= $page->hero_title()->kirbytext() ?></h1>
     <?php endif ?>
 
     <?php if ($page->hero_subtitle()->isNotEmpty()): ?>
-      <p class="text-green text-small page-subtitle">
+      <p class="text-purple text-small page-subtitle">
         <?= mb_strtoupper($page->hero_subtitle()->esc(), 'UTF-8') ?>
       </p>
     <?php endif ?>

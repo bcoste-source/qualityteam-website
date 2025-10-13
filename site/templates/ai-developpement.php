@@ -2,7 +2,7 @@
 
 <section class="green-section">
   <div class="body-padding body-centered">
-    <section class="padding-section-small" />
+    <section class="padding-section" />
 
     <h2 class="text-white-purple"><?= $page->ai_title()->kirbytext() ?></h2>
 
@@ -10,14 +10,14 @@
       <?= mb_strtoupper($page->ai_subtitle()->esc(), 'UTF-8') ?>
     </p>
 
-    <section class="padding-section-small" />
+    <section class="padding-section" />
 
-    <div style="display: flex; align-items: center; justify-content: center; gap: 1rem;">
-      <img src="/assets/images/spots/purple-flash-left.png" alt="Flash violet gauche" style="height: 32px; width: auto; margin-right: 1rem;">
-      <div class="text-white">
+    <div class="offer-intro-flex">
+      <img src="/assets/images/spots/purple-flash-left.png" alt="Flash violet gauche" class="offer-intro-flash">
+      <div class="text-white offer-content-text" style="margin-bottom: 0;">
         <?= $page->ai_paragraph1()->kirbytext() ?>
       </div>
-      <img src="/assets/images/spots/purple-flash-right.png" alt="Flash violet droite" style="height: 32px; width: auto; margin-left: 1rem;">
+      <img src="/assets/images/spots/purple-flash-right.png" alt="Flash violet droite" class="offer-intro-flash">
     </div>
 
     <section class="padding-section" />
@@ -28,17 +28,18 @@
       </div>
     <?php endif ?>
 
-    <div class="text-white-purple" style="text-align: left;">
+    <div class="text-white-purple offer-content-text">
       <?= $page->ai_paragraph2()->kirbytext() ?>
     </div>
 
-    <section class="padding-section" />
+    <section class="padding-section-small" />
 
     <?php if ($page->ai_why_title()->isNotEmpty()): ?>
       <div class="offer-title-container">
         <h4 class="offer-question-title"><?= $page->ai_why_title()->esc() ?></h4>
       </div>
     <?php endif ?>
+
 
     <?php if ($page->ai_why_items()->isNotEmpty()): ?>
       <ul class="why-list">
@@ -55,14 +56,11 @@
       </ul>
     <?php endif ?>
 
-
-
-    <div class="text-white-purple" style="text-align: left;">
+    <div class="text-white-purple offer-content-text">
       <?= $page->ai_why_paragraph()->kirbytext() ?>
     </div>
 
-
-    <section class="padding-section" />
+    <section class="padding-section-small" />
 
     <?php if ($page->ai_how_title()->isNotEmpty()): ?>
       <div class="offer-title-container">
@@ -70,12 +68,10 @@
       </div>
     <?php endif ?>
 
-
-    <div class="text-white-purple" style="text-align: left;">
+    <div class="text-white-purple offer-content-text">
       <?= $page->ai_how_paragraph()->kirbytext() ?>
     </div>
 
-    <section class="padding-section-small" />
 
     <?php $steps = $page->ai_how_steps()->toStructure();
     $total = $steps->count(); ?>
@@ -96,7 +92,7 @@
 
     <section class="padding-section-small" />
 
-    <div class="deliverables text-white">
+    <div class="deliverables text-white offer-content-text">
       <?= $page->ai_benefits_intro()->kirbytext() ?>
       <?php if ($page->ai_benefits()->isNotEmpty()): ?>
         <ul>
@@ -107,15 +103,15 @@
       <?php endif ?>
     </div>
 
-    <section class="padding-section" />
+    <section class="padding-section-small" />
 
     <div class="ready">
-      <div class="text-white-purple">
+      <div class="text-white-purple offer-content-text">
         <?= $page->ai_ready_text()->kirbytext() ?>
       </div>
-      <section class="padding-section-small" />
+      <section class="padding-section" />
       <?php if ($page->ai_cta_text()->isNotEmpty()): ?>
-        <button class="btn-purple text-white-green"><?= mb_strtoupper($page->ai_cta_text()->kirbytext()) ?></button>
+        <a href="#contact" class="btn-purple text-white-green"><?= mb_strtoupper($page->ai_cta_text()->kirbytext()) ?></a>
       <?php endif ?>
     </div>
   </div>

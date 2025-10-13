@@ -14,49 +14,67 @@
 }
 
 /* ===== HERO SECTION ===== */
-/* // TODO: Uncomment this when we have a hero image */
-
-/* .hero {
+.hero {
   position: relative;
-  min-height: 100vh;
+  height: 80vh;
   display: flex;
   align-items: center;
   justify-content: center;
-} */
+  overflow: hidden;
+}
 
-/* .hero-bg {
+.hero-bg {
   position: absolute;
   top: 0;
   left: 0;
   width: 100%;
   height: 100%;
   z-index: -1;
+  transition: opacity 0.3s ease;
 }
 
 .hero-bg img {
   width: 100%;
   height: 100%;
   object-fit: cover;
-} */
+  transition: transform 0.6s ease;
+}
 
-/* .hero-bg {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  z-index: -1;
-} */
+.hero:hover .hero-bg img {
+  transform: scale(1.05);
+}
+
+.hero-bg-mobile {
+  display: none;
+}
 
 .hero-description {
   text-align: left;
   max-width: 1000px;
   margin: 0 auto;
+  line-height: 1.8;
+}
+
+.hero-description p {
+  margin-bottom: 1.5rem;
 }
 
 /* ===== COMPANIES SECTION ===== */
 .companies {
   text-align: center;
+  margin: 2rem 0;
+}
+
+.companies .text-purple-black {
+  line-height: 1.8;
+}
+
+.companies .text-purple-black h3 {
+  margin-bottom: 1rem;
+}
+
+.companies .text-purple-black p {
+  margin-top: 0.5rem;
 }
 
 .companies-logo {
@@ -75,11 +93,23 @@
   height: auto;
   object-fit: contain;
   display: block;
+  transition: transform 0.3s ease, opacity 0.3s ease;
+  opacity: 0.85;
+}
+
+.companies-logo img:hover {
+  transform: scale(1.1);
+  opacity: 1;
 }
 
 /* ===== PROBLEM SECTION ===== */
 .problem-section {
   margin: 3rem 0;
+}
+
+.problem-title {
+  margin-bottom: 2rem;
+  line-height: 1.6;
 }
 
 .problem-grid {
@@ -94,6 +124,14 @@
   align-items: center;
   text-align: center;
   gap: 1rem;
+  transition: transform 0.3s ease;
+  padding: 1rem;
+  border-radius: 12px;
+}
+
+.problem-item:hover {
+  transform: translateY(-8px);
+  background: rgba(53, 196, 117, 0.05);
 }
 
 .problem-icon {
@@ -102,6 +140,11 @@
   display: flex;
   align-items: center;
   justify-content: center;
+  transition: transform 0.3s ease;
+}
+
+.problem-item:hover .problem-icon {
+  transform: scale(1.15) rotate(5deg);
 }
 
 .problem-icon img {
@@ -136,32 +179,37 @@
   width: 100%;
   height: auto;
   object-fit: contain;
-  transition: transform 0.3s ease;
+  transition: transform 0.4s ease, filter 0.3s ease;
+  filter: drop-shadow(0 8px 24px rgba(72, 62, 184, 0.15));
 }
 
-.btn-mvp img:hover {
+.btn-mvp:hover img {
   cursor: pointer;
-  transform: scale(1.05);
+  transform: scale(1.08);
+  filter: drop-shadow(0 12px 32px rgba(72, 62, 184, 0.25));
 }
 
 /* ===== CONSTRUCTION SECTION ===== */
 .construction {
   text-align: center;
+  margin: 2rem 0;
 }
 
 .construction .h2 {
   font-weight: 800;
   letter-spacing: .01em;
+  margin-bottom: 1rem;
 }
 
 .construction-text {
   margin-top: 0.5rem;
   font-size: 4rem;
+  line-height: 1.3;
 }
 
 .construction-text p {
   font-weight: 800;
-  line-height: 1.2;
+  line-height: 1.3;
 }
 
 /* strong is the highlight color (green) via colors.css */
@@ -173,7 +221,7 @@
 .team-section {
   text-align: center;
   max-width: 600px;
-  margin: 0 auto;
+  margin: 2rem auto;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -181,6 +229,12 @@
 
 .team-text,
 .example-text {
+  margin-bottom: 1.5rem;
+  line-height: 1.8;
+}
+
+.team-text p,
+.example-text p {
   margin-bottom: 1rem;
 }
 
@@ -188,6 +242,8 @@
   width: 120px;
   height: auto;
   display: block;
+  animation: float 6s ease-in-out infinite;
+  animation-delay: 1s;
 }
 
 /* ===== TRANSITION ELEMENTS ===== */
@@ -225,6 +281,19 @@
   object-fit: cover;
   position: relative;
   top: -20px;
+  animation: rotate-hourglass 3s ease-in-out infinite;
+}
+
+@keyframes rotate-hourglass {
+  0%, 100% {
+    transform: rotate(0deg);
+  }
+  25% {
+    transform: rotate(5deg);
+  }
+  75% {
+    transform: rotate(-5deg);
+  }
 }
 
 .method-header {
@@ -259,7 +328,18 @@
 
 .purple-arrow {
   width: 32px;
+  padding-right: 1rem;
   height: auto;
+  animation: bounce 2s ease-in-out infinite;
+}
+
+@keyframes bounce {
+  0%, 100% {
+    transform: translateX(0px);
+  }
+  50% {
+    transform: translateX(10px);
+  }
 }
 
 .method-steps {
@@ -359,6 +439,11 @@
   align-items: center;
   justify-content: center;
   margin-bottom: 0.5rem;
+  transition: transform 0.3s ease;
+}
+
+.accompaniment-item:hover .accompaniment-icon {
+  transform: scale(1.15) rotate(-5deg);
 }
 
 
@@ -404,13 +489,16 @@
   letter-spacing: .04em;
   text-transform: uppercase;
   text-decoration: none;
-  transition: transform .15s ease, opacity .15s ease;
+  transition: transform 0.3s ease, box-shadow 0.3s ease, background 0.3s ease;
   box-shadow: 0 4px 24px 0 rgba(72, 62, 184, 0.18);
+  border: 4px solid transparent;
 }
 
 .btn-launch:hover {
-  transform: translateY(-1px);
-  opacity: .95;
+  transform: translateY(-4px) scale(1.02);
+  box-shadow: 0 8px 32px 0 rgba(72, 62, 184, 0.35);
+  background: var(--color-code-purple);
+  border: 4px solid var(--color-white);
 }
 
 .expertise-section {
@@ -452,6 +540,19 @@
   align-items: center;
   justify-content: center;
   margin-top: 0.5rem;
+  transition: transform 0.3s ease;
+}
+
+.expertise-icon:hover {
+  transform: scale(1.1) rotate(10deg);
+}
+
+.expertise-icon img {
+  transition: filter 0.3s ease;
+}
+
+.expertise-icon:hover img {
+  filter: brightness(1.2);
 }
 
 .expertise-text {
@@ -481,10 +582,37 @@
   border-radius: 8px;
   transition: all 0.3s ease;
   margin-bottom: 2rem;
+  position: relative;
+  overflow: hidden;
+  z-index: 1;
+}
+
+.btn-expertise::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: var(--color-white);
+  transition: left 0.3s ease;
+  z-index: -1;
+}
+
+.btn-expertise:hover::before {
+  left: 0;
 }
 
 .btn-expertise:hover {
-  background: var(--color-white);
+  transform: translateY(-2px);
+  color: var(--color-black);
+}
+
+.btn-expertise .arrow {
+  transition: color 0.3s ease;
+}
+
+.btn-expertise:hover .arrow {
   color: var(--color-black);
 }
 
@@ -506,7 +634,11 @@
 .faq-title {
   font-weight: 800;
   margin-bottom: 1rem;
-  line-height: 1.2;
+  line-height: 1.3;
+}
+
+.faq-title span {
+  display: inline-block;
 }
 
 .faq-title-part1 {
@@ -532,6 +664,7 @@
 .faq-item {
   border-bottom: 2px solid var(--color-primary);
   margin-bottom: 0;
+  transition: background 0.3s ease;
 }
 
 .faq-item:nth-child(odd) {
@@ -548,7 +681,8 @@
 }
 
 .faq-question:hover {
-  background: rgba(72, 62, 184, 0.05);
+  background: rgba(72, 62, 184, 0.1);
+  padding-left: 0.5rem;
 }
 
 .faq-number {
@@ -673,12 +807,36 @@
   border-radius: 12px;
   transition: all 0.3s ease;
   letter-spacing: 0.05em;
+  position: relative;
+  overflow: hidden;
+  z-index: 1;
+}
+
+.btn-green::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: var(--color-white);
+  transition: left 0.3s ease;
+  z-index: -1;
+}
+
+.btn-green:hover::before {
+  left: 0;
 }
 
 .btn-green:hover {
-  background: var(--color-white);
   color: var(--color-secondary);
-  transform: translateY(-2px);
+  transform: translateY(-4px) scale(1.02);
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.2);
+}
+
+.btn-green span {
+  position: relative;
+  z-index: 1;
 }
 
 .btn-green .arrow {
@@ -691,6 +849,15 @@
   height: auto;
   object-fit: contain;
   z-index: 5;
+  transition: transform 0.3s ease;
+}
+
+.green-button-container:hover .pink-arrow-left {
+  transform: translateX(-8px);
+}
+
+.green-button-container:hover .pink-arrow-right {
+  transform: translateX(8px);
 }
 
 .pink-arrow-left {
@@ -723,17 +890,36 @@
   display: flex;
   align-items: center;
   justify-content: center;
+  animation: pulse 2s ease-in-out infinite;
 }
 
 .scroll-top-btn:hover {
-  transform: translateY(-2px);
-  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.2);
+  transform: translateY(-4px) scale(1.1);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.25);
+  animation: none;
+}
+
+@keyframes pulse {
+  0%, 100% {
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  }
+  50% {
+    box-shadow: 0 4px 20px rgba(53, 196, 117, 0.4);
+  }
 }
 
 /* ===== RESPONSIVE DESIGN ===== */
 
 /* Tablet */
 @media (max-width: 900px) {
+  .hero-bg-desktop {
+    display: none;
+  }
+
+  .hero-bg-mobile {
+    display: block;
+  }
+
   .problem-grid {
     grid-template-columns: repeat(2, 1fr);
   }
@@ -814,6 +1000,21 @@
 
 /* Mobile */
 @media (max-width: 768px) {
+  .hero {
+    min-height: 40vh;
+  }
+
+  .hero-description {
+    padding: 1rem;
+  }
+
+  .construction-text {
+    font-size: 2.5rem;
+  }
+
+  .problem-item {
+    padding: 1.5rem 1rem;
+  }
 
   .expertise-content {
     flex-direction: column;
@@ -826,7 +1027,6 @@
     gap: 0.5rem;
   }
 
-
   .faq-answer-content {
     gap: 0.5rem;
     padding: 0 0 1rem 0;
@@ -834,6 +1034,11 @@
 
   .btn-green {
     padding: 1rem 1.5rem;
+  }
+
+  .btn-launch {
+    padding: 0 3rem;
+    min-height: 48px;
   }
 
   .pink-arrow-left,

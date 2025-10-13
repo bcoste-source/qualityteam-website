@@ -2,14 +2,14 @@
 
 <section class="background-white-with-green-vector">
   <div class="body-padding body-centered">
-    <section class="padding-section-small" />
+    <section class="padding-section" />
     <h2 class="text-purple-green">
       <?= $page->section2_title()->kirbytext() ?>
     </h2>
     <p class="text-green text-small page-subtitle"><?= mb_strtoupper($page->section2_subtitle()->esc(), 'UTF-8') ?></p>
 
-    <section class="padding-section-small" />
-    <div class="text-purple-black" style="text-align: left;">
+    <section class="padding-section" />
+    <div class="text-purple-black offer-content-text">
       <?= $page->product_starter_paragraph()->kirbytext() ?>
     </div>
     <section class="padding-section" />
@@ -39,18 +39,15 @@
       <?php endif ?>
     </div>
 
-
-    <section class="padding-section-small" />
-
-    <div class="text-purple-black" style="text-align: left;">
+    <div class="text-purple-black offer-content-text">
       <?= $page->idea_paragraph()->kirbytext() ?>
     </div>
 
     <section class="padding-section-small" />
 
     <?php if ($page->section2_transform()->isNotEmpty()): ?>
-      <div>
-        <h3 style="margin: 0;">
+      <div style="margin: 2rem 0;">
+        <h3 style="margin: 0; display: flex; align-items: center; justify-content: center;">
           <img src="/assets/images/spots/green-arrow-to-right.png" alt="Flèche verte vers la gauche" style="height: 20px; width: auto; margin-right: 0.5rem;">
           <?= $page->section2_transform()->esc() ?>
         </h3>
@@ -59,11 +56,10 @@
 
     <section class="padding-section" />
 
-    <div class="text-purple-black" style="text-align: left;">
+    <div class="text-purple-black offer-content-text">
       <?= $page->section2_purple_black()->kirbytext() ?>
     </div>
 
-    <section class="padding-section" />
 
     <?php if ($page->why_title()->isNotEmpty()): ?>
       <div class="offer-title-container">
@@ -80,11 +76,11 @@
     <?php endif ?>
 
 
-    <div class="text-purple-black" style="text-align: left;">
+    <div class="text-purple-black offer-content-text">
       <?= $page->results_paragraph()->kirbytext() ?>
     </div>
 
-    <section class="padding-section" />
+    <section class="padding-section-small" />
 
     <?php if ($page->how_title()->isNotEmpty()): ?>
       <div class="offer-title-container">
@@ -94,7 +90,7 @@
 
     <section class="padding-section-small" />
 
-    <div class="text-purple-black">
+    <div class="text-purple-black offer-content-text">
       <?= $page->how_paragraph()->kirbytext() ?>
     </div>
 
@@ -113,14 +109,11 @@
 
     <section class="padding-section" />
 
-
-    <div style="text-align: left;">
+    <div class="offer-content-text">
       <?= $page->deliverables_intro()->kirbytext() ?>
     </div>
 
-
-
-    <div class="deliverables">
+    <div class="deliverables offer-content-text">
       <?php if ($page->deliverables()->isNotEmpty()): ?>
         <ul>
           <?php foreach ($page->deliverables()->toStructure() as $d): ?>
@@ -133,11 +126,11 @@
     <section class="padding-section" />
 
     <div class="ready">
-      <div class="text-purple-black"><?= $page->ready_text()->kirbytext() ?></div>
+      <div class="text-purple-black offer-content-text"><?= $page->ready_text()->kirbytext() ?></div>
       <section class="padding-section" />
 
       <?php if ($page->cta_text()->isNotEmpty()): ?>
-        <button class="btn-purple"><?= $page->cta_text()->esc() ?></button>
+        <a href="#contact" class="btn-purple"><?= $page->cta_text()->esc() ?></a>
       <?php endif ?>
     </div>
   </div>

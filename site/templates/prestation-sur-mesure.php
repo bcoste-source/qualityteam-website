@@ -2,33 +2,31 @@
 
 <section class="purple-section">
   <div class="body-padding body-centered">
-    <section class="padding-section-small" />
+    <section class="padding-section" />
 
-    <h2 class="text-black-green"><?= $page->custom_title()->kirbytext() ?></h2>
-    <p class="text-green text-small" style="text-transform: uppercase; letter-spacing:.08em; font-weight:600; margin:0;">
-      <?= $page->custom_tagline()->esc() ?>
+    <h2 class="text-white-green"><?= $page->custom_title()->kirbytext() ?></h2>
+    <p class="text-green text-small page-subtitle">
+      <?= mb_strtoupper($page->custom_tagline()->esc(), 'UTF-8') ?>
     </p>
 
-    <section class="padding-section-small" />
+    <section class="padding-section" />
 
-    <div class="text-white-pink" style="text-align: left;">
+    <div class="text-white-pink offer-content-text">
       <?= $page->custom_intro_emphase()->kirbytext() ?>
     </div>
 
-    <div class="padding-section-small" />
+    <section class="padding-section" />
 
     <div class="adapt-text">
       <strong><?= $page->custom_intro_adapt_text()->esc() ?></strong>
       <img class="wave-spot-large" src="/assets/images/spots/purple-wave-spot-double.png" alt="Spot vert équipe">
     </div>
 
-    <div class="padding-section-small" />
+    <section class="padding-section" />
 
-
-    <div class="text-white-pink" style="text-align: left;">
+    <div class="text-white-pink offer-content-text">
       <?= $page->custom_intro_text()->kirbytext() ?>
     </div>
-
 
     <section class="padding-section" />
 
@@ -38,9 +36,9 @@
       </div>
     <?php endif ?>
 
-    <section class="padding-section-small" />
+    <section class="padding-section" />
 
-    <div class="text-white-pink" style="text-align: left;">
+    <div class="text-white-pink offer-content-text">
       <?= $page->custom_why_paragraph()->kirbytext() ?>
     </div>
 
@@ -60,11 +58,11 @@
     <?php endif ?>
 
 
-    <div class="text-white-pink" style="text-align: left;">
+    <div class="text-white-pink offer-content-text">
       <?= $page->custom_why_paragraph_end()->kirbytext() ?>
     </div>
 
-    <section class="padding-section-small" />
+    <section class="padding-section" />
 
     <?php if ($page->custom_how_title()->isNotEmpty()): ?>
       <div class="offer-title-container">
@@ -72,23 +70,23 @@
       </div>
     <?php endif ?>
 
-    <section class="padding-section-small" />
+    <section class="padding-section" />
 
-    <div class="text-white-pink" style="text-align: left;">
+    <div class="text-white-pink offer-content-text">
       <?= $page->custom_how_paragraph()->kirbytext() ?>
     </div>
 
     <section class="padding-section" />
 
-    <div class="text-white-pink" style="max-width:52rem; margin:1rem auto 0; font-style: italic; opacity:.9;">
+    <div class="text-white-pink offer-content-text" style="font-style: italic; opacity:.9; max-width: 52rem; margin: 0 auto;">
       <?= $page->custom_contact_text()->kirbytext() ?>
     </div>
 
-    <section class="padding-section-small" />
+    <section class="padding-section" />
 
     <div class="ready">
       <?php if ($page->custom_cta_text()->isNotEmpty()): ?>
-        <button class="btn-black text-white-green"><?= mb_strtoupper($page->custom_cta_text()->kirbytext()) ?></button>
+        <a href="#contact" class="btn-black text-white-green"><?= mb_strtoupper($page->custom_cta_text()->kirbytext()) ?></a>
       <?php endif ?>
     </div>
   </div>

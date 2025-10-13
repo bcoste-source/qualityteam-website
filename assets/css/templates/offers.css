@@ -149,7 +149,17 @@
 
 .pair { display: flex; flex-direction: column; align-items: center; text-align: center; gap: 1rem; }
 
-.pair img { width: 70px; height: 70px; object-fit: contain; display: block; }
+.pair img {
+  width: 70px;
+  height: 70px;
+  object-fit: contain;
+  display: block;
+  transition: transform 0.3s ease;
+}
+
+.pair:hover img {
+  transform: scale(1.15) rotate(5deg);
+}
 
 .pair-text { text-align: center; max-width: 300px; }
 
@@ -219,6 +229,7 @@
   display: block;
   margin-left: auto;
   margin-right: auto;
+  animation-delay: 0.5s;
 }
 
 .wave-spot-large {
@@ -228,6 +239,8 @@
   display: block;
   margin-left: auto;
   margin-right: auto;
+  animation: float 6s ease-in-out infinite;
+  animation-delay: 1s;
 }
 
 .offer-question-title {
@@ -249,36 +262,43 @@
   justify-content: flex-start;
 }
 
-.btn-purple {
-  background: var(--color-code-purple);
-  color: var(--color-white);
-  padding: 0.75rem 3rem;
-  border-radius: 0.5rem;
-  cursor: pointer;
-  transition: all 0.3s ease;
-  border: 2px solid var(--color-code-purple);
+/* Boutons définis dans index.css */
+
+/* ===== ESPACEMENT ET CONTENUS HARMONISÉS ===== */
+.offer-content-text {
+  text-align: left;
+  line-height: 1.8;
+  margin-bottom: 2rem;
 }
 
-.btn-purple:hover {
-  background: var(--color-white);
-  color: var(--color-code-purple);
-  border: 2px solid var(--color-code-purple);
+.offer-content-text h1,
+.offer-content-text h2,
+.offer-content-text h3 {
+  margin: 2rem 0 1rem 0;
 }
 
-.btn-black {
-  background: var(--color-black);
-  color: var(--color-white);
-  padding: 0.75rem 3rem;
-  border-radius: 0.5rem;
-  cursor: pointer;
-  transition: all 0.3s ease;
-  border: 2px solid var(--color-black);
+.offer-content-text h1:first-child,
+.offer-content-text h2:first-child,
+.offer-content-text h3:first-child {
+  margin-top: 0;
 }
 
-.btn-black:hover {
-  background: var(--color-white);
-  color: var(--color-black);
-  border: 2px solid var(--color-black);
+.offer-section-spacing {
+  margin: 3rem 0;
+}
+
+.offer-intro-flex {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  margin: 2rem 0;
+}
+
+.offer-intro-flash {
+  height: 32px;
+  width: auto;
+  flex-shrink: 0;
 }
 
 /* AI timeline */

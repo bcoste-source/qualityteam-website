@@ -21,8 +21,13 @@
 <!-- Hero Section -->
 <section class="hero">
   <?php if ($page->hero_image()->isNotEmpty()): ?>
-    <div class="hero-bg">
+    <div class="hero-bg hero-bg-desktop">
       <?= $page->hero_image()->toFile()->html(['alt' => 'Background image']) ?>
+    </div>
+  <?php endif ?>
+  <?php if ($page->hero_image_mobile()->isNotEmpty()): ?>
+    <div class="hero-bg hero-bg-mobile">
+      <?= $page->hero_image_mobile()->toFile()->html(['alt' => 'Background image mobile']) ?>
     </div>
   <?php endif ?>
 </section>
@@ -30,6 +35,8 @@
 <!-- Green Background Section -->
 <div class="background-white-with-green-vector">
   <div class="body-padding body-centered">
+    <section class="padding-section" />
+
     <?php if ($page->hero_description()->isNotEmpty()): ?>
       <div class="hero-description text-purple-black">
         <?= $page->hero_description()->kirbytext() ?>
@@ -46,7 +53,7 @@
       </div>
     <?php endif ?>
 
-    <section class="padding-section-small" />
+    <section class="padding-section" />
     <!-- Companies Section -->
     <?php if ($page->companies_title()->isNotEmpty()): ?>
       <section class="companies">
@@ -63,13 +70,13 @@
 
     <section class="padding-section" />
     <img class="spot" src="/assets/images/spots/green-spot-1.png">
-    <section class="padding-section-small" />
+    <section class="padding-section" />
 
     <!-- Problem Section -->
     <?php if ($page->problem_items()->isNotEmpty()): ?>
       <section class="problem-section">
         <div class="problem-title"><?= $page->problem_title()->kirbytext() ?></div>
-        <section class="padding-section-small" />
+        <section class="padding-section" />
         <div class="problem-grid">
           <?php foreach ($page->problem_items()->toStructure() as $item): ?>
             <div class="problem-item">

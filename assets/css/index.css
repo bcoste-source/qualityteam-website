@@ -411,7 +411,31 @@ hr {
 .footer ul,
 
 .footer a:hover {
-  color: var(--color-text);
+  color: var(--color-text-purple);
+}
+
+.footer-socials {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1.5rem;
+  margin-top: 3rem;
+}
+
+.footer-social-link {
+  display: inline-block;
+  transition: transform 0.3s ease;
+}
+
+.footer-social-link:hover {
+  transform: scale(1.2);
+}
+
+.footer-social-link .social-icon {
+  width: 32px;
+  height: 32px;
+  filter: brightness(0) invert(1);
+  display: block;
 }
 
 .end-footer-container {

@@ -71,3 +71,6 @@ columns:
         create:
           - article
         sortBy: priority desc, date desc
+
+      footer:
+        extends: sections/footer

@@ -67,10 +67,6 @@
   color: var(--color-code-green);
 }
 
-.realisation-content p {
-  margin-bottom: 1.5rem;
-}
-
 .realisation-content strong {
   font-weight: 600;
 }

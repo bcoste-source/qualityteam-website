@@ -17,21 +17,18 @@
       <div class="column" style="--columns: 3">
         <h2 class="h3 text-white">Le Blog</h2>
         <ul>
-          <li><a class="text-white" href="#">Ressources</a></li>
-          <li><a class="text-white" href="#">Témoignages</a></li>
-          <li><a class="text-white" href="#">Podcasts</a></li>
-          <li><a class="text-white" href="#">Articles</a></li>
+          <?php foreach ($site->footer_list1_links()->toStructure() as $item): ?>
+            <li><a class="text-white" href="<?= $item->url()->esc() ?>"><?= $item->label()->esc() ?></a></li>
+          <?php endforeach ?>
         </ul>
       </div>
 
       <div class="column" style="--columns: 3">
         <h2 class="h3 text-white">Le Collectif</h2>
         <ul>
-          <li><a class="text-white" href="#">Nous rencontrer</a></li>
-          <li><a class="text-white" href="#">Notre réseau</a></li>
-          <li><a class="text-white" href="#">FrenchTech</a></li>
-          <li><a class="text-white" href="#">UNITEC</a></li>
-          <li><a class="text-white" href="#">Auberge numérique</a></li>
+          <?php foreach ($site->footer_list2_links()->toStructure() as $item): ?>
+            <li><a class="text-white" href="<?= $item->url()->esc() ?>"><?= $item->label()->esc() ?></a></li>
+          <?php endforeach ?>
         </ul>
       </div>
 
@@ -47,12 +44,34 @@
       <div class="column" style="--columns: 3">
         <h2 class="h3 text-white">Mentions légales</h2>
         <ul>
-          <li><a class="text-white" href="#">CGV</a></li>
-          <li><a class="text-white" href="#">À propos</a></li>
+          <?php foreach ($site->footer_list4_links()->toStructure() as $item): ?>
+            <li><a class="text-white" href="<?= $item->url()->esc() ?>"><?= $item->label()->esc() ?></a></li>
+          <?php endforeach ?>
         </ul>
       </div>
     </div>
 
+    <div class="footer-socials">
+      <?php foreach ($site->footer_socials()->toStructure() as $social): ?>
+        <?php
+        $icon = $social->icon()->value();
+        $url = $social->url()->or('https://www.google.com/');
+        $map = [
+          'youtube' => '/assets/icons/youtube.svg',
+          'instagram' => '/assets/icons/instagram.svg',
+          'linkedin' => '/assets/icons/linkedin.svg',
+          'discord' => '/assets/icons/discord.svg',
+          'mastodon' => '/assets/icons/mastodon.svg',
+        ];
+        $src = $map[$icon] ?? null;
+        ?>
+        <?php if ($src): ?>
+          <a class="footer-social-link" href="<?= esc($url) ?>" target="_blank" rel="noopener">
+            <img src="<?= $src ?>" alt="<?= esc(ucfirst($icon)) ?>" class="social-icon" />
+          </a>
+        <?php endif ?>
+      <?php endforeach ?>
+    </div>
 
   </div>
 

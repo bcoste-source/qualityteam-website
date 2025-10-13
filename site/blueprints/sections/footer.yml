@@ -1,0 +1,52 @@
+type: fields
+fields:
+  footer_list1_links:
+    label: Footer – Liens « Le Blog »
+    type: structure
+    fields:
+      label:
+        label: Texte
+        type: text
+      url:
+        label: Lien (URL ou chemin)
+        type: url
+
+  footer_list2_links:
+    label: Footer – Liens « Le Collectif »
+    type: structure
+    fields:
+      label:
+        label: Texte
+        type: text
+      url:
+        label: Lien (URL ou chemin)
+        type: url
+
+  footer_list4_links:
+    label: Footer – Liens « Mentions légales »
+    type: structure
+    fields:
+      label:
+        label: Texte
+        type: text
+      url:
+        label: Lien (URL ou chemin)
+        type: url
+
+  footer_socials:
+    label: Footer – Réseaux sociaux
+    type: structure
+    help: "Icône disponible: youtube, instagram, linkedin, discord, mastodon"
+    fields:
+      icon:
+        label: Icône
+        type: select
+        options:
+          youtube: YouTube
+          instagram: Instagram
+          linkedin: LinkedIn
+          discord: Discord
+          mastodon: Mastodon
+      url:
+        label: Lien
+        type: url

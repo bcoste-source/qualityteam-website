@@ -3,3 +3,77 @@ Title: QualityTeam
 ----
 
 Logo-image: - 'file://ecdvxmibpl9cup2e'
+
+----
+
+Footer-list1-links:
+
+-
+  label: Ressources
+  url: 'https://www.google.com/'
+-
+  label: Témoignages
+  url: 'https://www.google.com/'
+-
+  label: Podcasts
+  url: 'https://www.google.com/'
+-
+  label: Articles
+  url: 'https://www.google.com/'
+
+----
+
+Footer-list2-links:
+
+-
+  label: Nous rencontrer
+  url: 'https://www.google.com/'
+-
+  label: Notre réseau
+  url: 'https://www.google.com/'
+-
+  label: FrenchTech
+  url: 'https://www.google.com/'
+-
+  label: UNITEC
+  url: 'https://www.google.com/'
+-
+  label: Auberge numérique
+  url: 'https://www.google.com/'
+
+----
+
+Footer-list4-links:
+
+-
+  label: CGV
+  url: 'https://www.google.com/'
+-
+  label: À propos
+  url: 'https://www.google.com/'
+
+----
+
+Footer-socials:
+
+-
+  icon: youtube
+  url: 'https://www.google.com/'
+-
+  icon: instagram
+  url: 'https://www.google.com/'
+-
+  icon: linkedin
+  url: 'https://www.linkedin.com/company/qualityteamweb/posts/?feedView=all'
+
+----
+
+Footer-list1-title: 
+
+----
+
+Footer-list2-title: 
+
+----
+
+Footer-list4-title: 

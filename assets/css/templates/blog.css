@@ -271,9 +271,6 @@ section h2.text-purple {
   color: var(--color-code-green);
 }
 
-.article-content p {
-  margin-bottom: 1.5rem;
-}
 .article-content strong {
   font-weight: 600;
 }

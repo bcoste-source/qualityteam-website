@@ -268,3 +268,16 @@
     gap: 0.75rem;
   }
 }
+
+.wave-spot-large {
+  margin-top: 1rem;
+  width: 300px;
+  height: auto;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.transition-spot img {
+  max-height: 60px;
+}

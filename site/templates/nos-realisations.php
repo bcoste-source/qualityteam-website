@@ -33,15 +33,17 @@
 </section>
 
 <div class="transition-spot">
-  <img src="/assets/images/spots/spot-heart.png" alt="Transition coeur">
-  <section class="padding-section-small" />
+  <img src="/assets/images/spots/arrow-down.png" alt="Transition coeur">
 </div>
 
 <section>
   <div class="body-padding body-centered">
-    <section class="padding-section" />
 
-    <h2 class="text-black-green">Consultez les projets :</h2>
+    <section class="padding-section-small" />
+
+    <h2 class="text-purple">Nos projets :</h2>
+    <img class="wave-spot-large" src="/assets/images/spots/purple-wave-spot-double.png" alt="Spot vert équipe">
+
 
     <section class="padding-section-small" />
 

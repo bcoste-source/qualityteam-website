@@ -6,6 +6,10 @@ options:
   changeStatus: false
 
 sections:
+  seo:
+    label: SEO
+    extends: sections/seo
+
   content:
     type: fields
     fields:

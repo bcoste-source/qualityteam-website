@@ -1,0 +1,15 @@
+type: fields
+fields:
+  meta_title:
+    label: Meta Titre (SEO)
+    type: text
+    help: "Titre de la page pour les moteurs de recherche"
+    counter: true
+    width: 1/2
+
+  meta_description:
+    label: Meta Description (SEO)
+    type: textarea
+    help: "Description de la page pour les moteurs de recherche"
+    counter: true
+    width: 1/2

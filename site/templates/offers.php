@@ -10,10 +10,9 @@
 
     <p class="text-white offer-content-text" style="text-align: center; max-width: 52rem; margin: 0 auto;"><?= $page->hero_description()->or('Découvrez ce que nous vous apportons')->esc() ?></p>
 
-    <section class="padding-section-small" />
 
     <?php snippet('offers-cards', ['offers' => $page]) ?>
-    <section class="padding-section" />
+    <section class="padding-section-small" />
   </div>
 </section>
 

@@ -21,11 +21,38 @@
 
   <?php
   /*
-    In the title tag we show the title of our
-    site and the title of the current page
+    SEO Meta Tags
+    - Meta title: utilise meta_title si défini, sinon fallback sur le titre de la page
+    - Meta description: utilise meta_description si défini
   */
+  $metaTitle = $page->meta_title()->isNotEmpty()
+    ? $page->meta_title()->esc()
+    : $site->title()->esc() . ' | ' . $page->title()->esc();
+
+  $metaDescription = $page->meta_description()->isNotEmpty()
+    ? $page->meta_description()->esc()
+    : null;
   ?>
-  <title><?= $site->title()->esc() ?> | <?= $page->title()->esc() ?></title>
+
+  <title><?= $metaTitle ?></title>
+
+  <?php if ($metaDescription): ?>
+    <meta name="description" content="<?= $metaDescription ?>">
+  <?php endif ?>
+
+  <!-- Open Graph / Facebook -->
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="<?= $metaTitle ?>">
+  <?php if ($metaDescription): ?>
+    <meta property="og:description" content="<?= $metaDescription ?>">
+  <?php endif ?>
+
+  <!-- Twitter -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="<?= $metaTitle ?>">
+  <?php if ($metaDescription): ?>
+    <meta name="twitter:description" content="<?= $metaDescription ?>">
+  <?php endif ?>
 
   <?php
   /*

@@ -2,6 +2,14 @@ Title: Product Starter
 
 ----
 
+Meta-title: Product Starter – Ton MVP en 30h avec QualityTeam
+
+----
+
+Meta-description: Passe de l’idée au prototype sans gaspiller ton budget. Avec Product Starter, QualityTeam t’aide à créer ton MVP : clair, testé et prêt à convaincre.
+
+----
+
 Section2-title: <p>Product Starter</p>
 
 ----

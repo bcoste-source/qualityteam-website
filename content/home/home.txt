@@ -2,7 +2,19 @@ Title: Home
 
 ----
 
+Meta-title: Du concept au produit numérique – QualityTeam
+
+----
+
+Meta-description: Passe de l’idée au prototype en quelques semaines. QualityTeam aide les startups à créer des produits numériques solides, testés et prêts pour le marché.
+
+----
+
 Hero-image: - 'file://2qzsqmrgloowybjd'
+
+----
+
+Hero-image-mobile: - 'file://3luqbhvuhaeem9vt'
 
 ----
 

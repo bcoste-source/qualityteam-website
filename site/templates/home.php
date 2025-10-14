@@ -35,7 +35,6 @@
 <!-- Green Background Section -->
 <div class="background-white-with-green-vector">
   <div class="body-padding body-centered">
-    <section class="padding-section" />
 
     <?php if ($page->hero_description()->isNotEmpty()): ?>
       <div class="hero-description text-purple-black">
@@ -154,89 +153,91 @@
 
 <!-- Purple Section - Method -->
 <section class="purple-section">
-  <div class="hourglass-container">
-    <img class="hourglass" src="/assets/images/other/hourglass.png">
-  </div>
+  <div class="body-padding">
+    <div class="hourglass-container">
+      <img class="hourglass" src="/assets/images/other/hourglass.png">
+    </div>
 
-  <div class="method-header">
-    <?php if ($page->method_title()->isNotEmpty()): ?>
-      <p class="text-pink"><?= $page->method_title()->esc() ?></p>
-    <?php endif ?>
-    <?php if ($page->method_duration()->isNotEmpty()): ?>
-      <h1 class="method-duration text-green"><?= $page->method_duration()->esc() ?></h1>
-    <?php endif ?>
-    <?php if ($page->method_description()->isNotEmpty()): ?>
-      <h4 class="method-description text-white"><?= $page->method_description()->esc() ?></h4>
-    <?php endif ?>
-  </div>
+    <div class="method-header">
+      <?php if ($page->method_title()->isNotEmpty()): ?>
+        <p class="text-pink"><?= $page->method_title()->esc() ?></p>
+      <?php endif ?>
+      <?php if ($page->method_duration()->isNotEmpty()): ?>
+        <h1 class="method-duration text-green"><?= $page->method_duration()->esc() ?></h1>
+      <?php endif ?>
+      <?php if ($page->method_description()->isNotEmpty()): ?>
+        <h4 class="method-description text-white"><?= $page->method_description()->esc() ?></h4>
+      <?php endif ?>
+    </div>
 
-  <div class="arrow-container">
-    <img class="purple-arrow" src="/assets/images/spots/purple-arrow.png" alt="Flèche violette">
-    <div class="text-white">La méthode utilisée :</div>
-  </div>
+    <div class="arrow-container">
+      <img class="purple-arrow" src="/assets/images/spots/purple-arrow.png" alt="Flèche violette">
+      <div class="text-white">La méthode utilisée :</div>
+    </div>
 
-  <section class="padding-section" />
+    <section class="padding-section" />
 
-  <?php if ($page->method_steps()->isNotEmpty()): ?>
-    <section class="method-steps">
-      <?php foreach ($page->method_steps()->toStructure() as $index => $step): ?>
-        <div class="method-step">
-          <h1 class="step-number text-green"><?= $index + 1 ?></h1>
-          <div class="step-content">
-            <h3 class="step-title text-green"><?= $step->title()->esc() ?></h3>
-            <div class="step-description text-white">
-              <?= $step->description()->kirbytext() ?>
-            </div>
-          </div>
-        </div>
-      <?php endforeach ?>
-    </section>
-  <?php endif ?>
-
-  <section class="padding-section" />
-
-  <!-- Accompaniment Section -->
-  <?php if ($page->accompaniment_title()->isNotEmpty()): ?>
-    <section class="accompaniment-section">
-      <div class="accompaniment-header">
-        <h3 class="text-white-green"><?= $page->accompaniment_title()->kirbytext() ?></h3>
-      </div>
-
-      <?php if ($page->accompaniment_items()->isNotEmpty()): ?>
-        <div class="accompaniment-grid">
-          <?php foreach ($page->accompaniment_items()->toStructure() as $item): ?>
-            <div class="accompaniment-item">
-              <?php if ($item->icon()->isNotEmpty()): ?>
-                <div class="accompaniment-icon">
-                  <?= $item->icon()->toFile()->html(['alt' => '']) ?>
-                </div>
-              <?php endif ?>
-              <div class="accompaniment-text text-white">
-                <?= mb_strtoupper($item->text()->kirbytext(), 'UTF-8') ?>
+    <?php if ($page->method_steps()->isNotEmpty()): ?>
+      <section class="method-steps">
+        <?php foreach ($page->method_steps()->toStructure() as $index => $step): ?>
+          <div class="method-step">
+            <h1 class="step-number text-green"><?= $index + 1 ?></h1>
+            <div class="step-content">
+              <h3 class="step-title text-green"><?= $step->title()->esc() ?></h3>
+              <div class="step-description text-white">
+                <?= $step->description()->kirbytext() ?>
               </div>
             </div>
-          <?php endforeach ?>
+          </div>
+        <?php endforeach ?>
+      </section>
+    <?php endif ?>
+
+    <section class="padding-section" />
+
+    <!-- Accompaniment Section -->
+    <?php if ($page->accompaniment_title()->isNotEmpty()): ?>
+      <section class="accompaniment-section">
+        <div class="accompaniment-header">
+          <h3 class="text-white-green"><?= $page->accompaniment_title()->kirbytext() ?></h3>
         </div>
-      <?php endif ?>
 
-      <section class="padding-section" />
+        <?php if ($page->accompaniment_items()->isNotEmpty()): ?>
+          <div class="accompaniment-grid">
+            <?php foreach ($page->accompaniment_items()->toStructure() as $item): ?>
+              <div class="accompaniment-item">
+                <?php if ($item->icon()->isNotEmpty()): ?>
+                  <div class="accompaniment-icon">
+                    <?= $item->icon()->toFile()->html(['alt' => '']) ?>
+                  </div>
+                <?php endif ?>
+                <div class="accompaniment-text text-white">
+                  <?= mb_strtoupper($item->text()->kirbytext(), 'UTF-8') ?>
+                </div>
+              </div>
+            <?php endforeach ?>
+          </div>
+        <?php endif ?>
 
-      <div class="button-spots">
-        <img class="button-spot-left" src="/assets/images/spots/button-spot-left.png" alt="Spot gauche">
-        <img class="button-spot-right" src="/assets/images/spots/button-spot-right.png" alt="Spot droite">
-      </div>
+        <section class="padding-section" />
 
-      <?php if ($page->accompaniment_button_text()->isNotEmpty()): ?>
-        <div class="cta-accompaniment">
-          <a href="<?= $page->accompaniment_button_link()->esc() ?>" class="btn-launch">
-            <?= $page->accompaniment_button_text()->esc() ?>
-          </a>
+        <div class="button-spots">
+          <img class="button-spot-left" src="/assets/images/spots/button-spot-left.png" alt="Spot gauche">
+          <img class="button-spot-right" src="/assets/images/spots/button-spot-right.png" alt="Spot droite">
         </div>
-      <?php endif ?>
 
-      <section class="padding-section" />
-    </section>
-  <?php endif ?>
+        <?php if ($page->accompaniment_button_text()->isNotEmpty()): ?>
+          <div class="cta-accompaniment">
+            <a href="<?= $page->accompaniment_button_link()->esc() ?>" class="btn-launch">
+              <?= $page->accompaniment_button_text()->esc() ?>
+            </a>
+          </div>
+        <?php endif ?>
+
+        <section class="padding-section" />
+      </section>
+    <?php endif ?>
+  </div>
 </section>
 
 <!-- Transition Image -->

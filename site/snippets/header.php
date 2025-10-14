@@ -81,32 +81,35 @@
 <body>
 
   <header class="header">
-    <?php
-    /*
-      We use `$site->url()` to create a link back to the homepage
-      for the logo and `$site->title()` as a temporary logo. You
-      probably want to replace this with an SVG.
-    */
-    ?>
-    <a class="logo" href="<?= $site->url() ?>">
-      <?php if ($site->logo_image()->isNotEmpty()): ?>
-        <?= $site->logo_image()->toFile()->html(['alt' => $site->title()->esc()]) ?>
-      <?php else: ?>
-        <?= $site->title()->esc() ?>
-      <?php endif ?>
-    </a>
-
-    <button class="menu-toggle" aria-label="Toggle menu" aria-expanded="false">
-      <span class="hamburger">
-        <span></span>
-        <span></span>
-        <span></span>
-      </span>
-    </button>
-
-    <nav class="menu">
+    <div class="header-left">
       <?php
       /*
+        We use `$site->url()` to create a link back to the homepage
+        for the logo and `$site->title()` as a temporary logo. You
+        probably want to replace this with an SVG.
+      */
+      ?>
+      <a class="logo" href="<?= $site->url() ?>">
+        <?php if ($site->logo_image()->isNotEmpty()): ?>
+          <?= $site->logo_image()->toFile()->html(['alt' => $site->title()->esc()]) ?>
+        <?php else: ?>
+          <?= $site->title()->esc() ?>
+        <?php endif ?>
+      </a>
+
+      <button class="menu-toggle" aria-label="Toggle menu" aria-expanded="false">
+        <span class="hamburger">
+          <span></span>
+          <span></span>
+          <span></span>
+        </span>
+      </button>
+    </div>
+
+    <nav class="menu">
+      <div class="menu-center">
+        <?php
+        /*
         In the menu, we only fetch listed pages,
         i.e. the pages that have a prepended number
         in their foldername.
@@ -117,23 +120,40 @@
         More about page status:
         https://getkirby.com/docs/reference/panel/blueprints/page#statuses
       */
-      ?>
-      <?php foreach ($site->children()->listed() as $item): ?>
-        <?php $children = $item->children()->listed(); ?>
-        <?php if ($item->id() === 'offers' && $children->count()): ?>
-          <div class="menu-item has-dropdown" tabindex="0">
-            <a <?php e($item->isOpen(), 'aria-current="page"') ?> href="<?= $item->url() ?>"><?= $item->title()->esc() ?></a>
-            <div class="dropdown">
-              <?php foreach ($children as $child): ?>
-                <a href="<?= $child->url() ?>"><?= $child->title()->esc() ?></a>
-              <?php endforeach ?>
+        ?>
+        <?php foreach ($site->children()->listed() as $item): ?>
+          <?php $children = $item->children()->listed(); ?>
+          <?php if ($item->id() === 'offers' && $children->count()): ?>
+            <div class="menu-item has-dropdown" tabindex="0">
+              <a <?php e($item->isOpen(), 'aria-current="page"') ?> href="<?= $item->url() ?>"><?= $item->title()->esc() ?></a>
+              <div class="dropdown">
+                <?php foreach ($children as $child): ?>
+                  <a href="<?= $child->url() ?>"><?= $child->title()->esc() ?></a>
+                <?php endforeach ?>
+              </div>
             </div>
-          </div>
-        <?php else: ?>
-          <a <?php e($item->isOpen(), 'aria-current="page"') ?> href="<?= $item->url() ?>"><?= $item->title()->esc() ?></a>
-        <?php endif ?>
-      <?php endforeach ?>
+          <?php else: ?>
+            <a <?php e($item->isOpen(), 'aria-current="page"') ?> href="<?= $item->url() ?>"><?= $item->title()->esc() ?></a>
+          <?php endif ?>
+        <?php endforeach ?>
+        <?php // CTA mobile dans le menu (affiché uniquement en mobile)
+        $ctaLabel = $site->appointment_label()->or('PRENDRE RENDEZ-VOUS');
+        $ctaUrl   = $site->appointment_url()->or('#');
+        ?>
+        <a class="header-cta-mobile btn-outline-green" href="<?= $ctaUrl->esc() ?>">
+          <?= mb_strtoupper($ctaLabel->esc(), 'UTF-8') ?>
+        </a>
+      </div>
     </nav>
+    <?php // CTA desktop à droite
+    $ctaLabel = $site->appointment_label()->or('PRENDRE RENDEZ-VOUS');
+    $ctaUrl   = $site->appointment_url()->or('#');
+    ?>
+    <div class="menu-cta">
+      <a class="header-cta btn-outline-green" href="<?= $ctaUrl->esc() ?>">
+        <?= mb_strtoupper($ctaLabel->esc(), 'UTF-8') ?>
+      </a>
+    </div>
   </header>
 
   <main class="main">

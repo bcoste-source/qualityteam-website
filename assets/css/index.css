@@ -88,21 +88,47 @@ small {
 
 .header {
   position: relative;
-  display: flex;
-  flex-wrap: wrap;
+  display: grid;
+  grid-template-columns: auto 1fr auto;
   align-items: center;
-  justify-content: space-between;
   padding: var(--padding);
 }
 
 .logo {
-  position: absolute;
+  position: static;
   padding: 1rem;
   display: flex;
   align-items: center;
   cursor: pointer;
   max-width: 130px;
 }
+
+/* Cacher le CTA mobile (dans le menu) par défaut sur desktop/tablette */
+.header-cta-mobile { display: none !important; }
+
+.header .btn-outline-green {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: .5rem;
+  padding: .6rem 1.2rem;
+  border-radius: 9999px;
+  border: 3px solid var(--color-code-green);
+  color: var(--color-code-green);
+  background: transparent;
+  font-weight: 700;
+  font-size: .9rem;
+  letter-spacing: .03em;
+  text-transform: uppercase;
+  transition: box-shadow .25s ease, background .25s ease, color .25s ease;
+}
+
+.header .btn-outline-green:hover {
+  box-shadow: 0 6px 20px rgba(53,196,117,.25);
+  color: var(--color-white);
+  background: var(--color-code-green);
+}
+
 
 .menu-toggle {
   display: none;
@@ -142,21 +168,51 @@ small {
   transform: rotate(-45deg) translate(7px, -6px);
 }
 
-.menu {
-  display: flex;
-  flex: 1;
-  justify-content: center;
-  gap: 2rem;
-}
+.menu { display: contents; }
+.menu-center { display:flex; justify-content:center; align-items:center; gap:2rem; }
+.header-left { display:flex; align-items:center; gap:.5rem; }
+.menu-cta { display:flex; align-items:center; justify-content:flex-end; }
+
+.header-cta { max-width: fit-content !important; }
+.header-cta-mobile { max-width: fit-content !important; }
 
 @media screen and (max-width: 768px) {
+  .header { grid-template-columns: 1fr; row-gap: .5rem; }
+  .header-cta { display: none; }
+  .menu-toggle { display: block; }
+  .header .btn-outline-green {
+    padding: .55rem 1rem;
+    font-size: .85rem;
+    border-width: 3px;
+  }
   .menu {
     display: none;
   }
 
   .menu.is-open {
-    display: flex;
+    display: block;
   }
+  .menu.is-open > div { width: 100%; }
+  .menu.is-open .menu-center {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+    width: 100%;
+  }
+  .menu.is-open .menu-cta { display:flex; justify-content:center; }
+  .menu.is-open .header-cta-mobile {
+    display: inline-flex !important;
+    margin-top: 2rem;
+    width: 100%;
+    justify-content: center;
+  }
+}
+
+/* Casse intermédiaire: si l'espace est réduit, on masque le CTA header et on ne l'affiche que dans le menu ouvert */
+@media screen and (max-width: 1024px) {
+  .header { flex-wrap: wrap; }
+  .header-cta { display: none !important; }
 }
 .menu a {
   padding: 1rem;

@@ -20,6 +20,15 @@ columns:
               cover: true
             uploads:
               template: image
+          appointment_label:
+            label: Bouton header – Libellé
+            type: text
+            width: 1/2
+            default: PRENDRE RENDEZ-VOUS
+          appointment_url:
+            label: Bouton header – Lien
+            type: url
+            width: 1/2
 
   # The second column has two sections, `notes` and `pages`
   - width: 1

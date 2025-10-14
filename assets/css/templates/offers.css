@@ -320,11 +320,9 @@
   top: -6px;
   width: 24px;
   /* La hauteur de la flèche s'adapte dynamiquement à la hauteur de la timeline */
-  height: 110%;
-  object-fit: contain;
+  height: 100%;
   pointer-events: none;
   margin-left: -0.07rem; /* décale légèrement la barre vers la gauche */
-
 }
 
 .timeline-list {

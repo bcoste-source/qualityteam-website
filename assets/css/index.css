@@ -617,6 +617,13 @@ hr {
   .padding-section {
     padding-top: 2rem;
   }
+
+  .footer .grid {
+    text-align: center;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
+  }
 }
 
 @media screen and (min-width: 60rem) {

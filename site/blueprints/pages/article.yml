@@ -31,14 +31,9 @@ sections:
       date:
         label: Date
         type: date
-      priority:
-        label: Priorité
-        type: number
-        width: 1/2
       views:
         label: Nombre de vues
         type: number
-        width: 1/2
         default: 0
         help: Ce champ est mis à jour automatiquement
       tags:

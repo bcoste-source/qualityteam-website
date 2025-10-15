@@ -172,7 +172,7 @@ Expertise-button-text: DÉCOUVRIR NOTRE TEAM
 
 ----
 
-Expertise-button-link: 
+Expertise-button-link: /le-collectif
 
 ----
 
@@ -224,7 +224,7 @@ Cta-button1-text: DÉCOUVRIR LE COLLECTIF QUALITYTEAM
 
 ----
 
-Cta-button1-link: about
+Cta-button1-link: /le-collectif
 
 ----
 
@@ -232,7 +232,7 @@ Cta-button2-text: CONSULTER NOS RÉALISATIONS
 
 ----
 
-Cta-button2-link: portfolio
+Cta-button2-link: /nos-realisations
 
 ----
 

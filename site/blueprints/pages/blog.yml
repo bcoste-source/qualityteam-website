@@ -33,15 +33,18 @@ sections:
     image:
       cover: true
       ratio: 3/2
-    sortBy: priority desc, date desc
+    sortBy: num asc
+    sortable: true
+    flip: true
     template: article
     empty: Aucun article pour le moment
-    layout: cards
+    layout: list
+    size: medium
+    status: all
 
 children:
   type: pages
   template: article
-  sortBy: priority desc, date desc
+  sortBy: num asc
   create:
     - article
-  text: "{{ title }}"

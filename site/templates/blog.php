@@ -67,13 +67,8 @@ snippet('header');
   <div class="body-padding body-centered">
 
     <?php
-    // Source de données - inclure tous les articles (listés et non listés)
+    // Source de données - inclure tous les articles listés
     $all = $page->children()->listed();
-
-    // Debug: si aucun article listé, vérifier tous les enfants
-    if ($all->count() === 0) {
-      $all = $page->children();
-    }
 
     // Filtrage par tag
     $selectedTag = trim((string)(get('tag') ?? ''));
@@ -115,20 +110,22 @@ snippet('header');
       });
     }
 
-    // Tri : si pas de recherche/filtrage, tri par priorité puis date
-    // Sinon tri par date
-    $sorted = ($q === '' && $selectedTag === '')
-      ? $all->sortBy('priority', 'desc', 'date', 'desc')
+    // Tri pour "À la une" : par numéro croissant (premier article = plus petit numéro)
+    $sortedByNum = ($q === '' && $selectedTag === '')
+      ? $all->sortBy('num', 'asc')
       : $all->sortBy('date', 'desc');
 
-    // À la une = plus grande priorité (sauf si recherche active)
-    $featured = ($q === '' && $selectedTag === '') ? $sorted->first() : null;
-    $rest = $featured ? $sorted->not($featured) : $sorted;
+    // À la une = premier article dans l'ordre de placement (plus petit numéro)
+    $featured = ($q === '' && $selectedTag === '') ? $sortedByNum->first() : null;
+    $rest = $featured ? $all->not($featured) : $all;
 
     // Les plus lus = tri par vues desc (top 5, en excluant le featured)
     $mostRead = ($q === '' && $selectedTag === '')
       ? $rest->sortBy('views', 'desc')->limit(5)
       : null;
+
+    // Pour "Derniers articles" : tri par date décroissante
+    $rest = $rest->sortBy('date', 'desc');
 
     // Récupérer tous les tags disponibles pour le nuage de tags
     $allTags = [];

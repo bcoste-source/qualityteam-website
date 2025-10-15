@@ -22,11 +22,7 @@ Text: <h2>L’IA doit servir l’expérience utilisateur, pas la remplacer&nbsp;
 
 ----
 
-Date: 2026-10-01
-
-----
-
-Priority: 5
+Date: 2025-10-01
 
 ----
 
@@ -35,6 +31,10 @@ Views: 112
 ----
 
 Tags: MVP
+
+----
+
+Priority: 5
 
 ----
 

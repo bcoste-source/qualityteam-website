@@ -79,7 +79,14 @@ columns:
           - article
         create:
           - article
-        sortBy: priority desc, date desc
+        sortable: true
+        status: all
+        info: "{{ page.date.toDate('d/m/Y') }} - {{ page.views }} vues"
+        layout: list
+        size: medium
+        image:
+          cover: true
+          ratio: 3/2
 
       footer:
         extends: sections/footer

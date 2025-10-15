@@ -22,11 +22,7 @@ Text: <h2>Adoption : combien d’utilisateurs testent réellement ton MVP</h2><p
 
 ----
 
-Date: 
-
-----
-
-Priority: 
+Date: 2025-10-06
 
 ----
 
@@ -35,6 +31,10 @@ Views: 1
 ----
 
 Tags: 
+
+----
+
+Priority: 
 
 ----
 

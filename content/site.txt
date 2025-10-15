@@ -6,6 +6,14 @@ Logo-image: - 'file://ecdvxmibpl9cup2e'
 
 ----
 
+Appointment-label: Prendre rendez-vous
+
+----
+
+Appointment-url: https://google.fr
+
+----
+
 Footer-list1-links:
 
 -
@@ -26,10 +34,10 @@ Footer-list1-links:
 Footer-list2-links:
 
 -
-  label: Nous rencontrer
+  label: 'Nous rencontrer'
   url: 'https://www.google.com/'
 -
-  label: Notre réseau
+  label: 'Notre réseau'
   url: 'https://www.google.com/'
 -
   label: FrenchTech
@@ -38,7 +46,7 @@ Footer-list2-links:
   label: UNITEC
   url: 'https://www.google.com/'
 -
-  label: Auberge numérique
+  label: 'Auberge numérique'
   url: 'https://www.google.com/'
 
 ----
@@ -49,7 +57,7 @@ Footer-list4-links:
   label: CGV
   url: 'https://www.google.com/'
 -
-  label: À propos
+  label: 'À propos'
   url: 'https://www.google.com/'
 
 ----

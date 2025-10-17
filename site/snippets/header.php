@@ -10,7 +10,13 @@
   More about snippets:
   https://getkirby.com/docs/guide/templates/snippets
 */
-?>
+$preprod_url = 'https://preprod.qualityteam.fr';
+$full_url = (string)($kirby->url('full') ?? '');
+$is_preprod = str_starts_with($full_url, $preprod_url);
+if ($is_preprod): ?>
+  <meta name="robots" content="noindex, nofollow">
+<?php endif ?>
+
 <!DOCTYPE html>
 <html lang="en">
 

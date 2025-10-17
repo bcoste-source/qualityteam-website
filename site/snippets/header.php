@@ -38,12 +38,20 @@ if ($is_preprod): ?>
   $metaDescription = $page->meta_description()->isNotEmpty()
     ? $page->meta_description()->esc()
     : null;
+
+  $preprod_domain = 'preprod.qualityteam.fr';
+  $current_host = $_SERVER['HTTP_HOST'] ?? '';
+  $is_preprod = str_contains($current_host, $preprod_domain);
   ?>
 
   <title><?= $metaTitle ?></title>
 
   <?php if ($metaDescription): ?>
     <meta name="description" content="<?= $metaDescription ?>">
+  <?php endif ?>
+
+  <?php if ($is_preprod): ?>
+    <meta name="robots" content="noindex, nofollow">
   <?php endif ?>
 
   <!-- Open Graph / Facebook -->

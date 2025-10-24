@@ -1,0 +1,23 @@
+title: Page simple
+icon: 📄
+
+options:
+  changeStatus: true
+
+sections:
+  seo:
+    label: SEO
+    extends: sections/seo
+
+  content:
+    type: fields
+    fields:
+      title:
+        label: Titre de la page
+        type: text
+        required: true
+
+      text:
+        label: Contenu
+        type: writer
+        required: true

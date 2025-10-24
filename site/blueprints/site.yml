@@ -47,6 +47,7 @@ columns:
           - offers
           - nos-realisations
           - blog
+          - simple-page
           - default
 
       offers_children:

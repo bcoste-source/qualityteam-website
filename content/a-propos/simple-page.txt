@@ -1,0 +1,29 @@
+Title: À propos
+
+----
+
+Meta-title: 
+
+----
+
+Meta-description: 
+
+----
+
+Text: <h2>Article 1 - Objet  </h2><h3>H2</h3><p>Paragraphe.</p>
+
+----
+
+Seo-title: À propos - QualityTeam
+
+----
+
+Seo-description: Découvrez QualityTeam, votre partenaire pour la création de produits digitaux de qualité et l'accompagnement dans la transformation numérique
+
+----
+
+Seo-meta-tags: à propos, qualityteam, collectif, développement web
+
+----
+
+Uuid: 97x3gnsrgtgrirxf

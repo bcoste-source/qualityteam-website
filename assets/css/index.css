@@ -853,3 +853,65 @@ hr {
   transform: translateY(-4px) scale(1.02);
   box-shadow: 0 8px 24px rgba(0, 0, 0, 0.3);
 }
+
+/* ============================================
+   Simple Page Content
+   ============================================ */
+.simple-page-content {
+  max-width: 52rem;
+  margin: 0 auto;
+  line-height: 1.8;
+  text-align: left;
+}
+
+.simple-page-content h1,
+.simple-page-content h2,
+.simple-page-content h3,
+.simple-page-content h4,
+.simple-page-content h5,
+.simple-page-content h6 {
+  margin: 2rem 0 1rem 0;
+  color: var(--color-code-purple);
+}
+
+.simple-page-content h1 {
+  font-size: 2rem;
+}
+
+.simple-page-content h2 {
+  font-size: 1.75rem;
+}
+
+.simple-page-content h3 {
+  font-size: 1.5rem;
+  color: var(--color-code-green);
+}
+
+.simple-page-content p {
+  margin: 1rem 0;
+}
+
+.simple-page-content ul,
+.simple-page-content ol {
+  margin: 1rem 0;
+  padding-left: 2rem;
+}
+
+.simple-page-content li {
+  margin-bottom: 0.5rem;
+}
+
+.simple-page-content strong {
+  font-weight: 600;
+  color: var(--color-code-purple);
+}
+
+.simple-page-content a {
+  color: var(--color-code-green);
+  text-decoration: underline;
+  transition: color 0.3s ease;
+}
+
+.simple-page-content a:hover {
+  color: var(--color-code-purple);
+}

@@ -55,10 +55,10 @@ Footer-list4-links:
 
 -
   label: CGV
-  url: 'https://www.google.com/'
+  url: /cgv
 -
   label: 'À propos'
-  url: 'https://www.google.com/'
+  url: /a-propos
 
 ----
 

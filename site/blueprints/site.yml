@@ -52,7 +52,7 @@ columns:
       offers_children:
         type: pages
         label: Offres
-        parent: site.find("offers")
+        parent: site.find("nos-offres")
         templates:
           - product-starter
           - ai-developpement
@@ -74,7 +74,7 @@ columns:
       blog_children:
         type: pages
         label: Articles de Blog
-        parent: site.find("blog")
+        parent: site.find("le-blog")
         templates:
           - article
         create:

@@ -131,7 +131,7 @@
       <section class="team-section">
         <?php if ($page->team_text()->isNotEmpty()): ?>
           <div class="team-text text-purple">
-            <p><?= $page->team_text()->esc() ?></p>
+            <p><?= $page->team_text()->kirbytext() ?></p>
           </div>
           <img class="team-spot" src="/assets/images/spots/green-spot-4.avif" alt="Spot vert équipe">
         <?php endif ?>
@@ -140,7 +140,7 @@
 
         <?php if ($page->example_text()->isNotEmpty()): ?>
           <div class="example-text text-purple">
-            <p><?= $page->example_text()->esc() ?></p>
+            <p><?= $page->example_text()->kirbytext() ?></p>
           </div>
         <?php endif ?>
       </section>
@@ -162,11 +162,8 @@
       <?php if ($page->method_title()->isNotEmpty()): ?>
         <p class="text-pink"><?= $page->method_title()->esc() ?></p>
       <?php endif ?>
-      <?php if ($page->method_duration()->isNotEmpty()): ?>
-        <h1 class="method-duration text-green"><?= $page->method_duration()->esc() ?></h1>
-      <?php endif ?>
       <?php if ($page->method_description()->isNotEmpty()): ?>
-        <h4 class="method-description text-white"><?= $page->method_description()->esc() ?></h4>
+        <h2 class="method-description text-white-green"><?= $page->method_description()->kirbytext() ?></h2>
       <?php endif ?>
     </div>
 

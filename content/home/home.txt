@@ -30,7 +30,7 @@ Hero-button-link: https://google.fr
 
 ----
 
-Companies-title: <h3><strong>Des entreprises qui passent à l’action avec nous. Pourquoi pas toi ?</strong></h3><p>Nous accompagnons des startups et entreprises ambitieuses dans la création de <strong>produits numériques solides et testés</strong>.</p>
+Companies-title: <h2><strong>Des entreprises qui passent à l’action avec nous. Pourquoi pas toi ?</strong></h2><p>Nous accompagnons des startups et entreprises ambitieuses dans la création de <strong>produits numériques solides et testés</strong>.</p>
 
 ----
 
@@ -41,7 +41,7 @@ Companies-logos:
 
 ----
 
-Problem-title: <p>Tu as une idée de produit numérique ? On te guide :</p>
+Problem-title: <h2>Tu as une idée de produit numérique ? On te guide :</h2>
 
 ----
 
@@ -50,15 +50,15 @@ Problem-items:
 -
   icon:
     - 'file://anqmlzmydixibnkh'
-  text: '<p>Tu ne sais pas par où commencer ?</p>'
+  text: '<p>Tu ne sais pas par où commencer&nbsp;?</p>'
 -
   icon:
     - 'file://kjmnglzuslvpwij8'
-  text: '<p>Ton projet est lancé mais il manque une <strong>vision stratégique claire</strong> ?</p>'
+  text: '<p>Ton projet est lancé mais il manque une <strong>vision stratégique claire</strong>&nbsp;?</p>'
 -
   icon:
     - 'file://tokp0fyerf9f6wcm'
-  text: '<p>Tu veux <strong>valider ton idée auprès de vrais utilisateurs</strong> avant d’investir davantage ?</p>'
+  text: '<p>Tu veux <strong>valider ton idée auprès de vrais utilisateurs</strong> avant d’investir davantage&nbsp;?</p>'
 
 ----
 
@@ -78,11 +78,11 @@ Mvp-button-link: contact
 
 ----
 
-Team-text: Tu es accompagné par une équipe soudée qui te guide étape par étape. Résultat : un prototype clair, testé et crédible, prêt à convaincre tes utilisateurs et investisseurs.
+Team-text: <p>Tu es <strong>accompagné</strong> par une équipe soudée qui te guide étape par étape. Résultat : un prototype clair, testé et crédible, prêt à convaincre tes utilisateurs et investisseurs.</p>
 
 ----
 
-Example-text: Applis mobiles iOS/Android, sites web ou outils métiers, on conçoit ensemble un produit numérique robuste qui met en valeur ton idée.
+Example-text: <p>Applis <strong>mobiles iOS/Android</strong>, sites web ou outils métiers, on conçoit ensemble un produit numérique robuste qui met en valeur ton idée.</p>
 
 ----
 
@@ -90,11 +90,7 @@ Method-title: Notre offre découverte : Product Starter
 
 ----
 
-Method-duration: 30H
-
-----
-
-Method-description: pour passer de l'idée au prototype avec un max de valeur
+Method-description: <p><strong>30H</strong> </p><p>pour passer de l'idée au prototype avec un max de valeur</p>
 
 ----
 
@@ -233,6 +229,10 @@ Cta-button2-text: CONSULTER NOS RÉALISATIONS
 ----
 
 Cta-button2-link: /nos-realisations
+
+----
+
+Method-duration: 30H
 
 ----
 

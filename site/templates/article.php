@@ -1,10 +1,21 @@
 <?php
-// Incrémenter le compteur de vues
-$currentViews = $page->views()->toInt();
-try {
-  $page->update(['views' => $currentViews + 1], 'fr');
-} catch (Exception $e) {
-  // Silencieusement ignorer l'erreur si l'update échoue
+// Incrémenter le compteur de vues (une seule fois par session)
+if (!isset($_SESSION)) {
+  session_start();
+}
+
+$pageId = $page->id();
+$sessionKey = 'viewed_article_' . md5($pageId);
+
+// Vérifier si cet article n'a pas déjà été vu dans cette session
+if (!isset($_SESSION[$sessionKey])) {
+  $currentViews = $page->views()->toInt();
+  try {
+    $page->update(['views' => $currentViews + 1], 'fr');
+    $_SESSION[$sessionKey] = true;
+  } catch (Exception $e) {
+    // Silencieusement ignorer l'erreur si l'update échoue
+  }
 }
 
 snippet('header');

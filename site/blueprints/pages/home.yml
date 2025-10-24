@@ -137,13 +137,13 @@ sections:
 
       team_text:
         label: Texte équipe
-        type: text
+        type: writer
         width: 1/2
         help: "Description de l'équipe"
 
       example_text:
         label: Texte exemples
-        type: text
+        type: writer
         width: 1/2
         help: "Exemples de réalisations"
 
@@ -154,15 +154,9 @@ sections:
         width: 1/2
         help: "Titre de la section méthode"
 
-      method_duration:
-        label: Durée méthode
-        type: text
-        width: 1/2
-        help: "Durée de la méthode (ex: 30H)"
-
       method_description:
         label: Description méthode
-        type: text
+        type: writer
         width: 1
         help: "Description de la méthode"
 

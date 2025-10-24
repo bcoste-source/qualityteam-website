@@ -56,6 +56,28 @@ sections:
         width: 1/2
         help: "Lien du bouton hero"
 
+      hero_title:
+        label: Titre hero
+        type: writer
+        width: 1/2
+        help: "Titre de la section hero"
+
+      hero_subtitle:
+        label: Sous-titre hero
+        type: text
+        width: 1/2
+        help: "Sous-titre de la section hero"
+
+      hero_companies_images:
+        label: Images entreprises
+        type: files
+        multiple: true
+        layout: cards
+        image:
+          cover: true
+        uploads:
+          template: image
+
       # Companies Section
       companies_title:
         label: Titre section entreprises

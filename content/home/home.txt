@@ -10,11 +10,11 @@ Meta-description: Passe de l’idée au prototype en quelques semaines. QualityT
 
 ----
 
-Hero-image: - 'file://2qzsqmrgloowybjd'
+Hero-image: - 'file://nrhrg9arcnvj4quq'
 
 ----
 
-Hero-image-mobile: - 'file://3luqbhvuhaeem9vt'
+Hero-image-mobile: - 'file://svmxt5syxite1woq'
 
 ----
 
@@ -27,6 +27,21 @@ Hero-button-text: Discuter de mon projet !
 ----
 
 Hero-button-link: https://google.fr
+
+----
+
+Hero-title: <p>On co-construit avec vous le bon produit, <strong>dès le début.</strong></p>
+
+----
+
+Hero-subtitle: Que vous soyez porteur de projet, start-up, scale-up ou PME en transformation digitale, on travaille main dans la main pour concevoir un produit qui fait la différence. Avec méthode, écoute et exigence.
+
+----
+
+Hero-companies-images:
+
+- 'file://z26wqzc7fupudnhv'
+- 'file://bkyegtfbtrzabkg3'
 
 ----
 
@@ -160,7 +175,7 @@ Expertise-text1: <p>Parce qu’un <strong>produit numérique qui fonctionne</str
 
 ----
 
-Expertise-text2: <ul><li><p>- Une stratégie produit solide pour répondre aux besoins utilisateurs et business.,</p></li><li><p>- Une expérience utilisateur fluide qui rend l’application intuitive,</p></li><li><p>- Une base technique réaliste pour garantir que le produit est faisable et évolutif.</p></li></ul><p>Chez <strong>QualityTeam</strong>, ces trois expertises travaillent ensemble dès le départ. Résultat : un produit numérique utile, cohérent et réalisable, pas juste un concept théorique.</p>
+Expertise-text2: <ul><li><p>Une stratégie produit solide pour répondre aux besoins utilisateurs et business.,</p></li><li><p>Une expérience utilisateur fluide qui rend l’application intuitive,</p></li><li><p>Une base technique réaliste pour garantir que le produit est faisable et évolutif.</p></li></ul><p>Chez <strong>QualityTeam</strong>, ces trois expertises travaillent ensemble dès le départ. Résultat : un produit numérique utile, cohérent et réalisable, pas juste un concept théorique.</p>
 
 ----
 
@@ -257,14 +272,6 @@ Mvp-button-text: DÉMARRE TON PROJET
 ----
 
 Expertise-icon: []
-
-----
-
-Hero-title: Co-construisons ensemble !
-
-----
-
-Hero-subtitle: QualityTeam s'occupe de tout
 
 ----
 

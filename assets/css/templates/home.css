@@ -14,8 +14,91 @@
 }
 
 /* ===== HERO SECTION ===== */
+.hero {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+}
+
+.hero-bg {
+  width: auto;
+  height: 100%;
+  display: block;
+}
+
+.hero-bg img {
+  width: 100%;
+  height: auto;
+  display: block;
+  object-fit: cover;
+}
+
 .hero-bg-mobile {
   display: none;
+}
+
+.hero-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  display: flex;
+  align-items: center;
+  padding: 3rem 5rem;
+  pointer-events: none;
+}
+
+.hero-content {
+  max-width: 600px;
+  pointer-events: auto;
+  animation: fadeIn 1.2s ease-out;
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.hero-title {
+  font-size: clamp(2rem, 4vw, 3.5rem);
+  font-weight: 700;
+  line-height: 1.2;
+  margin-bottom: 1.5rem;
+  text-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
+}
+
+.hero-subtitle {
+  font-size: clamp(1rem, 1.5vw, 1.25rem);
+  line-height: 1.6;
+  margin-bottom: 2rem;
+  text-shadow: 0 1px 4px rgba(0, 0, 0, 0.3);
+}
+
+.hero-companies {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+  align-items: center;
+  justify-content: center;
+}
+
+.hero-company-logo {
+  max-width: 200px;
+  max-height: 80px;
+  height: auto;
+  object-fit: contain;
+  transition: transform 0.3s ease;
+}
+
+.hero-company-logo:hover {
+  transform: scale(1.05);
 }
 
 .hero-description {
@@ -884,6 +967,109 @@
     display: block;
   }
 
+  .hero-overlay {
+    align-items: flex-start;
+    justify-content: center;
+    padding: 3rem 1.5rem;
+  }
+
+  .hero-content {
+    max-width: 500px;
+  }
+
+  .hero-title {
+    font-size: clamp(1.75rem, 3.5vw, 2.5rem);
+    margin-bottom: 1rem;
+  }
+
+  .hero {
+    min-height: auto;
+    height: 100vh;
+    position: relative;
+  }
+
+  .hero-bg {
+    height: 100%;
+  }
+
+  .hero-bg img {
+    height: 100%;
+    object-fit: cover;
+  }
+
+  .hero-subtitle {
+    font-size: clamp(0.875rem, 2.5vw, 1rem);
+    margin-bottom: 1.25rem;
+  }
+
+  .hero-companies {
+    gap: 0.75rem;
+    justify-content: center;
+  }
+
+  .hero-company-logo {
+    max-width: 120px;
+    max-height: 50px;
+  }
+
+  .hero-description {
+    padding: 1rem;
+  }
+
+  .construction-text {
+    font-size: 2.5rem;
+  }
+
+  .problem-item {
+    padding: 1.5rem 1rem;
+  }
+
+  .expertise-content {
+    flex-direction: column;
+    text-align: center;
+    gap: 1rem;
+  }
+
+  .faq-question {
+    padding: 1rem 0;
+    gap: 0.5rem;
+  }
+
+  .faq-answer-content {
+    gap: 0.5rem;
+    padding: 0 0 1rem 0;
+  }
+
+  .btn-green {
+    padding: 1rem 1.5rem;
+  }
+
+  .btn-launch {
+    padding: 0 3rem;
+    min-height: 48px;
+  }
+
+  .pink-arrow-left,
+  .pink-arrow-right {
+    width: 40px;
+    display: none;
+  }
+
+  .green-button-container {
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+
+  .scroll-to-top {
+    bottom: 1rem;
+    right: 1rem;
+  }
+
+  .scroll-top-btn {
+    width: 45px;
+    height: 45px;
+  }
+
   .problem-grid {
     grid-template-columns: repeat(2, 1fr);
   }
@@ -960,72 +1146,6 @@
     margin-right: auto;
   }
 }
-
-/* Mobile */
-@media (max-width: 768px) {
-  .hero {
-    min-height: 40vh;
-  }
-
-  .hero-description {
-    padding: 1rem;
-  }
-
-  .construction-text {
-    font-size: 2.5rem;
-  }
-
-  .problem-item {
-    padding: 1.5rem 1rem;
-  }
-
-  .expertise-content {
-    flex-direction: column;
-    text-align: center;
-    gap: 1rem;
-  }
-
-  .faq-question {
-    padding: 1rem 0;
-    gap: 0.5rem;
-  }
-
-  .faq-answer-content {
-    gap: 0.5rem;
-    padding: 0 0 1rem 0;
-  }
-
-  .btn-green {
-    padding: 1rem 1.5rem;
-  }
-
-  .btn-launch {
-    padding: 0 3rem;
-    min-height: 48px;
-  }
-
-  .pink-arrow-left,
-  .pink-arrow-right {
-    width: 40px;
-    display: none;
-  }
-
-  .green-button-container {
-    flex-direction: column;
-    gap: 0.5rem;
-  }
-
-  .scroll-to-top {
-    bottom: 1rem;
-    right: 1rem;
-  }
-
-  .scroll-top-btn {
-    width: 45px;
-    height: 45px;
-  }
-}
-
 @media (max-width: 600px) {
   .problem-grid {
     grid-template-columns: 1fr;

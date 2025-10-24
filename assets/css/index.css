@@ -466,6 +466,10 @@ hr {
   color: var(--color-text-purple);
 }
 
+.footer ul {
+  list-style: none;
+}
+
 .footer-socials {
   display: flex;
   justify-content: center;

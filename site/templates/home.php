@@ -30,6 +30,30 @@
       <?= $page->hero_image_mobile()->toFile()->html(['alt' => 'Background image mobile']) ?>
     </div>
   <?php endif ?>
+
+  <div class="hero-overlay">
+    <div class="hero-content">
+      <?php if ($page->hero_title()->isNotEmpty()): ?>
+        <h1 class="hero-title text-white-green">
+          <?= $page->hero_title()->kirbytext() ?>
+        </h1>
+      <?php endif ?>
+
+      <?php if ($page->hero_subtitle()->isNotEmpty()): ?>
+        <p class="hero-subtitle text-white">
+          <?= $page->hero_subtitle()->esc() ?>
+        </p>
+      <?php endif ?>
+
+      <?php if ($page->hero_companies_images()->isNotEmpty()): ?>
+        <div class="hero-companies">
+          <?php foreach ($page->hero_companies_images()->toFiles() as $image): ?>
+            <?= $image->html(['alt' => 'Logo entreprise', 'class' => 'hero-company-logo']) ?>
+          <?php endforeach ?>
+        </div>
+      <?php endif ?>
+    </div>
+  </div>
 </section>
 
 <!-- Green Background Section -->

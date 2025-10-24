@@ -18,6 +18,16 @@ sections:
       realisation_description:
         label: Description courte
         type: writer
+      images_content:
+        label: Images à ajouter dans le contenu (optionnel)
+        type: structure
+        fields:
+          image:
+            label: Image
+            type: files
+            multiple: false
+            uploads:
+              template: image
       realisation_content:
         label: Contenu détaillé
         type: writer

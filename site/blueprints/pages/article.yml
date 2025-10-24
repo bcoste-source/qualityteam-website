@@ -19,6 +19,16 @@ sections:
         uploads:
           template: image
         preset: gallery
+      images_content:
+        label: Images à ajouter dans le contenu (optionnel)
+        type: structure
+        fields:
+          image:
+            label: Image
+            type: files
+            multiple: false
+            uploads:
+              template: image
       title:
         label: Titre
         type: writer

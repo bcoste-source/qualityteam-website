@@ -8,17 +8,40 @@
  * All config options: https://getkirby.com/docs/reference/system/options
  */
 return [
-    'debug' => false,
+    'debug' => getenv('DEBUG_MODE') === 'false',
+
     'yaml.handler' => 'symfony', // already makes use of the more modern Symfony YAML parser: https://getkirby.com/docs/reference/system/options/yaml (will become the default in a future Kirby version)
+
     'cache' => [
         'pages' => [
-            'active' => false,
+            // Cache désactivé en debug, activé sinon
+            'active' => getenv('DEBUG_MODE') !== 'true',
         ],
     ],
     'panel' => [
         'vue' => [
             'compiler' => false
         ]
+    ],
+
+    // Email configuration
+    // Les credentials SMTP sont dans les variables d'environnement (.user.ini sur le serveur)
+    'email' => [
+        'presets' => [
+            'contact' => [
+                'from' => 'b.coste@qualityteam.fr',
+                'subject' => 'Nouveau message de contact - QualityTeam'
+            ]
+        ],
+        'transport' => getenv('SMTP_PASSWORD') ? [
+            'type'     => 'smtp',
+            'host'     => getenv('SMTP_HOST') ?: 'ssl0.ovh.net',
+            'port'     => (int)(getenv('SMTP_PORT') ?: 465),
+            'security' => 'ssl',
+            'auth'     => true,
+            'username' => getenv('SMTP_USERNAME') ?: 'b.coste@qualityteam.fr',
+            'password' => getenv('SMTP_PASSWORD')
+        ] : null,  // Pas de SMTP en local si variables non définies
     ],
     'routes' => [
         [

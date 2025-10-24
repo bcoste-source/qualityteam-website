@@ -1,0 +1,15 @@
+; Configuration PHP variables d'environnement
+; Copiez ce fichier en .user.ini sur votre serveur OVH
+; Le fichier .user.ini ne doit JAMAIS être commité dans Git
+
+; Mode Debug
+; Pour PRODUCTION (www.qualityteam.fr) : false ou commenté
+; Pour PRÉPROD (preprod.qualityteam.fr) : true
+env[DEBUG_MODE] = false
+
+; Email SMTP Configuration
+env[SMTP_HOST] = ssl0.ovh.net
+env[SMTP_PORT] = 465
+env[SMTP_USERNAME] = b.coste@qualityteam.fr
+env[SMTP_PASSWORD] = VOTRE-MOT-DE-PASSE-ICI
+

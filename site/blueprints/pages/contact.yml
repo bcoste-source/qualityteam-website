@@ -1,0 +1,49 @@
+title: Contact
+icon: 📧
+
+options:
+  changeStatus: false
+
+sections:
+  seo:
+    label: SEO
+    extends: sections/seo
+
+  content:
+    type: fields
+    fields:
+      title:
+        label: Titre de la page
+        type: text
+        required: true
+        width: 1/2
+
+      subtitle:
+        label: Sous-titre
+        type: text
+        width: 1/2
+
+      intro_text:
+        label: Texte d'introduction
+        type: writer
+        width: 1
+
+      email_recipient:
+        label: Email de réception
+        type: email
+        required: true
+        default: b.coste@qualityteam.fr
+        help: L'adresse email qui recevra les messages du formulaire
+        width: 1/2
+
+      success_message:
+        label: Message de succès
+        type: textarea
+        default: Merci pour votre message ! Nous vous répondrons dans les plus brefs délais.
+        width: 1/2
+
+      error_message:
+        label: Message d'erreur
+        type: textarea
+        default: Une erreur est survenue lors de l'envoi de votre message. Veuillez réessayer.
+        width: 1/2

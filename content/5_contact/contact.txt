@@ -1,0 +1,49 @@
+Title: Contact
+
+----
+
+Meta-title: 
+
+----
+
+Meta-description: 
+
+----
+
+Subtitle: Parlons de votre projet
+
+----
+
+Intro-text:
+
+Vous avez un projet digital en tête ? Une idée d'application ? Besoin d'accompagnement pour votre transformation numérique ?
+
+**Notre équipe est là pour vous aider.** Remplissez le formulaire ci-dessous et nous vous répondrons dans les plus brefs délais.
+
+----
+
+Email-recipient: rayan.kheloufi@hotmail.com
+
+----
+
+Success-message: Merci pour votre message ! Nous vous répondrons dans les plus brefs délais.
+
+----
+
+Error-message: Une erreur est survenue lors de l'envoi de votre message. Veuillez réessayer.
+
+----
+
+Seo-title: Contact - QualityTeam
+
+----
+
+Seo-description: Contactez QualityTeam pour discuter de votre projet digital. Notre équipe est à votre écoute pour vous accompagner dans votre transformation numérique.
+
+----
+
+Seo-meta-tags: contact, qualityteam, projet digital, devis
+
+----
+
+Uuid: contactpage2025

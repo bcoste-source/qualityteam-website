@@ -50,6 +50,11 @@ Icon
 /site/config/.license
 /site/config/config.starterkit.test.php
 
+# Config files with credentials
+# ---------------
+# Les variables d'environnement contiennent les mots de passe SMTP
+.user.ini
+
 1_figma_images/
 
 node_modules/

@@ -1,0 +1,263 @@
+/* Contact Page Styles */
+
+* {
+  box-sizing: border-box;
+}
+
+.contact-intro {
+  max-width: 52rem;
+  margin: 0 auto;
+  line-height: 1.8;
+  text-align: center;
+  padding: 0 1rem;
+}
+
+.contact-intro p {
+  margin-bottom: 0.5rem;
+}
+
+.contact-container {
+  max-width: 600px;
+  margin: 0 auto;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+/* Form container with white background on purple section */
+.purple-section .contact-form {
+  background: var(--color-white);
+  padding: 2.5rem;
+  border-radius: 24px;
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.2);
+}
+
+/* Messages */
+.contact-message {
+  padding: 1.5rem 2rem;
+  border-radius: 16px;
+  margin-bottom: 2rem;
+  display: flex;
+  align-items: flex-start;
+  gap: 1rem;
+  animation: slideIn 0.5s ease-out;
+  background: var(--color-white);
+}
+
+@keyframes slideIn {
+  0% {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.contact-success {
+  border: 2px solid var(--color-code-green);
+  color: var(--color-code-green);
+}
+
+.contact-error {
+  border: 2px solid #eb5757;
+  color: #eb5757;
+}
+
+.message-icon {
+  font-size: 1.5rem;
+  font-weight: 700;
+  flex-shrink: 0;
+  width: 32px;
+  height: 32px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  background: var(--color-white);
+}
+
+.contact-success .message-icon {
+  color: var(--color-code-green);
+}
+
+.contact-error .message-icon {
+  color: #eb5757;
+}
+
+.contact-message p {
+  margin: 0;
+  flex: 1;
+  font-weight: 600;
+}
+
+.error-list {
+  list-style: none;
+  padding: 0;
+  margin: 0.5rem 0 0 0;
+}
+
+.error-list li {
+  font-size: 0.9rem;
+  margin-top: 0.5rem;
+  font-weight: 500;
+}
+
+/* Form Styles */
+.contact-form {
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.form-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1.5rem;
+  margin-bottom: 1.5rem;
+}
+
+.form-field {
+  margin-bottom: 1.5rem;
+  box-sizing: border-box;
+}
+
+.form-label {
+  display: block;
+  margin-bottom: 0.5rem;
+  font-weight: 600;
+  color: var(--color-code-purple);
+  font-size: 0.95rem;
+}
+
+.form-input,
+.form-textarea {
+  width: 100%;
+  padding: 0.875rem 1rem;
+  border: 2px solid var(--color-border-light);
+  border-radius: 12px;
+  font-size: 1rem;
+  font-family: inherit;
+  transition: all 0.3s ease;
+  background: var(--color-white);
+  color: var(--color-black);
+  box-sizing: border-box;
+}
+
+.form-input:focus,
+.form-textarea:focus {
+  outline: none;
+  border-color: var(--color-code-purple);
+  box-shadow: 0 0 0 3px rgba(72, 62, 184, 0.1);
+}
+
+.form-textarea {
+  resize: vertical;
+  min-height: 150px;
+  line-height: 1.6;
+}
+
+.form-submit {
+  text-align: center;
+  margin-top: 2rem;
+}
+
+.form-submit .btn-purple {
+  min-width: 250px;
+  text-transform: uppercase;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .purple-section .body-padding {
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+
+  .contact-intro {
+    padding: 0 0.5rem;
+  }
+
+  .contact-container {
+    max-width: 100%;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+  .purple-section .contact-form {
+    padding: 1.5rem 1.25rem;
+    border-radius: 16px;
+  }
+
+  .form-grid {
+    grid-template-columns: 1fr;
+    gap: 0;
+    margin-bottom: 0;
+  }
+
+  .form-field {
+    margin-bottom: 1.25rem;
+    width: 100%;
+  }
+
+  .form-label {
+    font-size: 0.9rem;
+    margin-bottom: 0.4rem;
+  }
+
+  .form-input,
+  .form-textarea {
+    font-size: 0.95rem;
+    padding: 0.75rem 0.875rem;
+  }
+
+  .form-textarea {
+    min-height: 120px;
+  }
+
+  .contact-message {
+    padding: 1rem 1.25rem;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+  }
+
+  .message-icon {
+    margin-bottom: 0.5rem;
+  }
+
+  .form-submit {
+    margin-top: 1.5rem;
+  }
+
+  .form-submit .btn-purple {
+    width: 100%;
+    min-width: auto;
+    padding: 0.875rem 1.5rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .purple-section .body-padding {
+    padding-left: 0.75rem;
+    padding-right: 0.75rem;
+  }
+
+  .contact-intro {
+    padding: 0;
+    font-size: 0.95rem;
+  }
+
+  .purple-section .contact-form {
+    padding: 1.25rem 1rem;
+  }
+
+  .form-label {
+    font-size: 0.85rem;
+  }
+
+  .form-input,
+  .form-textarea {
+    font-size: 0.9rem;
+    padding: 0.65rem 0.75rem;
+  }
+}

@@ -47,6 +47,7 @@ columns:
           - offers
           - nos-realisations
           - blog
+          - contact
           - simple-page
           - default
 

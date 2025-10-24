@@ -2,11 +2,13 @@
 @import url('typography.css');
 @import url('sizes.css');
 @import url('colors.css');
+@import url('templates/home.css');
 @import url('templates/offers.css');
 @import url('templates/about.css');
 @import url('templates/nos-realisations.css');
 @import url('templates/realisation.css');
 @import url('templates/blog.css');
+@import url('templates/contact.css');
 
 * {
   margin: 0;

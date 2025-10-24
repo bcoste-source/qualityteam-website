@@ -384,9 +384,6 @@ small {
   margin: 0;
   grid-template-columns: repeat(auto-fit, minmax(10rem, 1fr));
 }
-.text figure ul li {
-  list-style: none;
-}
 
 hr {
   border: 0;

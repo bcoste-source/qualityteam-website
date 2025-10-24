@@ -2,11 +2,23 @@ Title: Pépite
 
 ----
 
+Meta-title: 
+
+----
+
+Meta-description: 
+
+----
+
 Realisation-title: <p>Pépite - <strong>Valentine Bono</strong> et le <em>recrutement en restauration</em></p>
 
 ----
 
 Realisation-description: <p>Contexte &amp; enjeux : <strong>Les défis du recrutement</strong> en restauration indépendante Dans le secteur de la <strong>restauration à Bordeaux</strong>, le recrutement est devenu un casse-tête.  Valentine Bono, gérante d’un établissement engagé dans une démarche humaine et durable, faisait face à des problématiques récurrentes</p>
+
+----
+
+Images-content: []
 
 ----
 

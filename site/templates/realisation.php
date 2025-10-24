@@ -15,7 +15,7 @@
     </div>
 
     <?php if ($page->realisation_content()->isNotEmpty()): ?>
-      <div class="realisation-content">
+      <div class="realisation-content text-black-green">
         <?= $page->realisation_content()->kirbytext() ?>
       </div>
     <?php endif ?>

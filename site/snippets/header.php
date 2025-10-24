@@ -137,7 +137,7 @@ if ($is_preprod): ?>
         ?>
         <?php foreach ($site->children()->listed() as $item): ?>
           <?php $children = $item->children()->listed(); ?>
-          <?php if ($item->id() === 'offers' && $children->count()): ?>
+          <?php if ($item->id() === 'nos-offres' && $children->count()): ?>
             <div class="menu-item has-dropdown" tabindex="0">
               <a <?php e($item->isOpen(), 'aria-current="page"') ?> href="<?= $item->url() ?>"><?= $item->title()->esc() ?></a>
               <div class="dropdown">

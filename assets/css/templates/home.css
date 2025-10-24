@@ -362,7 +362,6 @@
 
 .step-description li {
   margin-bottom: 0.5rem;
-  list-style: disc;
   color: var(--color-white);
 }
 

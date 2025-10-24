@@ -3,10 +3,10 @@
 <section class="background-white-with-green-vector">
   <div class="body-padding body-centered">
     <section class="padding-section" />
-    <h2 class="text-purple-green">
-      <?= $page->section2_title()->kirbytext() ?>
-    </h2>
-    <p class="text-green text-small page-subtitle"><?= mb_strtoupper($page->section2_subtitle()->esc(), 'UTF-8') ?></p>
+    <h1 class="text-purple-green">
+      <?= $page->section2_title()->esc() ?>
+    </h1>
+    <h1 class="text-green text-small page-subtitle"><?= mb_strtoupper($page->section2_subtitle()->esc(), 'UTF-8') ?></h1>
 
     <section class="padding-section" />
     <div class="text-purple-black offer-content-text">
@@ -15,7 +15,7 @@
     <section class="padding-section" />
 
     <?php if ($page->section2_pairs_title()->isNotEmpty()): ?>
-      <h3 class="text-purple-green"><?= $page->section2_pairs_title()->esc() ?></h3>
+      <h2 class="text-purple-green"><?= $page->section2_pairs_title()->esc() ?></h2>
     <?php endif ?>
 
 
@@ -109,18 +109,20 @@
 
     <section class="padding-section" />
 
-    <div class="offer-content-text">
-      <?= $page->deliverables_intro()->kirbytext() ?>
-    </div>
+    <div class="deliverables-box">
+      <div class="deliverables-box-content">
+        <div class="deliverables-box-intro">
+          <?= $page->deliverables_intro()->kirbytext() ?>
+        </div>
 
-    <div class="deliverables offer-content-text">
-      <?php if ($page->deliverables()->isNotEmpty()): ?>
-        <ul>
-          <?php foreach ($page->deliverables()->toStructure() as $d): ?>
-            <li>• <?= $d->item()->esc() ?></li>
-          <?php endforeach ?>
-        </ul>
-      <?php endif ?>
+        <?php if ($page->deliverables()->isNotEmpty()): ?>
+          <ul>
+            <?php foreach ($page->deliverables()->toStructure() as $d): ?>
+              <li><?= $d->item()->esc() ?></li>
+            <?php endforeach ?>
+          </ul>
+        <?php endif ?>
+      </div>
     </div>
 
     <section class="padding-section" />

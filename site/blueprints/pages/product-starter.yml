@@ -14,7 +14,7 @@ sections:
     fields:
       section2_title:
         label: Titre (vector-green)
-        type: writer
+        type: text
       section2_subtitle:
         label: Sous-titre
         type: text

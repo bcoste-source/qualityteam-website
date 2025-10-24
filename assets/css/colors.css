@@ -151,6 +151,14 @@
   color: var(--color-text-green);
 }
 
+.text-black-purple {
+  color: var(--color-text-primary);
+}
+
+.text-black-purple strong {
+  color: var(--color-text-purple);
+}
+
 .text-purple-green {
   color: var(--color-text-purple);
 }
@@ -173,6 +181,14 @@
 
 .text-white-purple strong {
   color: var(--color-text-purple);
+}
+
+.text-purple-white {
+  color: var(--color-text-purple);
+}
+
+.text-purple-white strong {
+  color: var(--color-text-white);
 }
 
 .text-white-pink {

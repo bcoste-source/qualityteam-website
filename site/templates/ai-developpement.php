@@ -4,11 +4,11 @@
   <div class="body-padding body-centered">
     <section class="padding-section" />
 
-    <h2 class="text-white-purple"><?= $page->ai_title()->kirbytext() ?></h2>
+    <h1 class="text-white-purple"><?= $page->ai_title()->kirbytext() ?></h1>
 
-    <p class="text-purple text-small page-subtitle">
+    <h1 class="text-purple text-small page-subtitle">
       <?= mb_strtoupper($page->ai_subtitle()->esc(), 'UTF-8') ?>
-    </p>
+    </h1>
 
     <section class="padding-section" />
 
@@ -24,7 +24,7 @@
 
     <?php if ($page->ai_paragraph2_title()->isNotEmpty()): ?>
       <div class="offer-title-container">
-        <h4 class="offer-question-title"><?= $page->ai_paragraph2_title()->esc() ?></h4>
+        <h2 class="offer-question-title"><?= $page->ai_paragraph2_title()->esc() ?></h2>
       </div>
     <?php endif ?>
 
@@ -36,7 +36,7 @@
 
     <?php if ($page->ai_why_title()->isNotEmpty()): ?>
       <div class="offer-title-container">
-        <h4 class="offer-question-title"><?= $page->ai_why_title()->esc() ?></h4>
+        <h2 class="offer-question-title"><?= $page->ai_why_title()->esc() ?></h2>
       </div>
     <?php endif ?>
 
@@ -64,7 +64,7 @@
 
     <?php if ($page->ai_how_title()->isNotEmpty()): ?>
       <div class="offer-title-container">
-        <h4 class="offer-question-title"><?= $page->ai_how_title()->esc() ?></h4>
+        <h2 class="offer-question-title"><?= $page->ai_how_title()->esc() ?></h2>
       </div>
     <?php endif ?>
 
@@ -84,7 +84,7 @@
               <span class="connector-dot"></span>
               <span class="connector-line"></span>
             </span>
-            <div class="text-white-purple timeline-bubble<?= $isLast ? ' is-last' : '' ?>"><?= $s->text()->kirbytext() ?></div>
+            <div class="text-black-purple timeline-bubble<?= $isLast ? ' is-last' : '' ?>"><?= $s->text()->kirbytext() ?></div>
           </li>
         <?php endforeach ?>
       </ul>
@@ -92,21 +92,26 @@
 
     <section class="padding-section-small" />
 
-    <div class="deliverables text-white offer-content-text">
-      <?= $page->ai_benefits_intro()->kirbytext() ?>
-      <?php if ($page->ai_benefits()->isNotEmpty()): ?>
-        <ul>
-          <?php foreach ($page->ai_benefits()->toStructure() as $d): ?>
-            <li>• <?= $d->item()->esc() ?></li>
-          <?php endforeach ?>
-        </ul>
-      <?php endif ?>
+    <div class="deliverables-box">
+      <div class="deliverables-box-content">
+        <div class="deliverables-box-intro">
+          <?= $page->ai_benefits_intro()->kirbytext() ?>
+        </div>
+
+        <?php if ($page->ai_benefits()->isNotEmpty()): ?>
+          <ul>
+            <?php foreach ($page->ai_benefits()->toStructure() as $d): ?>
+              <li><?= $d->item()->esc() ?></li>
+            <?php endforeach ?>
+          </ul>
+        <?php endif ?>
+      </div>
     </div>
 
     <section class="padding-section-small" />
 
     <div class="ready">
-      <div class="text-white-purple offer-content-text">
+      <div class="text-white-purple offer-content-text offer-content-emphasis">
         <?= $page->ai_ready_text()->kirbytext() ?>
       </div>
       <section class="padding-section" />

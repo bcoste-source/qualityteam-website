@@ -51,7 +51,7 @@ Ai-why-items:
 
 ----
 
-Ai-why-paragraph: <p>Avec AI Développement, finis les mois d’attente et les technologies limitées :<br><br></p><ul><li><p><strong>- Tu passes rapidement de ton prototype design à une V1 fonctionnelle.</strong></p></li><li><p><strong>- Ton produit est robuste et évolutif</strong>, prêt à évoluer avec les besoins de tes utilisateurs.</p></li><li><p><strong>- Tu gagnes en crédibilité</strong> auprès des investisseurs, partenaires et clients.</p></li></ul><p><br>Que ce soit pour une <strong>application mobile</strong>, un <strong>logiciel métier</strong> ou une <strong>plateforme web</strong>, notre approche te permet de rester focus sur ton business tout en avançant concrètement sur ton projet.</p>
+Ai-why-paragraph: <p>Avec AI Développement, finis les mois d’attente et les technologies limitées :<br><br></p><ul><li><p><strong>Tu passes rapidement de ton prototype design à une V1 fonctionnelle.</strong></p></li><li><p><strong>Ton produit est robuste et évolutif</strong>, prêt à évoluer avec les besoins de tes utilisateurs.</p></li><li><p><strong>Tu gagnes en crédibilité</strong> auprès des investisseurs, partenaires et clients.</p></li></ul><p><br>Que ce soit pour une <strong>application mobile</strong>, un <strong>logiciel métier</strong> ou une <strong>plateforme web</strong>, notre approche te permet de rester focus sur ton business tout en avançant concrètement sur ton projet.</p>
 
 ----
 
@@ -66,13 +66,13 @@ Ai-how-paragraph: <p>Un accompagnement express, pensé pour livrer ta <strong>V1
 Ai-how-steps:
 
 -
-  text: '<p><strong>Jour 1 – Du design au prompt :</strong> </p><p>On part de ton prototype ou de ton idée et on le transforme en prompts concrets pour l’IA. À midi, ton plan de développement est prêt à être exécuté. Cette étape garantit que ton application mobile sur mesure sera conforme à ton concept et à tes besoins utilisateurs.</p>'
+  text: '<h3><strong>Jour 1 – Du design au prompt :</strong> </h3><p>On part de ton prototype ou de ton idée et on le transforme en prompts concrets pour l’IA. À midi, ton plan de développement est prêt à être exécuté. Cette étape garantit que ton application mobile sur mesure sera conforme à ton concept et à tes besoins utilisateurs.</p>'
 -
-  text: '<p><strong>Jour 1-4 Développement accéléré:</strong> </p><p>Notre développeur et l’IA travaillent ensemble pour créer ton produit numérique. Chaque jour, tu vois ton application mobile sur mesure prendre forme et devenir utilisable.</p><p>On se concentre sur les fonctionnalités essentielles pour ton MVP, tout en préparant une base technique évolutive pour la V2. Cette approche te permet de tester rapidement ton produit et de réduire les risques techniques.</p>'
+  text: '<h3><strong>Jour 1-4 Développement accéléré:</strong> </h3><p>Notre développeur et l’IA travaillent ensemble pour créer ton produit numérique. Chaque jour, tu vois ton application mobile sur mesure prendre forme et devenir utilisable.</p><p>On se concentre sur les fonctionnalités essentielles pour ton MVP, tout en préparant une base technique évolutive pour la V2. Cette approche te permet de tester rapidement ton produit et de réduire les risques techniques.</p>'
 -
-  text: '<p><strong>Jours 4 et 5 – Affinage et démo</strong> <strong>:</strong> </p><p>On peaufine les détails et corrige les points de friction. Ensuite, nous préparons une <strong>démo complète</strong> de ton produit.</p>'
+  text: '<h3><strong>Jours 4 et 5 – Affinage et démo</strong> <strong>:</strong> </h3><p>On peaufine les détails et corrige les points de friction. Ensuite, nous préparons une <strong>démo complète</strong> de ton produit.</p>'
 -
-  text: '<p><strong>Jour 5 :</strong> </p><p>Le dernier jour, tu découvres ta V1 fonctionnelle, tu partages tes retours et nous ajustons tout pour que ton application mobile sur mesure soit prête à être utilisée ou présentée.</p>'
+  text: '<h3><strong>Jour 5 :</strong> </h3><p>Le dernier jour, tu découvres ta V1 fonctionnelle, tu partages tes retours et nous ajustons tout pour que ton application mobile sur mesure soit prête à être utilisée ou présentée.</p>'
 
 ----
 
@@ -95,7 +95,7 @@ Ai-benefits:
 
 ----
 
-Ai-ready-text: <p>Cette approche combinant <strong>IA et expertise humaine</strong>, te permet de <strong>gagner du temps, économiser de l’argent</strong> et obtenir un produit prêt à convaincre tes utilisateurs et investisseurs sans sacrifier la qualité.</p><h2><br>Prêt à passer à la vitesse supérieure ?</h2><p><br>Pour <strong>3550 € HT</strong>, tu obtiens une V1 technique complète de ton application mobile sur mesure, <strong>en seulement 5 jours</strong>. Tu gagnes des semaines de développement et tu avances enfin avec du concret.</p>
+Ai-ready-text: <p>Cette approche combinant <strong>IA et expertise humaine</strong>, te permet de <strong>gagner du temps, économiser de l’argent</strong> et obtenir un produit prêt à convaincre tes utilisateurs et investisseurs sans sacrifier la qualité.</p><h2><br>Prêt à passer à la vitesse supérieure ?</h2><p><br>Pour <strong><em>3550 € HT</em></strong>, tu obtiens une V1 technique complète de ton application mobile sur mesure, <strong>en seulement 5 jours</strong>. Tu gagnes des semaines de développement et tu avances enfin avec du concret.</p>
 
 ----
 

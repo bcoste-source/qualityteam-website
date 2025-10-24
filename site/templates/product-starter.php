@@ -128,7 +128,7 @@
     <section class="padding-section" />
 
     <div class="ready">
-      <div class="text-purple-black offer-content-text"><?= $page->ready_text()->kirbytext() ?></div>
+      <div class="text-purple-black offer-content-text offer-content-emphasis"><?= $page->ready_text()->kirbytext() ?></div>
       <section class="padding-section" />
 
       <?php if ($page->cta_text()->isNotEmpty()): ?>

@@ -117,7 +117,7 @@ Deliverables:
 
 ----
 
-Ready-text: <p>Bref, toutes les clés pour <strong>lancer ton MVP rapidement</strong> et convaincre autour de toi</p><h2><strong><em>Prêt à transformer ton idée en MVP ?</em></strong></h2><p>En 30 heures d’accompagnement pour <strong>2850 € HT</strong>, tu passes de l’idée au concret.</p><p>Tu repars avec un prototype fonctionnel, une vision claire de ton produit et une feuille de route réaliste pour la suite.</p>
+Ready-text: <p>Bref, toutes les clés pour <strong>lancer ton MVP rapidement</strong> et convaincre autour de toi</p><h2><strong><em>Prêt à transformer ton idée en MVP ?</em></strong></h2><p>En <strong>30 heures</strong> d’accompagnement pour <strong><em>2850 € HT</em></strong>, tu passes de l’idée au concret.</p><p>Tu repars avec un prototype fonctionnel, une vision claire de ton produit et une feuille de route réaliste pour la suite.</p>
 
 ----
 

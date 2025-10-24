@@ -60,7 +60,7 @@ snippet('header');
 </section>
 
 <div class="transition-spot">
-  <img src="/assets/images/spots/arrow-down.png" alt="Transition">
+  <img src="/assets/images/spots/arrow-down.avif" alt="Transition">
 </div>
 
 <section>
@@ -167,7 +167,7 @@ snippet('header');
     <?php if ($featured): ?>
       <section class="padding-section" />
       <h2 class="text-purple">À la une</h2>
-      <img class="wave-spot-large" src="/assets/images/spots/purple-wave-spot-double.png" alt="Spot vert équipe">
+      <img class="wave-spot-large" src="/assets/images/spots/purple-wave-spot-double.avif" alt="Spot vert équipe">
       <section class="padding-section-small" />
 
       <div class="blog-featured">
@@ -178,7 +178,7 @@ snippet('header');
     <?php if ($mostRead && $mostRead->count()): ?>
       <section class="padding-section" />
       <h2 class="text-purple">Les plus lus</h2>
-      <img class="wave-spot-large" src="/assets/images/spots/purple-wave-spot-double.png" alt="Spot vert équipe">
+      <img class="wave-spot-large" src="/assets/images/spots/purple-wave-spot-double.avif" alt="Spot vert équipe">
       <section class="padding-section-small" />
       <div class="blog-carousel">
         <?php foreach ($mostRead as $article): ?>
@@ -200,7 +200,7 @@ snippet('header');
           Derniers articles
         <?php endif ?>
       </h2>
-      <img class="wave-spot-large" src="/assets/images/spots/purple-wave-spot-double.png" alt="Spot vert équipe">
+      <img class="wave-spot-large" src="/assets/images/spots/purple-wave-spot-double.avif" alt="Spot vert équipe">
       <section class="padding-section-small" />
 
       <div class="blog-grid" id="blog-grid" data-page="<?= $pageNum ?>" data-total-pages="<?= $totalPages ?>" data-q="<?= esc($q) ?>" data-tag="<?= esc($selectedTag) ?>">

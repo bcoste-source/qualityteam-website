@@ -68,7 +68,7 @@
     <?php endif ?>
 
     <section class="padding-section" />
-    <img class="spot" src="/assets/images/spots/green-spot-1.png">
+    <img class="spot" src="/assets/images/spots/green-spot-1.avif">
     <section class="padding-section" />
 
     <!-- Problem Section -->
@@ -133,7 +133,7 @@
           <div class="team-text text-purple">
             <p><?= $page->team_text()->esc() ?></p>
           </div>
-          <img class="team-spot" src="/assets/images/spots/green-spot-4.png" alt="Spot vert équipe">
+          <img class="team-spot" src="/assets/images/spots/green-spot-4.avif" alt="Spot vert équipe">
         <?php endif ?>
 
         <section class="padding-section" />
@@ -155,7 +155,7 @@
 <section class="purple-section">
   <div class="body-padding">
     <div class="hourglass-container">
-      <img class="hourglass" src="/assets/images/other/hourglass.png">
+      <img class="hourglass" src="/assets/images/other/hourglass.avif">
     </div>
 
     <div class="method-header">
@@ -171,7 +171,7 @@
     </div>
 
     <div class="arrow-container">
-      <img class="purple-arrow" src="/assets/images/spots/purple-arrow.png" alt="Flèche violette">
+      <img class="purple-arrow" src="/assets/images/spots/purple-arrow.avif" alt="Flèche violette">
       <div class="text-white">La méthode utilisée :</div>
     </div>
 
@@ -222,8 +222,8 @@
         <section class="padding-section" />
 
         <div class="button-spots">
-          <img class="button-spot-left" src="/assets/images/spots/button-spot-left.png" alt="Spot gauche">
-          <img class="button-spot-right" src="/assets/images/spots/button-spot-right.png" alt="Spot droite">
+          <img class="button-spot-left" src="/assets/images/spots/button-spot-left.avif" alt="Spot gauche">
+          <img class="button-spot-right" src="/assets/images/spots/button-spot-right.avif" alt="Spot droite">
         </div>
 
         <?php if ($page->accompaniment_button_text()->isNotEmpty()): ?>
@@ -242,7 +242,7 @@
 
 <!-- Transition Image -->
 <div class="transition-spot">
-  <img src="/assets/images/spots/purple-to-black-spot.png" alt="Transition spot">
+  <img src="/assets/images/spots/purple-to-black-spot.avif" alt="Transition spot">
 </div>
 
 <!-- Black Section - Expertise -->
@@ -258,7 +258,7 @@
 
       <div class="expertise-content">
         <div class="expertise-icon">
-          <img src="/assets/images/other/lightning-bolt.png" alt="Expertise icon">
+          <img src="/assets/images/other/lightning-bolt.avif" alt="Expertise icon">
         </div>
         <div class="expertise-text">
           <?php if ($page->expertise_text1()->isNotEmpty()): ?>
@@ -290,7 +290,7 @@
 
 <!-- Transition Image -->
 <div class="double-transition-spot">
-  <img src="/assets/images/spots/black-to-white-spot.png" alt="Transition spot">
+  <img src="/assets/images/spots/black-to-white-spot.avif" alt="Transition spot">
 </div>
 
 <!-- FAQ Section -->
@@ -358,13 +358,13 @@
               <?= $page->cta_button1_text()->esc() ?>
               <span class="arrow">→</span>
             </a>
-            <img class="pink-arrow-right" src="/assets/images/spots/pink-arrow-to-left.png" alt="Flèche droite">
+            <img class="pink-arrow-right" src="/assets/images/spots/pink-arrow-to-left.avif" alt="Flèche droite">
           </div>
         <?php endif ?>
 
         <?php if ($page->cta_button2_text()->isNotEmpty()): ?>
           <div class="green-button-container">
-            <img class="pink-arrow-left" src="/assets/images/spots/pink-arrow-to-right.png" alt="Flèche gauche">
+            <img class="pink-arrow-left" src="/assets/images/spots/pink-arrow-to-right.avif" alt="Flèche gauche">
             <a href="<?= $page->cta_button2_link()->esc() ?>" class="btn-green">
               <?= $page->cta_button2_text()->esc() ?>
               <span class="arrow">→</span>

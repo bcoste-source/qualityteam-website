@@ -13,11 +13,11 @@
     <section class="padding-section" />
 
     <div class="offer-intro-flex">
-      <img src="/assets/images/spots/purple-flash-left.png" alt="Flash violet gauche" class="offer-intro-flash">
+      <img src="/assets/images/spots/purple-flash-left.avif" alt="Flash violet gauche" class="offer-intro-flash">
       <div class="text-white offer-content-text" style="margin-bottom: 0;">
         <?= $page->ai_paragraph1()->kirbytext() ?>
       </div>
-      <img src="/assets/images/spots/purple-flash-right.png" alt="Flash violet droite" class="offer-intro-flash">
+      <img src="/assets/images/spots/purple-flash-right.avif" alt="Flash violet droite" class="offer-intro-flash">
     </div>
 
     <section class="padding-section" />
@@ -76,7 +76,7 @@
     <?php $steps = $page->ai_how_steps()->toStructure();
     $total = $steps->count(); ?>
     <div class="timeline">
-      <img class="timeline-arrow" src="/assets/images/other/arrow-down-timeline.png" alt="Flèche timeline" />
+      <img class="timeline-arrow" src="/assets/images/other/arrow-down-timeline.avif" alt="Flèche timeline" />
       <ul class="timeline-list">
         <?php foreach ($steps as $i => $s): $isLast = ($i === $total - 1); ?>
           <li class="timeline-item<?= $isLast ? ' is-last' : '' ?>">

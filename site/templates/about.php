@@ -10,9 +10,9 @@
     <?php endif ?>
     <?php if ($page->about_title()->isNotEmpty()): ?>
       <div class="about-title-container">
-        <img class="thunder-left" src="/assets/images/spots/team/thunder-left.png" alt="Thunder left">
+        <img class="thunder-left" src="/assets/images/spots/team/thunder-left.avif" alt="Thunder left">
         <h2 class="text-purple-black"><?= $page->about_title()->kirbytext() ?></h2>
-        <img class="thunder-right" src="/assets/images/spots/team/thunder-right.png" alt="Thunder right">
+        <img class="thunder-right" src="/assets/images/spots/team/thunder-right.avif" alt="Thunder right">
       </div>
     <?php endif ?>
 
@@ -39,11 +39,11 @@
     <?php if ($page->teammates()->isNotEmpty()): ?>
       <div class="team-list">
         <?php $spots = [
-          '/assets/images/spots/team/spot-1.png',
-          '/assets/images/spots/team/spot-2.png',
-          '/assets/images/spots/team/spot-3.png',
-          '/assets/images/spots/team/spot-4.png',
-          '/assets/images/spots/team/spot-5.png'
+          '/assets/images/spots/team/spot-1.avif',
+          '/assets/images/spots/team/spot-2.avif',
+          '/assets/images/spots/team/spot-3.avif',
+          '/assets/images/spots/team/spot-4.avif',
+          '/assets/images/spots/team/spot-5.avif'
         ]; ?>
         <?php foreach ($page->teammates()->toStructure() as $idx => $t): ?>
           <div class="teammate <?= $idx % 2 === 0 ? 'is-even' : 'is-odd' ?>">
@@ -123,7 +123,7 @@
 
 
 <div class="transition-spot">
-  <img src="/assets/images/spots/spot-heart.png" alt="Transition coeur">
+  <img src="/assets/images/spots/spot-heart.avif" alt="Transition coeur">
   <section class="padding-section-small" />
 </div>
 

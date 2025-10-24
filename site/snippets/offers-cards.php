@@ -32,7 +32,7 @@ if ($offersPage && $offersPage->products()->isNotEmpty()): ?>
         ?>
         <a class="offer-card" href="<?= $url ?? '#' ?>">
           <h2 class="text-white-green"><?= $prod->title()->kirbytext() ?></h2>
-          <img class="offer-spot" src="/assets/images/spots/pink-spot.png" alt="Spot" />
+          <img class="offer-spot" src="/assets/images/spots/pink-spot.avif" alt="Spot" />
           <div class="text-white-green"><?= $prod->description()->kirbytext() ?></div>
         </a>
       <?php endforeach ?>

@@ -35,7 +35,7 @@
     <div class="section2-known">
       <?php if ($page->section2_known()->isNotEmpty()): ?>
         <p class="text-purple"><?= $page->section2_known()->esc() ?></p>
-        <img class="wave-spot" src="/assets/images/spots/purple-wave-spot.png" alt="Spot vert équipe">
+        <img class="wave-spot" src="/assets/images/spots/purple-wave-spot.avif" alt="Spot vert équipe">
       <?php endif ?>
     </div>
 
@@ -48,7 +48,7 @@
     <?php if ($page->section2_transform()->isNotEmpty()): ?>
       <div style="margin: 2rem 0;">
         <h3 style="margin: 0; display: flex; align-items: center; justify-content: center;">
-          <img src="/assets/images/spots/green-arrow-to-right.png" alt="Flèche verte vers la gauche" style="height: 20px; width: auto; margin-right: 0.5rem;">
+          <img src="/assets/images/spots/green-arrow-to-right.avif" alt="Flèche verte vers la gauche" style="height: 20px; width: auto; margin-right: 0.5rem;">
           <?= $page->section2_transform()->esc() ?>
         </h3>
       </div>

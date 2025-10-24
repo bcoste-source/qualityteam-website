@@ -76,7 +76,7 @@
   </div>
 
   <div class="end-footer-container">
-    <img class="end-footer-logo" src="/assets/images/other/logo-alone.png" alt="QualityTeam" />
+    <img class="end-footer-logo" src="/assets/images/other/logo-alone.avif" alt="QualityTeam" />
     <p class="text-white text-small">© 2025 QualityTeam. Tous droits réservés.</p>
     <p class="text-white text-small">Toutes les photographies présentes sur ce site sont la propriété exclusive de QualityTeam.</p>
   </div>

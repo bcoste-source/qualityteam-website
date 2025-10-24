@@ -679,7 +679,7 @@ hr {
 .purple-section {
   background-color: var(--color-code-purple);
   position: relative;
-  background-image: url('/assets/images/background-vectors/vector-purple.png');
+  background-image: url('/assets/images/background-vectors/vector-purple.svg');
   background-repeat: repeat;
   background-size: cover;
   background-position: center;
@@ -688,7 +688,7 @@ hr {
 .black-section {
   background-color: var(--color-black);
   position: relative;
-  background-image: url('/assets/images/background-vectors/vector-black.png');
+  background-image: url('/assets/images/background-vectors/vector-black.svg');
   background-repeat: repeat;
   background-size: cover;
   background-position: center;
@@ -697,7 +697,7 @@ hr {
 .green-section {
   background-color: var(--color-code-green);
   position: relative;
-  background-image: url('/assets/images/background-vectors/vector-green-full.png');
+  background-image: url('/assets/images/background-vectors/vector-green-full.svg');
   background-repeat: repeat;
   background-size: cover;
   background-position: center;
@@ -706,7 +706,7 @@ hr {
 .pink-section {
   background-color: var(--color-code-pink);
   position: relative;
-  background-image: url('/assets/images/background-vectors/vector-black.png');
+  background-image: url('/assets/images/background-vectors/vector-black.svg');
   background-repeat: repeat;
   background-size: cover;
   background-position: center;
@@ -714,7 +714,7 @@ hr {
 
 
 .background-white-with-green-vector {
-  background-image: url('/assets/images/background-vectors/vector-green.png');
+  background-image: url('/assets/images/background-vectors/vector-green.svg');
   background-repeat: repeat;
   background-size: cover;
   background-position: center;

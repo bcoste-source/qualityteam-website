@@ -19,7 +19,7 @@
 
     <div class="adapt-text">
       <strong><?= $page->custom_intro_adapt_text()->esc() ?></strong>
-      <img class="wave-spot-large" src="/assets/images/spots/purple-wave-spot-double.png" alt="Spot vert équipe">
+      <img class="wave-spot-large" src="/assets/images/spots/purple-wave-spot-double.avif" alt="Spot vert équipe">
     </div>
 
     <section class="padding-section" />

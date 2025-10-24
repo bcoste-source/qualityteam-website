@@ -33,7 +33,7 @@
 </section>
 
 <div class="transition-spot">
-  <img src="/assets/images/spots/arrow-down.png" alt="Transition coeur">
+  <img src="/assets/images/spots/arrow-down.avif" alt="Transition coeur">
 </div>
 
 <section>
@@ -42,7 +42,7 @@
     <section class="padding-section-small" />
 
     <h2 class="text-purple">Nos projets :</h2>
-    <img class="wave-spot-large" src="/assets/images/spots/purple-wave-spot-double.png" alt="Spot vert équipe">
+    <img class="wave-spot-large" src="/assets/images/spots/purple-wave-spot-double.avif" alt="Spot vert équipe">
 
 
     <section class="padding-section-small" />

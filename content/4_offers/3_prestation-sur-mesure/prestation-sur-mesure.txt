@@ -10,7 +10,7 @@ Meta-description: Accompagnement startup sur mesure : définis ta stratégie pro
 
 ----
 
-Custom-title: <p>Accompagnement <strong><em>sur mesure</em></strong></p>
+Custom-title: <p>Accompagnement <strong>sur mesure</strong></p>
 
 ----
 
@@ -26,7 +26,7 @@ Custom-intro-adapt-text: Chaque startup est unique. Ta stratégie produit aussi.
 
 ----
 
-Custom-intro-text: <p>Besoin d’un <strong>renfort technique </strong>pour développer une nouvelle fonctionnalité <strong>?<br></strong>Besoin de quelques heures pour <strong>cadrer une roadmap </strong>?&nbsp;<br>Ou simplement d’<strong>interviews utilisateurs </strong>pour valider une idée ?&nbsp;</p><p></p><p></p><p>Parfois, tu n’as pas besoin d’un accompagnement complet, mais d’un coup de pouce ciblé pour avancer sur ton produit numérique. Avec QualityTeam, tu bénéficies d’une <strong>expertise produit modulable</strong> : ciblée, flexible et toujours alignée avec ton budget et ton timing pour avancer sur ton produit numérique.</p>
+Custom-intro-text: <ul><li><p>Besoin d’un renfort technique pour développer une nouvelle fonctionnalité ?</p></li><li><p>Besoin de quelques heures pour cadrer une roadmap ?</p></li><li><p>Ou simplement d’interviews utilisateurs pour valider une idée ?</p></li></ul><p>‎ </p><p>Parfois, tu n’as pas besoin d’un accompagnement complet, mais d’un coup de pouce ciblé pour avancer sur ton produit numérique. Avec QualityTeam, tu bénéficies d’une expertise produit modulable : ciblée, flexible et toujours alignée avec ton budget et ton timing pour avancer sur ton produit numérique.</p>
 
 ----
 
@@ -67,11 +67,28 @@ Custom-how-title: Comment ça se passe ?
 
 ----
 
-Custom-how-paragraph: <p>Simple, flexible et orienté résultat : 3 étapes pour avancer sans perdre de temps, modulable selon ton projet et ton budget.</p><h3><br>1. Comprendre ton besoin</h3><p><br>Tout commence par une discussion pour cerner ton projet, ton marché et tes objectifs. Nous analysons ensemble :</p><ul><li><p>Ton produit actuel ou ton idée de MVP.</p></li><li><p>Les enjeux pour tes utilisateurs et ton business.</p></li><li><p>Les points précis où tu as besoin d’un <strong>renfort</strong>.</p></li></ul><p>Cette phase sert à définir une stratégie ciblée, savoir exactement <strong>où intervenir</strong> et comment prioriser les actions pour maximiser la valeur de ton produit.</p><h3><br>2. Concevoir un accompagnement sur mesure</h3><p><br>Ensuite, nous construisons un plan d’action personnalisé :</p><ul><li><p><strong>Priorisation des fonctionnalités</strong> pour ton MVP ou produit numérique.</p></li><li><p><strong>Structuration du backlog</strong> et planification des tâches pour avancer rapidement et efficacement.</p></li><li><p><strong>Soutien sur le design UX/UI</strong> si nécessaire, pour que ton produit soit intuitif et agréable à utiliser.</p></li></ul><p><strong>Recommandations techniques</strong> pour que le développement se fasse sans surprises.</p><p>Nous utilisons des méthodes éprouvées, adaptées aux startups : ateliers collaboratifs, feedback continu et <strong>outils de gestion de produit</strong> simples mais efficaces pour guider tes décisions.</p><h3><br>3. Suivi et résultats</h3><p><br>Enfin, tu repars avec :</p><ul><li><p>Une <strong>stratégie produit claire et priorisée</strong>.</p></li><li><p>Une <strong>équipe disponible</strong> pour te conseiller et coordonner les actions.</p></li><li><p>Un <strong>backlog structuré</strong> et facile à suivre.</p></li><li><p>Des<strong> livrables concrets</strong> (prototypes, parcours utilisateur, maquettes…)</p></li><li><p>Des recommandations stratégiques pour <strong>faire évoluer ton produit</strong>, préparer une V2 ou convaincre des investisseurs.</p></li><li><p>Un accompagnement agile, flexible et modulable selon l’avancement de ton projet.</p></li></ul><p>Grâce à cette approche, tu avances <strong>rapidement et sereinement</strong>, tu réduis les risques de gaspiller du temps ou de l’argent, et tu maximises la valeur de ton produit.<br><br><br>Ce que tu gagnes avec cette offre :</p><ul><li><p>Une équipe de Product Managers, Designers et Développeurs expérimentés.</p></li><li><p>Une <strong>stratégie produit 100% personnalisée</strong>, qui s’adapte à ton projet, ton rythme et tes besoins spécifiques.</p></li><li><p>Une vision claire de ton produit, un plan d’actions concret et des recommandations stratégiques.</p></li><li><p>Une approche flexible pour avancer rapidement sur ton MVP ou produit numérique adaptée à ton budget, tes délais et ton niveau d’avancement.</p></li></ul><p><br>Bref, tu gagnes en <strong>clarté, rapidité et efficacité</strong>, et tu peux te concentrer sur ce qui compte vraiment : lancer un produit qui séduit tes utilisateurs et tes partenaires.</p>
+Custom-how-paragraph: <p>Simple, flexible et orienté résultat : 3 étapes pour avancer sans perdre de temps, modulable selon ton projet et ton budget.</p><h3><br>1. Comprendre ton besoin</h3><p><br>Tout commence par une discussion pour cerner ton projet, ton marché et tes objectifs. Nous analysons ensemble :</p><ul><li><p>Ton produit actuel ou ton idée de MVP.</p></li><li><p>Les enjeux pour tes utilisateurs et ton business.</p></li><li><p>Les points précis où tu as besoin d’un <strong>renfort</strong>.</p></li></ul><p> </p><p>Cette phase sert à définir une stratégie ciblée, savoir exactement <strong>où intervenir</strong> et comment prioriser les actions pour maximiser la valeur de ton produit.</p><h3><br>2. Concevoir un accompagnement sur mesure</h3><p><br>Ensuite, nous construisons un plan d’action personnalisé :</p><ul><li><p><strong>Priorisation des fonctionnalités</strong> pour ton MVP ou produit numérique.</p></li><li><p><strong>Structuration du backlog</strong> et planification des tâches pour avancer rapidement et efficacement.</p></li><li><p><strong>Soutien sur le design UX/UI</strong> si nécessaire, pour que ton produit soit intuitif et agréable à utiliser.</p></li></ul><p> </p><p><strong>Recommandations techniques</strong> pour que le développement se fasse sans surprises.</p><p>Nous utilisons des méthodes éprouvées, adaptées aux startups : ateliers collaboratifs, feedback continu et <strong>outils de gestion de produit</strong> simples mais efficaces pour guider tes décisions.</p><h3><br>3. Suivi et résultats</h3><p><br>Enfin, tu repars avec :</p><ul><li><p>Une <strong>stratégie produit claire et priorisée</strong>.</p></li><li><p>Une <strong>équipe disponible</strong> pour te conseiller et coordonner les actions.</p></li><li><p>Un <strong>backlog structuré</strong> et facile à suivre.</p></li><li><p>Des<strong> livrables concrets</strong> (prototypes, parcours utilisateur, maquettes…)</p></li><li><p>Des recommandations stratégiques pour <strong>faire évoluer ton produit</strong>, préparer une V2 ou convaincre des investisseurs.</p></li><li><p>Un accompagnement agile, flexible et modulable selon l’avancement de ton projet.</p></li></ul><p> </p><p>Grâce à cette approche, tu avances <strong>rapidement et sereinement</strong>, tu réduis les risques de gaspiller du temps ou de l’argent, et tu maximises la valeur de ton produit.</p><ul><li><p>Une équipe de Product Managers, Designers et Développeurs expérimentés.</p></li><li><p>Une <strong>stratégie produit 100% personnalisée</strong>, qui s’adapte à ton projet, ton rythme et tes besoins spécifiques.</p></li></ul>
 
 ----
 
-Custom-contact-text: <h2><strong><em>Dis-nous ce dont tu as besoin.</em></strong> </h2><p>Avec nous, pas de format imposé : quelques heures d’expertise ou un suivi plus poussé, tout est possible.On construit ensemble la <strong>stratégie produit</strong> qui fera décoller ton projet.</p>
+Custom-benefits-intro: <p>Ce que tu gagnes avec cette offre :</p>
+
+----
+
+Custom-benefits:
+
+-
+  item: 'Une équipe de Product Managers, Designers et Développeurs expérimentés.'
+-
+  item: 'Une stratégie produit 100% personnalisée, qui s’adapte à ton projet, ton rythme et tes besoins spécifiques.'
+-
+  item: 'Une vision claire de ton produit, un plan d’actions concret et des recommandations stratégiques.'
+-
+  item: 'Une approche flexible pour avancer rapidement sur ton MVP ou produit numérique adaptée à ton budget, tes délais et ton niveau d’avancement.'
+
+----
+
+Custom-contact-text: <p>Bref, tu gagnes en <strong>clarté, rapidité et efficacité</strong>, et tu peux te concentrer sur ce qui compte vraiment : lancer un produit qui séduit tes utilisateurs et tes partenaires.</p><h2><strong>Dis-nous ce dont tu as besoin.</strong> </h2><p>Avec nous, pas de format imposé : quelques heures d’expertise ou un suivi plus poussé, tout est possible.On construit ensemble la <strong>stratégie produit</strong> qui fera décoller ton projet.</p>
 
 ----
 

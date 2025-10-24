@@ -4,10 +4,10 @@
   <div class="body-padding body-centered">
     <section class="padding-section" />
 
-    <h2 class="text-white-green"><?= $page->custom_title()->kirbytext() ?></h2>
-    <p class="text-green text-small page-subtitle">
+    <h1 class="text-white-green"><?= $page->custom_title()->kirbytext() ?></h1>
+    <h1 class="text-green text-small page-subtitle">
       <?= mb_strtoupper($page->custom_tagline()->esc(), 'UTF-8') ?>
-    </p>
+    </h1>
 
     <section class="padding-section" />
 
@@ -18,7 +18,7 @@
     <section class="padding-section" />
 
     <div class="adapt-text">
-      <strong><?= $page->custom_intro_adapt_text()->esc() ?></strong>
+      <h2><strong><?= $page->custom_intro_adapt_text()->esc() ?></strong></h2>
       <img class="wave-spot-large" src="/assets/images/spots/purple-wave-spot-double.avif" alt="Spot vert équipe">
     </div>
 
@@ -32,11 +32,10 @@
 
     <?php if ($page->custom_why_title()->isNotEmpty()): ?>
       <div class="offer-title-container">
-        <h4 class="offer-question-title"><?= $page->custom_why_title()->esc() ?></h4>
+        <h2 class="offer-question-title"><?= $page->custom_why_title()->esc() ?></h2>
       </div>
     <?php endif ?>
 
-    <section class="padding-section" />
 
     <div class="text-white-pink offer-content-text">
       <?= $page->custom_why_paragraph()->kirbytext() ?>
@@ -66,11 +65,10 @@
 
     <?php if ($page->custom_how_title()->isNotEmpty()): ?>
       <div class="offer-title-container">
-        <h4 class="offer-question-title"><?= $page->custom_how_title()->esc() ?></h4>
+        <h2 class="offer-question-title"><?= $page->custom_how_title()->esc() ?></h2>
       </div>
     <?php endif ?>
 
-    <section class="padding-section" />
 
     <div class="text-white-pink offer-content-text">
       <?= $page->custom_how_paragraph()->kirbytext() ?>
@@ -78,7 +76,25 @@
 
     <section class="padding-section" />
 
-    <div class="text-white-pink offer-content-text" style="font-style: italic; opacity:.9; max-width: 52rem; margin: 0 auto;">
+    <div class="deliverables-box">
+      <div class="deliverables-box-content">
+        <div class="deliverables-box-intro">
+          <?= $page->custom_benefits_intro()->kirbytext() ?>
+        </div>
+
+        <?php if ($page->custom_benefits()->isNotEmpty()): ?>
+          <ul>
+            <?php foreach ($page->custom_benefits()->toStructure() as $d): ?>
+              <li><?= $d->item()->esc() ?></li>
+            <?php endforeach ?>
+          </ul>
+        <?php endif ?>
+      </div>
+    </div>
+
+    <section class="padding-section" />
+
+    <div class="text-white-pink offer-content-text" style="opacity:.9; max-width: 52rem; margin: 0 auto;">
       <?= $page->custom_contact_text()->kirbytext() ?>
     </div>
 

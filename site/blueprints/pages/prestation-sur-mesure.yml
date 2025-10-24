@@ -56,6 +56,16 @@ sections:
       custom_how_paragraph:
         label: Paragraphe Comment
         type: writer
+      custom_benefits_intro:
+        label: Intro bénéfices
+        type: writer
+      custom_benefits:
+        label: Bénéfices (liste)
+        type: structure
+        fields:
+          item:
+            label: Élément
+            type: text
       custom_contact_text:
         label: Texte contact
         type: writer

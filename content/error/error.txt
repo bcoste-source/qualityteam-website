@@ -1,8 +1,8 @@
-Title: Error
+Title: Page introuvable
 
 ----
 
-Text: This page cannot be found 😱
+Text: Désolé, la page que vous recherchez n'existe pas ou a été déplacée.
 
 ----
 

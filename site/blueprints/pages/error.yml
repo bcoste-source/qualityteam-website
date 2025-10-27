@@ -1,5 +1,5 @@
 # Each page blueprint must have a title, the title may be different from the file name
-title: Error
+title: Page d'erreur
 
 # Page options allow you to control how users can interact with the page.
 # Here we prevent reading of the page, so it is not shown to anyone in the Panel.
@@ -7,3 +7,12 @@ title: Error
 # More about page options: https://getkirby.com/docs/reference/panel/blueprints/page#options
 options:
   read: false
+
+fields:
+  title:
+    label: Titre
+    type: text
+
+  text:
+    label: Message d'erreur
+    type: textarea

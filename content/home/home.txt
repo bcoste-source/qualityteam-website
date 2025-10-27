@@ -30,7 +30,11 @@ Hero-button-link: /contact
 
 ----
 
-Hero-title: <p>On co-construit avec vous le bon produit, <strong>dès le début.</strong></p>
+Hero-title: On co-construit avec vous le bon produit,
+
+----
+
+Hero-title-green: dès le début.
 
 ----
 

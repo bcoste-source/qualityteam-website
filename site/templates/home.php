@@ -35,8 +35,10 @@
     <div class="hero-content">
       <?php if ($page->hero_title()->isNotEmpty()): ?>
         <h1 class="hero-title text-white-green">
-          <?= $page->hero_title()->kirbytext() ?>
+          <?= $page->hero_title()->esc() ?>
+          <span class="text-green"><?= $page->hero_title_green()->esc() ?></span>
         </h1>
+
       <?php endif ?>
 
       <?php if ($page->hero_subtitle()->isNotEmpty()): ?>

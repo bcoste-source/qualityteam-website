@@ -58,9 +58,15 @@ sections:
 
       hero_title:
         label: Titre hero
-        type: writer
+        type: text
         width: 1/2
         help: "Titre de la section hero"
+
+      hero_title_green:
+        label: Fin titre hero vert
+        type: text
+        width: 1/2
+        help: "Fin du titre de la section hero"
 
       hero_subtitle:
         label: Sous-titre hero

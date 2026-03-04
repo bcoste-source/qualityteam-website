@@ -25,7 +25,7 @@ snippet('header');
   <div class="body-padding body-centered">
 
     <div class="article-header">
-      <h1 class="text-black-green"><?= $page->title()->kirbytext() ?></h1>
+      <h1 class="text-purple-green"><?= $page->title()->kirbytext() ?></h1>
 
       <div class="article-meta-header">
         <?php if ($page->date()->isNotEmpty()): ?>

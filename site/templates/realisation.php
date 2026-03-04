@@ -4,7 +4,7 @@
   <div class="body-padding body-centered">
 
     <div class="realisation-header">
-      <h1 class="text-black-green"><?= $page->realisation_title()->kirbytext() ?></h1>
+      <h1 class="text-purple-green"><?= $page->realisation_title()->kirbytext() ?></h1>
 
       <?php if ($page->realisation_date()->isNotEmpty()): ?>
         <div class="realisation-date-header">

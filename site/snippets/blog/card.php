@@ -36,9 +36,6 @@ if (!isset($article) || !$article instanceof Page) return;
       <?php if ($article->date()->isNotEmpty()): ?>
         <div class="blog-date"><?= $article->date()->toDate('d/m/Y') ?></div>
       <?php endif ?>
-      <?php if ($article->views()->isNotEmpty() && $article->views()->toInt() > 0): ?>
-        <div class="blog-views"><?= $article->views()->toInt() ?> vues</div>
-      <?php endif ?>
     </div>
 
     <span class="blog-link">Lire l'article →</span>

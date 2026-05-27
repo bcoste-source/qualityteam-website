@@ -132,7 +132,7 @@
       <section class="padding-section" />
 
       <?php if ($page->cta_text()->isNotEmpty()): ?>
-        <a href="#contact" class="btn-purple"><?= $page->cta_text()->esc() ?></a>
+        <a href="<?= $page->cta_link()->or('#contact')->esc() ?>" class="btn-purple"><?= $page->cta_text()->esc() ?></a>
       <?php endif ?>
     </div>
   </div>

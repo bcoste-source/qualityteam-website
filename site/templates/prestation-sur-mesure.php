@@ -102,7 +102,7 @@
 
     <div class="ready">
       <?php if ($page->custom_cta_text()->isNotEmpty()): ?>
-        <a href="#contact" class="btn-black text-white-green"><?= mb_strtoupper($page->custom_cta_text()->kirbytext()) ?></a>
+        <a href="<?= $page->custom_cta_link()->or('#contact')->esc() ?>" class="btn-black text-white-green"><?= mb_strtoupper($page->custom_cta_text()->kirbytext()) ?></a>
       <?php endif ?>
     </div>
   </div>

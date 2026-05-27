@@ -116,7 +116,7 @@
       </div>
       <section class="padding-section" />
       <?php if ($page->ai_cta_text()->isNotEmpty()): ?>
-        <a href="#contact" class="btn-purple text-white-green"><?= mb_strtoupper($page->ai_cta_text()->kirbytext()) ?></a>
+        <a href="<?= $page->ai_cta_link()->or('#contact')->esc() ?>" class="btn-purple text-white-green"><?= mb_strtoupper($page->ai_cta_text()->kirbytext()) ?></a>
       <?php endif ?>
     </div>
   </div>
